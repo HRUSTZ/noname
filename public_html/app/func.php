@@ -4,7 +4,7 @@ function tlog($str){ //функция логирования
   $t = date("d-m-Y H:i:s");
   $w = addslashes($_SERVER['REQUEST_URI']);
   $h = fopen('logger.log' , 'ab');
-  fwrite($h, $t . ' [' . $w . '] ' . $str . "\n");
+  fwrite($h, $t . ' [' . $w . '] ' . $str . '\n');
 }
 
 function tpl($tpl, $cont = ""){ //прогрузка тимплейта
