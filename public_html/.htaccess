@@ -1,0 +1,6 @@
+AddDefaultCharset UTF-8
+Options -Indexes
+RewriteEngine on
+
+RewriteCond %{REQUEST_URI} !app/*
+RewriteRule ^(.*)$ app/app.php [L,QSA]
