@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  height: 100%;
+  width: 100%;
+  background-color: #ccc;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  font: 16px/1.5em Arial;
+}
+
+.container{
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+/*header*/
+
+header{
+  background-color: #aaa;
+  height: 80px;
+  width: 100%;
+}
+
+/*footer*/
+
+footer{
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #aaa;
+  width: 100%;
+}
