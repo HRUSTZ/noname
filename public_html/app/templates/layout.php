@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="app/templates/style.css">
+  <link rel="stylesheet" type="text/css" href="/assets/style.css">
   <title></title>
 </head>
 <body>
