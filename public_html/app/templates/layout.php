@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="app/templates/style.css">
-  <title></title>
+  <link rel="stylesheet" href="app/templates/style.css">
+  <title><?= $title ?></title>
 </head>
 <body>
   <div class="container">
