@@ -1,1 +1,3 @@
-О сайте
+<section class="about">
+  О нас
+</section>

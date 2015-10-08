@@ -16,6 +16,7 @@ body{
 }
 
 .container{
+  position: relative;
   height: 100%;
   width: 100%;
   max-width: 1600px;
@@ -31,13 +32,24 @@ header{
   width: 100%;
 }
 
+/*main*/
+
+main{
+  height: 900px;
+  background-color: #09f;
+}
+
+/*about*/
+
+.about{
+  height: 900px;
+  background-color: #f44;
+}
+
 /*footer*/
 
 footer{
   height: 80px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   background-color: #aaa;
   width: 100%;
 }
