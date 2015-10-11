@@ -26,7 +26,3 @@ function q($value){ // возвращает безопасную строчку
   $value = htmlspecialchars($value);
   return $value;
 }
-
-function notice($proof){
-  echo ($proof);
-}

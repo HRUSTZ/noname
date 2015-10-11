@@ -1,4 +1,4 @@
-﻿<?
+<?
 global $mysqli;
 
 $email = q($_POST[email]);
@@ -43,11 +43,11 @@ if ($_POST){
   if (!$control){
     $hash = md5($password1);
     $q = $mysqli->query("INSERT INTO Users(email, hash, name) VALUES ('$email', '$hash', '$name')");
-    notice('Вы успешно зарегистрированы');
+    //echo('Вы успешно зарегистрированы');
     header("Location: /authorization");
     exit;
   } else{
-    notice($control);
+    echo($control);
   }
 }
 
