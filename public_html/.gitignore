@@ -1,0 +1,6 @@
+# CodeLobster PHP Edition project file
+/*.clpprj
+# logger 
+/app/logger.log
+/files/*
+/app/config.php
