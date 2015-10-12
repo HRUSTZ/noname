@@ -7,7 +7,14 @@
 </head>
 <body>
   <div class="container">
-    <header>Хэдер</header>
+    <header>
+      <nav>
+        <a href="/main">Главная</a>
+        <a href="/about">О нас</a>
+        <a href="/authorization">Item3</a>
+        <a href="/registration">Item4</a>
+      </nav>
+    </header>
     <?=$content?>
     <footer>Футер</footer>
   </div>

@@ -12,7 +12,7 @@ html{
 body{
   height: 100%;
   width: 100%;
-  font: 16px/1.5em Arial;
+  font: 24px/1.5em Arial;
 }
 
 .container{
@@ -28,16 +28,36 @@ body{
 /*header*/
 
 header{
-  background-color: #aaa;
+  background-color: #028EC9;
   height: 80px;
   width: 100%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav a{
+  margin: auto;
+  display: block;
+  padding: 15px 100px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover{
+  background-color: #fff;
+  color: #028EC9;
+  transition: 1s;
 }
 
 /*main*/
 
 main{
   height: 900px;
-  background-color: #09f;
+  background-color: #fff;
 }
 
 /*registration*/
@@ -58,6 +78,6 @@ main{
 
 footer{
   height: 80px;
-  background-color: #aaa;
+  background-color: #028EC9;
   width: 100%;
 }
