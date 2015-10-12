@@ -11,7 +11,7 @@
       <nav>
         <a href="/main">Главная</a>
         <a href="/about">О нас</a>
-        <a href="../controllers/exit.php">Выход</a>
+        <a href="/exit">Выход</a>
       </nav>
     </header>
     <?=$content?>
