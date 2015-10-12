@@ -2,7 +2,7 @@
 session_start();
 
 $login = $_SESSION['login'];
-$nameUser = $_SESSION['name'];
+$name = $_SESSION['name'];
 
 require_once("config.php");
 require_once("func.php");
