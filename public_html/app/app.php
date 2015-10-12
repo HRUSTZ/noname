@@ -8,4 +8,8 @@ require_once("config.php");
 require_once("func.php");
 require_once("router.php");
 
-include($_SERVER['DOCUMENT_ROOT'].'/app/templates/layout.php');
+if(empty($login) && empty($name)){
+  include($_SERVER['DOCUMENT_ROOT'].'/app/templates/layout.php');
+} else{
+  include($_SERVER['DOCUMENT_ROOT'].'/app/templates/layout_user.php');
+}
