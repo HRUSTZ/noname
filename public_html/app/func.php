@@ -15,7 +15,7 @@ function tpl($tpl, $cont = ""){ //прогрузка тимплейта
 }
 
 function error($handl){ //функция вызова ошибки
-  //tlog($handl);
+  tlog($handl);
   ob_end_clean();
   include('error.php');
   exit;

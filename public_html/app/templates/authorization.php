@@ -1,5 +1,5 @@
-<form action="/authorization" method="POST" class="form-auth">
+ï»¿<form action="/authorization" method="POST" class="form-auth">
   <input type="text" name="email" id="email" placeholder="Email:"/>
-  <input type="password" name="password" id="password" placeholder="Ïàðîëü:"/>
-  <input type="submit" value="Âõîä"  class="button-auth">
+  <input type="password" name="password" id="password" placeholder="ÐŸÐ°Ñ€Ð¾Ð»ÑŒ:"/>
+  <input type="submit" value="Ð’Ñ…Ð¾Ð´"  class="button-auth">
 </form>

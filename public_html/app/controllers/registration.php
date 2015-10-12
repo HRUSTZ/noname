@@ -7,7 +7,7 @@ $password2 = q($_POST[password2]);
 $name = q($_POST[name]);
 
 if ($_POST){
-  function check ($email, $password1, $password2, $name){
+  function control($email, $password1, $password2, $name){
     global $mysqli;
     $control = false;
     
@@ -39,7 +39,7 @@ if ($_POST){
     }
   }
   
-  $control = check($email, $password1, $password2, $name);
+  $control = control($email, $password1, $password2, $name);
   if (!$control){
     $hash = md5($password1);
     $q = $mysqli->query("INSERT INTO Users(email, hash, name) VALUES ('$email', '$hash', '$name')");
