@@ -40,6 +40,13 @@ main{
   background-color: #09f;
 }
 
+/*registration*/
+
+.registration{
+  height: 900px;
+  background-color: #1f5;
+}
+
 /*about*/
 
 .about{
