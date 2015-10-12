@@ -42,7 +42,7 @@ nav{
 nav a{
   margin: auto;
   display: block;
-  padding: 15px 80px;
+  padding: 15px 60px;
   text-decoration: none;
   color: #fff;
 }
@@ -51,6 +51,19 @@ nav a:hover{
   background-color: #fff;
   color: #028EC9;
   transition: 1s;
+}
+
+.menu-login{
+
+}
+
+#sub-login{
+  height: 200px;
+  width: 200px;
+  background-color: #f00;
+  position: absolute;
+  right: 0;
+  top: 80px;
 }
 
 /*main*/
