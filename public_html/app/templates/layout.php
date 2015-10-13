@@ -17,7 +17,7 @@
       </nav>
       <div class="flex login-menu">
         <a class="login" href="#" onclick="openLogin('sub-login')"><span>Вход</span></a>
-        <a class="authorization" href="/authorization"><span>Авторизация</span></a>
+        <a class="registr" href="/registration"><span>Регистрация</span></a>
         <div id="sub-login"></div>
       </div>
     </header>
