@@ -8,20 +8,22 @@
 </head>
 <body>
   <div class="container">
-    <header>
-      <nav>
-        <a href="/main">Главная</a>
-        <a href="/about">О нас</a>
-        <a href="#">Item3</a>
-        <a href="#">Item4</a>
-        <div class="menu-login">
-          <a href="#" onclick="openLogin('sub-login');return(false)">Вход</a>
-          <div id="sub-login"> </div>
-        </div>
+    <header class="flex">
+      <nav class="flex">
+        <a href="/main"><span>Главная</span></a>
+        <a href="/about"><span>О нас</span></a>
+        <a href=""><span>Пункт1</span></a>
+        <a href=""><span>Пункт2</span></a>
       </nav>
+      <div class="flex login-menu">
+        <a class="login" href="#" onclick="openLogin('sub-login')"><span>Вход</span></a>
+        <a class="authorization" href="/authorization"><span>Авторизация</span></a>
+        <div id="sub-login"></div>
+      </div>
     </header>
     <?=$content?>
-    <footer>Футер</footer>
+    <footer></footer>
   </div>
+  
 </body>
 </html>
