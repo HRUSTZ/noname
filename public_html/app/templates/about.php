@@ -1,3 +1,5 @@
 <section class="about">
-  О нас
+  <div class="wrap">
+    О нас
+  </div>
 </section>
