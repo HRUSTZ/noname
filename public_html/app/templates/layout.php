@@ -15,10 +15,18 @@
           <a href="/about"><span>О нас</span></a>
           <a href=""><span>Пункт1</span></a>
           <a href=""><span>Пункт2</span></a>
+          <a href=""><span>Пункт3</span></a>
         </nav>
         <div class="flex login-menu">
           <a class="login" href="#" onclick="openLogin('sub-login')"><span>Вход</span></a>
           <div id="sub-login">
+            <section class="authorization-page">
+              <form action="/authorization" method="POST" class="form-auth">
+                <input type="text" name="login" id="login" placeholder="Email:"/>
+                <input type="password" name="password" id="password" placeholder="Пароль:"/>
+                <input type="submit" value="Вход"  class="button-auth">
+              </form>
+            </section>
             <a class="registr" href="/registration"><span>Регистрация</span></a>
           </div>
         </div>
