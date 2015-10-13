@@ -9,7 +9,7 @@ if($_POST){
     global $mysqli;
     $control = false;
     $hashLoad = $user['hash'];
-    $hashInput = md5($password);
+    $hashInput = md5(md5($password));
     
     if(empty($login) || empty($password)){
       $control = "Заполнены не все поля";
@@ -27,18 +27,20 @@ if($_POST){
     }
   }
   
-  $q = $mysqli->query("SELECT * FROM Users WHERE login='$login'");
+  $q = $mysqli->query("SELECT * FROM Users WHERE login = '$login'");
   $user = $q->fetch_assoc();
   $control = control($login, $password, $user);
   if (!$control){
+    $_SESSION['token'] = md5(uniqid(genCode()));
+    $token = $_SESSION['token'];
+    $q = $mysqli->query("UPDATE Users SET token = '$token' WHERE login = '$login'");
     $_SESSION['login'] = $user['login'];
     $_SESSION['name'] = $user['name'];
     header("Location: /main");
   } else{
-    echo($control);   
+    $result[cont] = "$control";
   }
 }
-
 
 $title = "Авторизация";
 $content = tpl("authorization",$result);

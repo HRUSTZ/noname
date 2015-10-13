@@ -4,6 +4,7 @@
       <input type="text" name="login" id="login" placeholder="Email:"/>
       <input type="password" name="password" id="password" placeholder="Пароль:"/>
       <input type="submit" value="Вход"  class="button-auth">
+      <?echo($cont[cont]);?>
     </form>
   </div>
 </section>

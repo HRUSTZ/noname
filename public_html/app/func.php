@@ -26,3 +26,14 @@ function q($value){ // возвращает безопасную строчку
   $value = htmlspecialchars($value);
   return $value;
 }
+
+function genCode(){ //генерация случайной строки
+  $code = "qwe";
+  /*$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPRQSTUVWXYZ0123456789";
+  $code = "";
+  $clen = strlen($chars) - 1;  
+  while (strlen($code) < $length){
+    $code = $chars[mt_rand(0,$clen)];  
+  }*/
+  return $code;
+}

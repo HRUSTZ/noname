@@ -12,6 +12,7 @@
         <a href="/main">Главная</a>
         <a href="/about">О нас</a>
         <a href="/exit">Выход</a>
+        <? echo($name);?>
       </nav>
     </header>
     <?=$content?>

@@ -1,4 +1,5 @@
 <?
+unset($_SESSION['token']);
 unset($_SESSION['login']);
 unset($_SESSION['name']);
 header("Location: main");
