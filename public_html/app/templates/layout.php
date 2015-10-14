@@ -12,8 +12,8 @@
       <div class="wrap flex">
         <nav class="flex">
           <a href="/main"><span>Главная</span></a>
+          <a href="/products"><span>Продукты</span></a>
           <a href="/about"><span>О нас</span></a>
-          <a href=""><span>Пункт1</span></a>
           <a href=""><span>Пункт2</span></a>
           <a href=""><span>Пункт3</span></a>
         </nav>
