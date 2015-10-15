@@ -27,13 +27,12 @@ function q($value){ // возвращает безопасную строчку
   return $value;
 }
 
-function genCode(){ //генерация случайной строки
-  $code = "qwe";
-  /*$chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPRQSTUVWXYZ0123456789";
+function genCode($length){ //генерация случайной строки
+  $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPRQSTUVWXYZ0123456789";
   $code = "";
-  $clen = strlen($chars) - 1;  
-  while (strlen($code) < $length){
-    $code = $chars[mt_rand(0,$clen)];  
-  }*/
+  $clen = strlen($chars) - 1;
+  for ($i = 0; $i < $length; $i++) {
+    $code .= substr($chars, rand(1, $clen) - 1, 1);
+  }
   return $code;
 }

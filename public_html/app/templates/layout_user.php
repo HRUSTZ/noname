@@ -3,20 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="app/assets/styles/style.css">
+  <script src="app/assets/js/sub-login.js"></script>
   <title><?=$title?></title>
 </head>
 <body>
   <div class="container">
-    <header>
-      <nav>
-        <a href="/main">Главная</a>
-        <a href="/about">О нас</a>
-        <a href="/exit">Выход</a>
-        <? echo($name);?>
-      </nav>
+    <header class="flex">
+      <div class="wrap flex">
+        <nav class="flex">
+          <a href="/main"><span>Главная</span></a>
+          <a href="/product"><span>Продукты</span></a>
+          <a href="/about"><span>О нас</span></a>
+          <a href=""><span>Пункт2</span></a>
+          <a href=""><span>Пункт3</span></a>
+          <a href="/exit"><span>Выход</span></a>
+        </nav>
+      </div>
     </header>
     <?=$content?>
-    <footer>Футер</footer>
-  </div>
+    <footer></footer>
+  </div>  
 </body>
 </html>
