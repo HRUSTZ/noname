@@ -18,7 +18,7 @@
           <a href=""><span>Пункт3</span></a>
         </nav>
         <div class="flex login-menu">
-          <a class="login" href="#" onclick="openLogin('sub-login')"><span>Вход</span></a>
+          <a class="login" href="#"><span>Вход</span></a>
           <div id="sub-login">
             <section class="authorization-page">
               <form action="/authorization" method="POST" class="form-auth">

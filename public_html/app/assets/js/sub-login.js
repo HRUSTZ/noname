@@ -1,12 +1,11 @@
-var id_menu = 'sub-login';
-startList = function close() {
-  document.getElementById(id_menu).style.display = "none";
-}
-function openLogin(id){
-  if (document.getElementById(id).style.display == "block"){
-    document.getElementById(id).style.display = "none";
-  }else{
-    document.getElementById(id).style.display = "block";
+window.onload = function() { 
+  var subLogin = document.getElementById('sub-login');
+  var btnLogin = document.getElementsByClassName('login')[0];
+  
+  subLogin.style.display = 'none';
+  btnLogin.addEventListener('click', openLogin);
+  
+  function openLogin() {
+    subLogin.style.display == 'none' ? subLogin.style.display = 'block' : subLogin.style.display = 'none';
   }
 }
-window.onload=startList;
