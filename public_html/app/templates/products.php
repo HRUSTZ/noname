@@ -1,5 +1,5 @@
 <section class="about">
   <div class="wrap">
-    О нас
+    Все товары
   </div>
 </section>

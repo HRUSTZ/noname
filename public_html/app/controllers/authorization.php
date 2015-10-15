@@ -36,7 +36,7 @@ if($_POST){
     $q = $mysqli->query("UPDATE Users SET token = '$token' WHERE login = '$login'");
     $_SESSION['login'] = $user['login'];
     $_SESSION['name'] = $user['name'];
-    header("Location: /main");
+    header("Location: main");
   } else{
     $result[cont] = "$control";
   }

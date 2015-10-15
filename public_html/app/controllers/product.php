@@ -1,5 +1,8 @@
 <?
+$id = $query[2];
 global $mysqli;
+
+
 
 
 $title = "Продукты";
