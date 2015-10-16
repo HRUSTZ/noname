@@ -36,3 +36,8 @@ function genCode($length){ //генерация случайной строки
   }
   return $code;
 }
+
+function momentNotice($text){
+  echo "<script>function addEvent(element, eventName, fn) {if (element.addEventListener)element.addEventListener(eventName, fn, false);else if (element.attachEvent)element.attachEvent('on' + eventName, fn);}
+         addEvent(window, 'load', function(){ notice(' ".$text." ') }); </script>";
+}

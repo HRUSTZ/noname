@@ -1,6 +1,16 @@
-AddDefaultCharset UTF-8
-Options -Indexes
+# не забыть открыть на проде
+#php_flag display_errors off 
+#php_flag display_startup_errors off
+
+AddDefaultCharset UTF-8 
+Options -Indexes 
 RewriteEngine on
 
-RewriteCond %{REQUEST_URI} !app/*
-RewriteRule ^(.*)$ app/app.php [L,QSA]
+# RewriteCond	%{REQUEST_URI}	!app/* 
+RewriteCond	%{REQUEST_URI}	!assets/*
+RewriteCond	%{REQUEST_URI}	!files/*
+# RewriteCond	%{REQUEST_URI}	!robots.txt
+# RewriteCond	%{REQUEST_URI}	!humans.txt
+# RewriteCond	%{REQUEST_URI}	!sitemap.php
+# RewriteCond	%{REQUEST_URI}	!favicon.*
+RewriteRule	^(.*)$	app/app.php [L,QSA]

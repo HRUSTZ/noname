@@ -38,7 +38,7 @@ if($_POST){
     $_SESSION['name'] = $user['name'];
     header("Location: main");
   } else{
-    $result[cont] = "$control";
+    momentNotice($control);
   }
 }
 

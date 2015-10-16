@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="app/assets/styles/style.css">
+  <link rel="stylesheet" href="/assets/styles/style.css">
   <script src="app/assets/js/sub-login.js"></script>
   <title><?=$title?></title>
 </head>
