@@ -13,7 +13,7 @@
         <nav class="flex">
           <a href="/main"><span>Главная</span></a>
           <a href="/news"><span>Новости</span></a>
-          <a href="/product"><span>Продукты</span></a>
+          <a href="/product"><span>Наши предложения</span></a>
           <a href="/about"><span>О нас</span></a>
           <a href="/exit"><span>Выход</span></a>
         </nav>
