@@ -16,6 +16,7 @@
           <a href="/product"><span>Наши предложения</span></a>
           <a href="/about"><span>О нас</span></a>
           <a href="/exit"><span>Выход</span></a>
+          <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
         </nav>
       </div>
     </header>

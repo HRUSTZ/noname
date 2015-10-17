@@ -36,7 +36,11 @@ if($_POST){
     $q = $mysqli->query("UPDATE Users SET token = '$token' WHERE login = '$login'");
     $_SESSION['login'] = $user['login'];
     $_SESSION['name'] = $user['name'];
-    header("Location: main");
+    
+    $link = $_SESSION['link'];
+    unset($_SESSION['link']);
+    
+    header("Location: $link");
   } else{
     momentNotice($control);
   }

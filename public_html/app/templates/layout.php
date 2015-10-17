@@ -24,6 +24,7 @@
                 <input type="text" name="login" id="login" placeholder="Email:"/>
                 <input type="password" name="password" id="password" placeholder="Пароль:"/>
                 <input type="submit" value="Вход"  class="button-auth">
+                <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
               </form>
             </section>
             <a class="registr" href="/registration"><span>Регистрация</span></a>
