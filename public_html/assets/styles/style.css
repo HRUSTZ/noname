@@ -1,6 +1,6 @@
 *{
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 html{
@@ -11,94 +11,147 @@ html{
 body{
   height: 100%;
   width: 100%;
-  font: 20px/1.5em Arial;
-}
-
-.flex{
-  display: -moz-inline-flex;
-  display: -ms-inline-flex;
-  display: -o-inline-flex;
-  display: inline-flex;
+  font: 16px/1.5em Arial;
 }
 
 .container{
-  height: 100%;
   width: 100%;
-  min-width: 1024px;
-  max-width: 1920px;
+  min-width: 960px;
   min-height: 100%;
-  background-color: #ddd;
-  margin: 0 auto;
+  box-sizing: border-box;
+  padding-bottom: 40px;  
 }
 
 .wrap{
   width: 100%;
   height: 100%;
-  max-width: 1366px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
+/* header */
+
 header{
   width: 100%;
-  height: 50px;
-  background-color: #028EC9;
+  height: 150px;
 }
 
-nav{
-  flex-grow: 4;
+.head-con{
+  float: left;
   height: 100%;
-}
-
-nav a{
-  flex-grow: 1;
   display: flex;
-  text-decoration: none;
-  color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
 }
 
-nav a span{
-  margin: auto;
+.head-con p{
+  margin: 5px 0 5px 15px;
 }
 
-.login-menu{
-  flex-grow: 1;
-  height: 100%;
-  position: relative;
+.logo-link{
+  width: 150px;
 }
 
-.login-menu a{
-  display: flex;
-  color: #fff;
-  text-decoration: none;
+.logo-img{
+  height: 100px;
+  width: 100px;
+  margin: 25px;;
+}
+
+.name-info{
+  width: 220px;
+}
+
+.address-info{
+  width: 220px;
+}
+
+.phone-info{
+  width: 150px;
+}
+
+.social-info{
+  width: 220px;
+}
+
+/* menu */
+
+menu{
   width: 100%;
+  height: 40px;
+  background-color: #444;
 }
 
-.login-menu a span{
-  margin: auto;
+menu li{
+  float: left;
+  display: block;
+  height: 100%;
+  width: 150px;
+  text-align: center;
+  background-color: #028ec9;
 }
 
-.login{
-  background-color: #f70;
+menu li:last-child{
+  width: 100px;
+  background-color: #092;
+  text-transform: uppercase;
 }
 
-.registr{
-  background-color: #0a0;
+menu li a{
+  text-decoration: none;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  color: #fff;
 }
 
-a:hover{
-  background-color: #fff;
-  color: #028EC9;
-  transition: 1s;
+.search-form{
+  float: left;
+  height: 100%;
+  width: 410px;
+  background-color: #028ec9;
+}
+
+.search-form input{
+  width: 300px;
+  height: 100%;
+  padding-left: 10px;
+  float: left;
+  border: none;
+  background-color: #eee; 
+}
+
+.search-form input:focus{
+  outline: none;
+}
+
+.search-form button{
+    float: right;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    width: 100px;
+    color: #fff;
+    text-transform: uppercase;
+    background: #f70;
+    outline: none;
+    font-size: 16px;
 }
 
 #sub-login{
   height: 200px;
-  width: 100%;
   background-color: #f00;
-  position: absolute;
-  right: 0;
-  top: 50px;
-  transition: 2s;
+  width: 200px;
+  margin-left: -100px;
+}
+
+.registr{
+  height: 20px;
+  margin-top: -40px;
+  background-color: brown;
+  line-height: 19px;
 }
 
 /*main*/
@@ -132,6 +185,15 @@ main{
 
 footer{
   width: 100%;
-  height: 50px;
-  background-color: #028EC9;
+  height: 40px;
+  margin-top: -40px;
+  background-color: #444;
+  text-align: center;
+  line-height: 40px;
+}
+
+footer span{
+  color: #fff;
+}
+a.registr{
 }
