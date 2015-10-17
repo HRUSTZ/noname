@@ -1,5 +1,6 @@
-<section class="about">
-  <div class="wrap">
-    Все товары
-  </div>
-</section>
+<? foreach($cont as $value): ?>
+  <?= $value[id]?>
+  <?= $value[name]?>
+  <?= $value[description]?>
+  <img src="<?= $value[photo]?>">
+<? endforeach; ?>

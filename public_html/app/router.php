@@ -5,6 +5,6 @@ if($query[1] == "") $query[1] = "main";
 
 $controller = "controllers/".$query[1].".php";
 
-if(@!include($controller)){
+if(!include($controller)){
   error("Нет страницы - ".$controller);
 }
