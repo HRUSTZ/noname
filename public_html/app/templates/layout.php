@@ -14,7 +14,7 @@
       <div class="wrap flex">
         <a class="logo-link head-con" href="#"><img class="logo-img" src="assets/img/logo.png" height="208" width="211" alt=""></a>
         <div class="name-info head-con">
-          <p class="bold-text">Название компании</p>
+          <p class="bold-text">ООО "Коракс"</p>
         </div>
         <div class="address-info head-con">
           <p>Ростов-на-Дону,</p>
@@ -64,7 +64,7 @@
   
   <footer>
     <div class="wrap">
-      <span>2015 © Компания</span>
+      <span>2015 © ООО "Коракс"</span>
     </div>
   </footer>
 

@@ -1,10 +1,8 @@
 <section class="block-news">
 
-  <div class="wrap flex">
+  <div class="wrap">
       
-      <aside class="left-sidebar">Левый сайдбар</aside>
-      
-      <section class="news-content">
+      <section class="news-content flex">
         
         <? foreach($cont as $value): ?>
         <article class="post">
@@ -16,17 +14,15 @@
               <h1><a href="/news/<?= $value[id]?>"><?= $value[name]?> </a></h1>
               <p><?= $value[description]?></p>
             </div>
-            <div class="more">
+            <div class="more flex">
               <p><?= $value[date]?></p>
-              <button>Подробнее</button>
+              <a href="/news/<?= $value[id]?>">Подробнее</a>
             </div>
           </div>
          </article>
         <? endforeach; ?>
 
       </section>
-
-      <aside class="right-sidebar">Правый сайдбар</aside>
 
   </div>
 
