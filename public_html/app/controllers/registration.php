@@ -43,8 +43,7 @@ if ($_POST){
   if (!$control){
     $hash = md5(md5($password1));
     $q = $mysqli->query("INSERT INTO Users(login, hash, token, name) VALUES ('$login', '$hash', 'firstInput', '$name')");
-    //echo('Вы успешно зарегистрированы');
-    header("Location: /authorization");
+    header("Location: /main");
     exit;
   } else{
     echo($control);

@@ -17,5 +17,5 @@ if($id) {
   $result = $q->fetch_all(MYSQLI_ASSOC);
   
   $title = "Новости";
-  $content = tpl("news", $result);
+  $content = tpl("articles", $result);
 }

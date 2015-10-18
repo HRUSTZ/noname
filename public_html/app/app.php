@@ -9,15 +9,15 @@ require_once("config.php");
 require_once("func.php");
 require_once("router.php");
 
-if(empty($token) && empty($login)){       
-  include($_SERVER['DOCUMENT_ROOT'].'/app/templates/layout.php');
-} else{
+if(isset($token) && isset($login)){
   $q = $mysqli->query("SELECT token FROM Users WHERE login = '$login'");
-  $control = $q->fetch_assoc();
+  $control = $q -> fetch_assoc();
   if($control[token] == $token){
-    include($_SERVER['DOCUMENT_ROOT'].'/app/templates/layout_user.php');
+    include(ROOT.'/app/templates/layout_user.php');
   } else{
-    echo("Истекло время сессии. Авторизируйтесь заново.");
-    include($_SERVER['DOCUMENT_ROOT'].'/app/templates/layout.php');
+    echo("Авторизируйтесь заново");
+    include(ROOT.'/app/templates/layout.php');
   }
+} else{
+  include(ROOT.'/app/templates/layout.php');
 }
