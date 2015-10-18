@@ -11,7 +11,7 @@
   <div class="container">
     
     <header>
-      <div class="wrap">
+      <div class="wrap flex">
         <a class="logo-link head-con" href="#"><img class="logo-img" src="assets/img/logo.png" height="208" width="211" alt=""></a>
         <div class="name-info head-con">
           <p class="bold-text">Название компании</p>
@@ -26,15 +26,14 @@
           <p class="bold-text phone-icon">322-22-33</p>
         </div>
         <div class="social-info head-con">
-          <p class="bold-text">Мы в соц. сетях</p>
-          <p><a href="#"><img src="assets/img/logo-vk.png" alt="VK">ВКонтакте</a></p>
-          <p><a href="#"><img src="assets/img/logo-ok.png" alt="OK">Одноклассники</a></p>
+          <a href="#"><img src="assets/img/logo-vk.png" alt="VK"><span>ВКонтакте</span></a>
+          <a href="#"><img src="assets/img/logo-ok.png" alt="OK"><span>Одноклассники</span></a>
         </div>
       </div>
     </header>
 
     <menu>
-      <div class="wrap">
+      <div class="wrap flex">
         <li><a href="/main">Главная</a></li>
         <li><a href="/news">Новости</a></li>
         <li><a href="/product">Каталог</a></li>
