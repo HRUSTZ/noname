@@ -1,7 +1,7 @@
 <? //кастомные функции/функции для использования
 
 function tlog($str){ //функция логирования
-  $t = date("d-m-Y H:i:s");
+  $t= date("d-m-Y H:i:s");
   $w = addslashes($_SERVER['REQUEST_URI']);
   $h = fopen('logger.log' , 'ab');
   fwrite($h, $t . ' [' . $w . '] ' . $str . "\n");

@@ -50,10 +50,12 @@
     
     <? if($admin):?>
       Администратор
+      <a href="/panel">Панеь управления</a>
     <? endif; ?>
     <?= $name ?>
     <?= $login ?>
     <img src="<?= $photo ?>" height="100" width="100">
+    <a href="/profile_edit">Редактировать профиль</a>
     
     <?=$content?>
 
