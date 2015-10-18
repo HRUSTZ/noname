@@ -233,15 +233,45 @@ main{
 
 .news-content{
   flex-direction: column;
+  width: 720px;
+}
+
+.news-title{
+  width: 700px;
+  height: 40px;
+  margin: 25px auto -25px;
+}
+
+.title{
+  border: 2px solid #565656;
+  padding-left: 10px;
+  line-height: 38px;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #343434;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.news-filter{
+  width: 280px;
+}
+
+.filter-title{
+  width: 260px;
+  margin: 25px auto 0;
+  height: 40px;
 }
 
 .post{
   display: flex;
-  height: 350px;
-  width: 900px;
+  height: 275px;
+  width: 700px;
   margin: 50px auto 0;
   background-color: #fff;
   border: 2px solid #565656;
+  box-sizing: border-box;
 }
 
 .post:last-child{
@@ -255,36 +285,35 @@ main{
 }
 
 .news-left{
-  width: 400px;
-  height: 200px;
+  width: 350px;
+  height: 225зч;
   margin: 25px;
 }
 
 .news-picture{
-  height: 300px;
-  width: 400px;
+  height: 225px;
+  width: 300px;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
 }
 
 .news-right{
   display: flex;
   flex-direction: column;
-  width: 400px;
-  height: 300px;
+  width: 300px;
+  height: 225px;
   margin: 25px;
 
 }
 
 .description{
-  width: 400px;
-  height: 270px;
+  width: 300px;
+  height: 200px;
 }
 
 .description h1{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 800;
   margin-bottom: 10px;
-
 }
 
 .description a{
@@ -292,16 +321,20 @@ main{
   color: #343434;
 }
 
+.description a:hover{
+  color: #565656;
+}
+
 .more{
-  width: 400px;
-  height: 30px;
+  width: 300px;
+  height: 25px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
 .more p{
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   color: #565656;;
 
@@ -309,8 +342,11 @@ main{
 
 .more a{
   color: #565656;
-  font-size: 14px;
-  
+  font-size: 12px;
+}
+
+.more a:hover{
+  color: #343434;
 }
 
 /*registration*/
