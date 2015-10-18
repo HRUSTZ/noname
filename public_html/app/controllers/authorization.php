@@ -31,10 +31,9 @@ if($_POST){
   $user = $q->fetch_assoc();
   $control = control($login, $password, $user);
   if (!$control){
+    $_SESSION['login'] = $user['login'];
     $token = $_SESSION['token'] = md5(uniqid(genCode(8)));
     $q = $mysqli->query("UPDATE Users SET token = '$token' WHERE login = '$login'");
-    $_SESSION['login'] = $user['login'];
-    $_SESSION['name'] = $user['name'];
     
     $link = $_SESSION['link'];
     unset($_SESSION['link']);
