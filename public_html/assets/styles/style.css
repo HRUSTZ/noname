@@ -66,8 +66,8 @@ header{
 }
 
 .name-info{
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 34px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
@@ -80,7 +80,8 @@ header{
   align-items: center;
   text-decoration: none;
   color: #343434;
-  width: 200px;;
+  width: 200px;
+  margin-bottom: 5px;
 }
 
 .social-info p{
@@ -245,12 +246,12 @@ main{
 }
 
 .title{
-  border: 2px solid #565656;
+  border: 2px solid #036ca6;
   padding-left: 10px;
   line-height: 38px;
   box-sizing: border-box;
   background-color: #fff;
-  color: #343434;
+  color: #036ca6;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -272,7 +273,7 @@ main{
   width: 700px;
   margin: 50px auto 0;
   background-color: #fff;
-  border: 2px solid #565656;
+  border: 2px solid #036ca6;
   box-sizing: border-box;
 }
 
@@ -288,7 +289,7 @@ main{
 
 .news-left{
   width: 350px;
-  height: 225зч;
+  height: 225px;
   margin: 25px;
 }
 
@@ -301,34 +302,35 @@ main{
 .news-right{
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 325px;
   height: 225px;
-  margin: 25px;
+  margin: 25px 25px 25px 0;
 
 }
 
 .description{
-  width: 300px;
+  width: 325px;
   height: 200px;
 }
 
 .description h1{
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   margin-bottom: 10px;
+  font-family: 'Roboto Slab', serif;
 }
 
 .description a{
   text-decoration: none;
-  color: #343434;
+  color: #036ca6;
 }
 
 .description a:hover{
-  color: #565656;
+  color: #028ec9;
 }
 
 .more{
-  width: 300px;
+  width: 325px;
   height: 25px;
   display: flex;
   justify-content: space-between;
