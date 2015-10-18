@@ -231,46 +231,59 @@ main{
 }
 
 .news-content{
-  width: 600px;
+  flex-direction: column;
 }
 
 .post{
   display: flex;
-  height: 200px;
-  width: 500px;
-  margin: 30px 50px;
+  height: 350px;
+  width: 900px;
+  margin: 50px auto 0;
   background-color: #fff;
-  border: 1px solid #343434;
-  box-sizing: border-box;
+  border: 2px solid #343434;
 }
 
-.post a{
+.post:last-child{
+  margin: 50px auto;
+}
 
+.news-left a{
+  display: block;
+  height: 100%;
+  width: 100%;
 }
 
 .news-left{
-  width: 200px;
+  width: 400px;
   height: 200px;
+  margin: 25px;
 }
 
 .news-picture{
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 400px;
 }
 
 .news-right{
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  width: 300px;
+  width: 400px;
+  height: 300px;
+  margin: 25px;
 
 }
 
 .description{
+  width: 400px;
+  height: 284px;
 
 }
 
 .more{
+  width: 400px;
+  height: 16px;
+  display: flex;
+  justify-content: space-between;
 
 }
 
