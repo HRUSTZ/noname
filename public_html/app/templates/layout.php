@@ -14,22 +14,21 @@
       <div class="wrap">
         <a class="logo-link head-con" href="#"><img class="logo-img" src="assets/img/logo.png" height="208" width="211" alt=""></a>
         <div class="name-info head-con">
-          <p>Название компании</p>
-          <p>Коротко о сайте</p>
+          <p class="bold-text">Название компании</p>
         </div>
         <div class="address-info head-con">
           <p>Ростов-на-Дону,</p>
-          <p>ул. Тургеневская, 55</p>
+          <p class="bold-text marker-icon">ул. Тургеневская, 55</p>
           <p>ежедневно, 10:00 - 20:00</p>
         </div>
         <div class="phone-info head-con">
           <p>8 (863)</p>
-          <p>322-22-33</p>
+          <p class="bold-text phone-icon">322-22-33</p>
         </div>
         <div class="social-info head-con">
-          <p>Мы в соц. сетях</p>
-          <a href="#"><img src="" alt="VK"></a>
-          <a href="#"><img src="" alt="OK"></a>
+          <p class="bold-text">Мы в соц. сетях</p>
+          <p><a href="#"><img src="assets/img/logo-vk.png" alt="VK">ВКонтакте</a></p>
+          <p><a href="#"><img src="assets/img/logo-ok.png" alt="OK">Одноклассники</a></p>
         </div>
       </div>
     </header>

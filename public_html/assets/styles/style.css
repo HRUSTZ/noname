@@ -40,41 +40,65 @@ header{
 .head-con{
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;;
   justify-content: center;
-  text-align: center;;
+  text-align: start;
   float: left;
 }
 
 
-.head-con p{
+.head-con p{;;
   
 }
 
 .logo-link{
-  width: 150px;
+  width: 100px;
 }
 
 .logo-img{
   height: 100px;
-  width: 100px;
-  margin: 25px;;
+  width: 100px;;
 }
 
 .name-info{
-  width: 200px;
+  width: 210px;
 }
 
 .address-info{
-  width: 250px;
+  width: 310px;
 }
 
 .phone-info{
-  width: 150px;
+  width: 170px;
 }
 
 .social-info{
-  width: 250px;
+  width: 210px;
+}
+
+.bold-text{
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.phone-icon:before{
+  content: '';
+  display: block;
+  background: url('/assets/img/phone.png');
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 5px;
+}
+
+.marker-icon:before{
+  content: '';
+  display: block;
+  background: url('/assets/img/marker.png');
+  width: 24px;
+  height: 24px;
+  float: left;
+  margin-right: 5px;
 }
 
 /* menu */
@@ -82,7 +106,7 @@ header{
 menu{
   width: 100%;
   height: 40px;
-  background-color: #444;;
+  background: linear-gradient(to top, #343434, #565656);
 }
 
 menu li{
@@ -91,7 +115,7 @@ menu li{
   height: 100%;
   width: 160px;
   text-align: center;
-  background-color: #028ec9;
+  background: linear-gradient(to top, #036ca6, #028ec9);
 }
 
 menu li:last-child{
@@ -159,8 +183,7 @@ menu li a{
 /*main*/
 
 main{
-  height: 900px;
-  background-color: #ccc;
+  
 }
 
 /*registration*/
@@ -189,9 +212,9 @@ footer{
   width: 100%;
   height: 40px;
   margin-top: -40px;
-  background-color: #444;
   text-align: center;
   line-height: 40px;
+  background: linear-gradient(to top, #343434, #565656);
 }
 
 footer span{
