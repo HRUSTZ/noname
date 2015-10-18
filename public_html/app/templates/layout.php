@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <script src="/assets/js/sub-login.js"></script>
   <title><?=$title?></title>
 </head>
@@ -12,22 +13,20 @@
     
     <header>
       <div class="wrap flex">
-        <a class="logo-link head-con" href="#"><img class="logo-img" src="assets/img/logo.png" height="208" width="211" alt=""></a>
-        <div class="name-info head-con">
-          <p class="bold-text">ООО "Коракс"</p>
-        </div>
+        <a class="logo-link head-con" href="/main"><img class="logo-img" src="assets/img/logo.png" alt="ООО Коракс"></a>
+        <div class="name-info head-con">Коракс</div>
         <div class="address-info head-con">
-          <p>Ростов-на-Дону,</p>
+          <p class="margin">Ростов-на-Дону,</p>
           <p class="bold-text marker-icon">ул. Тургеневская, 55</p>
-          <p>ежедневно, 10:00 - 20:00</p>
+          <p class="margin">ежедневно, 10:00 - 20:00</p>
         </div>
         <div class="phone-info head-con">
-          <p>8 (863)</p>
+          <p class="margin">8 (863)</p>
           <p class="bold-text phone-icon">322-22-33</p>
         </div>
         <div class="social-info head-con">
-          <a href="#"><img src="assets/img/logo-vk.png" alt="VK"><span>ВКонтакте</span></a>
-          <a href="#"><img src="assets/img/logo-ok.png" alt="OK"><span>Одноклассники</span></a>
+          <a class="flex" href="#"><img src="assets/img/logo-vk.png" alt="VK"><p>ВКонтакте</p></a>
+          <a class="flex" href="#"><img src="assets/img/logo-ok.png" alt="OK"><p>Одноклассники</p></a>
         </div>
       </div>
     </header>
