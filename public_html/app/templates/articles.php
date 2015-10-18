@@ -12,7 +12,7 @@
           <div class="news-right">
             <div class="description">
               <h1><a href="/news/<?= $value[id]?>"><?= $value[name]?> </a></h1>
-              <p><?= $value[description]?></p>
+              <p><?= $value[text]?></p>
             </div>
             <div class="more flex">
               <p><?= $value[date]?></p>
