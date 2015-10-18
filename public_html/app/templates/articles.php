@@ -1,9 +1,11 @@
 <section class="block-news">
 
-  <div class="wrap">
+  <div class="wrap flex">
       
       <section class="news-content flex">
-        
+
+        <div class="title news-title">Новости</div>
+
         <? foreach($cont as $value): ?>
         <article class="post">
           <div class="news-left">
@@ -19,10 +21,14 @@
               <a href="/news/<?= $value[id]?>">Подробнее</a>
             </div>
           </div>
-         </article>
+        </article>
         <? endforeach; ?>
-
+      
       </section>
+      
+      <aside class="news-filter">
+         <div class="title filter-title">Фильтр новостей</div>
+      </aside>
 
   </div>
 
