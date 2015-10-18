@@ -38,10 +38,10 @@
         <li><a href="/product">Каталог</a></li>
         <form class="search-form" action="">
           <input type="text" placeholder="Поиск по сайту" required>
-          <button type="submit">Искать</button>
+          <button type="submit"><img src="assets/img/search.png" alt="Искать"></button>
         </form>
         <li>
-          <a class="login" href="#">Вход</a>
+          <a class="login" href="#"><img src="assets/img/user.png" alt="Вход"></a>
           <div id="sub-login">
             <section class="authorization-page">
               <form action="/authorization" method="POST" class="form-auth">
