@@ -13,7 +13,7 @@
     
     <header>
       <div class="wrap flex">
-        <a class="logo-link head-con" href="/main"><img class="logo-img" src="assets/img/logo.png" alt="ООО Коракс"></a>
+        <a class="logo-link head-con" href="/main"><img class="logo-img" src="/assets/img/logo.png" alt="ООО Коракс"></a>
         <div class="name-info head-con">Коракс</div>
         <div class="address-info head-con">
           <p class="margin">Ростов-на-Дону,</p>
@@ -25,8 +25,8 @@
           <p class="bold-text phone-icon">322-22-33</p>
         </div>
         <div class="social-info head-con">
-          <a class="flex" href="#"><img src="assets/img/logo-vk.png" alt="VK"><p>ВКонтакте</p></a>
-          <a class="flex" href="#"><img src="assets/img/logo-ok.png" alt="OK"><p>Одноклассники</p></a>
+          <a class="flex" href="#"><img src="/assets/img/logo-vk.png" alt="VK"><p>ВКонтакте</p></a>
+          <a class="flex" href="#"><img src="/assets/img/logo-ok.png" alt="OK"><p>Одноклассники</p></a>
         </div>
       </div>
     </header>
@@ -36,12 +36,12 @@
         <li><a href="/main">Главная</a></li>
         <li><a href="/news">Новости</a></li>
         <li><a href="/product">Каталог</a></li>
-        <form class="search-form" action="">
+        <form class="search-form flex" action="">
           <input type="text" placeholder="Поиск по сайту" required>
-          <button type="submit"><img src="assets/img/search.png" alt="Искать"></button>
+          <button type="submit"><img src="" alt=""></button>
         </form>
         <li>
-          <a class="login" href="#"><img src="assets/img/user.png" alt="Вход"></a>
+          <a class="login" href="#"><img src="" alt=""></a>
           <div id="sub-login">
             <section class="authorization-page">
               <form action="/authorization" method="POST" class="form-auth">
