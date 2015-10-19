@@ -9,11 +9,11 @@
         <? foreach($cont as $value): ?>
         <article class="post">
           <div class="news-left">
-            <a href="/news/<?= $value[id]?>"><img class="news-picture" src="<?= $value[photo]?>"></a>
+            <a href="/news/<?= $value[id]?>"><img class="news-picture" src="<?= $value[photo]?>" alt=""></a>
           </div>
           <div class="news-right">
             <div class="description">
-              <h1><a href="/news/<?= $value[id]?>"><?= $value[name]?> </a></h1>
+              <h1><a href="/news/<?= $value[id]?>"><?= $value[name]?></a></h1>
               <p><?= $value[text]?></p>
             </div>
             <div class="more flex">
