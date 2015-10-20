@@ -26,4 +26,4 @@
 
 </section>
 
-<?//page();?>
+<?page($next[p1], $next[p2], $next[p3]);?>

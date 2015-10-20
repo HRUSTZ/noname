@@ -33,36 +33,15 @@ if($control == 'article'){
     $result = $q -> fetch_all(MYSQLI_ASSOC);
   }
   
-  //$result[p1] = '/news/page/';
-  $result[p2] = $id;
-  $result[p3] = $count[0];
-  print_r($result[p2]);
+  $next[p1] = '/news/page/';
+  $next[p2] = $id;
+  $next[p3] = $count[0];
+  //print_r($result[p2]);
   
   //page($pageAddress, $id, $count);
   
   $title = "Новости";
-  $content = tpl("articles", $result);
+  $content = tpl("articles", $result, $next);
 } else{
   error ('404');
 }
-
-
-
-/*
-if($id) {
-  $q = $mysqli->query("SELECT * FROM News WHERE id='$id'");
-  $result = $q->fetch_assoc();
-  
-  if($result){   
-    $title = $result[name];
-    $content = tpl("article", $result);
-  } else{
-    error('Нет статьи');
-  }
-} else{
-  $q = $mysqli->query("SELECT * FROM News");
-  $result = $q->fetch_all(MYSQLI_ASSOC);
-  
-  $title = "Новости";
-  $content = tpl("articles", $result);
-}*/

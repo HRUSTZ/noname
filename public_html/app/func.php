@@ -7,7 +7,7 @@ function tlog($str){ //функция логирования
   fwrite($h, $t . ' [' . $w . '] ' . $str . "\n");
 }
 
-function tpl($tpl, $cont = ""){ //прогрузка тимплейта
+function tpl($tpl, $cont = "", $next = ""){ //прогрузка тимплейта
   $path = $_SERVER['DOCUMENT_ROOT'].'/app/templates/'.$tpl.'.php';
   ob_start();
   if(!include($path)) error('load template error => '.$path);
@@ -38,7 +38,7 @@ function genCode($length){ //генерация случайной строки
 }
 
 function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
-  $page = $p3[0] / $p4;
+  $page = $p3 / $p4;
   if($page > 1){
     echo'<div calss="PageSelector">';
     for($i = ($p2 - 3); $i < ($page + 1); $i++){
