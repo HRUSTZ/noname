@@ -36,9 +36,6 @@ if($control == 'article'){
   $next[p1] = '/news/page/';
   $next[p2] = $id;
   $next[p3] = $count[0];
-  //print_r($result[p2]);
-  
-  //page($pageAddress, $id, $count);
   
   $title = "Новости";
   $content = tpl("articles", $result, $next);

@@ -54,6 +54,8 @@ function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
     }
     $page = intval($page + 1);
     echo'<a class="switch-item" href="'.$p1.$page.'"><img src="/assets/img/arrow-r.png"></a>';
+    $page = ceil($page);
+    echo'<a class="switch-item" href="'.$p1.$page.'">В конец</a>';
     echo'</div>';
   }
 }
