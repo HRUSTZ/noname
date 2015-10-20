@@ -183,6 +183,7 @@ menu a:hover{
 }
 
 #sub-login{
+  display: none;
   height: 350px;
   width: 1000px;
   background-color: #f00;
@@ -322,6 +323,18 @@ menu a:hover{
 
 .more a:hover{
   color: #343434;
+}
+
+.page-selector{
+
+}
+
+.switch-item{
+
+}
+
+switch-item-cur{
+
 }
 
 /*registration*/

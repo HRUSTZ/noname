@@ -40,20 +40,20 @@ function genCode($length){ //генерация случайной строки
 function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
   $page = $p3 / $p4;
   if($page > 1){
-    echo'<div calss="PageSelector">';
-    echo'<a class="SwichItem" href="'.$p1.'1">В начало</a>';
+    echo'<div class="page-selector">';
+    echo'<a class="switch-item" href="'.$p1.'1">В начало</a>';
     for($i = ($p2 - 3); $i < ($page + 1); $i++){
       if($i > 0 && $i <= ($p2 + 3)){
         if($p2 == $i){
-          $swich = 'SwichItemCur';
+          $switch = 'switch-item-cur';
         } else{
-          $swich = 'SwichItem';
+          $switch = 'switch-item';
         }
-        echo'<a class="'.$swich.'" href="'.$p1.$i.'">'.$i.'</a>';
+        echo'<a class="'.$switch.'" href="'.$p1.$i.'">'.$i.'</a>';
       }
     }
     $page = ceil($page);
-    echo'<a class="SwichItem" href="'.$p1.$page.'">В конец</a>';
+    echo'<a class="switch-item" href="'.$p1.$page.'">В конец</a>';
     echo'</div>';
   }
 }
