@@ -52,7 +52,7 @@ function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
         echo'<a class="'.$swich.'" href="'.$p1.$i.'">'.$i.'</a>';
       }
     }
-    $page = intval($page + 1);
+    $page = ceil($page);
     echo'<a class="SwichItem" href="'.$p1.$page.'">В конец</a>';
     echo'</div>';
   }
