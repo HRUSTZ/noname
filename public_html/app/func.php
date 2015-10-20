@@ -21,7 +21,7 @@ function error($handl){ //функция вызова ошибки
   exit;
 }
 
-function q($value){ // возвращает безопасную строчку
+function q($value){ //возвращает безопасную строчку
   $value = trim($value); 
   $value = htmlspecialchars($value);
   return $value;
@@ -35,6 +35,24 @@ function genCode($length){ //генерация случайной строки
     $code .= substr($chars, rand(1, $clen) - 1, 1);
   }
   return $code;
+}
+
+function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
+  $page = $p3[0] / $p4;
+  if($page > 1){
+    echo'<div calss="PageSelector">';
+    for($i = ($p2 - 3); $i < ($page + 1); $i++){
+      if($i > 0 && $i <= ($p2 + 3)){
+        if($p2 == $i){
+          $swich = 'SwichItemCur';
+        } else{
+          $swich = 'SwichItem';
+        }
+        echo'<a class="'.$swich.'" href="'.$p1.$i.'">'.$i.'</a>';
+      }
+    }
+    echo'</div>';
+  }
 }
 
 function momentNotice($text){
