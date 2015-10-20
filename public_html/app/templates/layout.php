@@ -33,15 +33,15 @@
 
     <menu>
       <div class="wrap flex">
-        <li><a href="/main">Главная</a></li>
-        <li><a href="/news">Новости</a></li>
-        <li><a href="/product">Каталог</a></li>
-        <form class="search-form flex" action="">
+        <a href="/main"><span>Главная</span></a>
+        <a href="/news"><span>Новости</span></a>
+        <a href="/product"><span>Каталог</span></a>
+        <form class="search-form flex">
           <input type="text" placeholder="Поиск по сайту" required>
           <button type="submit"><img src="/assets/img/search.png" alt=""></button>
         </form>
-        <li>
-          <a class="login" href="#"><img src="/assets/img/user.png" alt=""></a>
+        <button class="login"><img src="/assets/img/key.png" alt=""></button>
+          
           <div id="sub-login">
             <section class="authorization-page">
               <form action="/authorization" method="POST" class="form-auth">
@@ -53,7 +53,7 @@
             </section>
             <a class="registr" href="/registration"><span>Регистрация</span></a>
           </div>
-        </li>
+ 
       </div>
     </menu>
     
