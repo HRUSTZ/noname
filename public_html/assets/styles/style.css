@@ -20,9 +20,7 @@ body{
   min-height: 100%;
   padding-bottom: 40px;
   background-color: #d2e5eb;
-  box-sizing: border-box;
-  position: relative;
-  z-index: 10;  
+  box-sizing: border-box;  
 }
 
 .flex{
