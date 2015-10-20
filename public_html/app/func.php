@@ -52,10 +52,8 @@ function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
         echo'<a class="'.$switch.'" href="'.$p1.$i.'"><span>'.$i.'</span></a>';
       }
     }
-    $page = intval($page + 1);
-    echo'<a class="switch-item" href="'.$p1.$page.'"><img src="/assets/img/arrow-r.png"></a>';
     $page = ceil($page);
-    echo'<a class="switch-item" href="'.$p1.$page.'">В конец</a>';
+    echo'<a class="switch-item" href="'.$p1.$page.'"><img src="/assets/img/arrow-r.png"></a>';
     echo'</div>';
   }
 }
