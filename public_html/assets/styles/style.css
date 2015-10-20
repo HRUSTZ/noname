@@ -185,12 +185,10 @@ menu a:hover{
 }
 
 #sub-login{
-  height: 200px;
-  width: 200px;
+  height: 350px;
+  width: 1000px;
   background-color: #f00;
-  position: absolute;
-  margin-left: -100px;
-  margin-top: 40px;;
+  margin:0 auto;
 }
 
 .registr{
@@ -200,7 +198,7 @@ menu a:hover{
   line-height: 19px;
 }
 
-/* Блок авторизации / регистрации */
+/* Блок авторизации / регистрации 
 
 .block-login{
   position: fixed;
@@ -232,6 +230,8 @@ menu a:hover{
     height: 100%;
     background: rgba(0, 0, 0, .8);
 }
+
+*/
 
 /* main */
 

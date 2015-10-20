@@ -8,16 +8,6 @@
 </head>
 <body>
 
-  <section class="block-login">
-    <form action="/authorization" method="POST" class="form-auth">
-      <input type="text" name="login" id="login" placeholder="Email:"/>
-      <input type="password" name="password" id="password" placeholder="Пароль:"/>
-      <input type="submit" value="Вход"  class="button-auth">
-      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-    </form>
-    <a class="registr" href="/registration"><span>Регистрация</span></a>
-  </section>
-
   <div class="container">
     
     <header>
@@ -53,6 +43,16 @@
       </div>
     </menu>
     
+
+  <section id="sub-login">
+    <form action="/authorization" method="POST" class="form-auth">
+      <input type="text" name="login" id="login" placeholder="Email:"/>
+      <input type="password" name="password" id="password" placeholder="Пароль:"/>
+      <input type="submit" value="Вход"  class="button-auth">
+      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+    </form>
+    <a class="registr" href="/registration"><span>Регистрация</span></a>
+  </section>
     
     <?=$content?>
 
@@ -64,7 +64,7 @@
     </div>
   </footer>
 
-<script src="/assets/js/classie1.js"></script>
+
 <script src="/assets/js/sub-login.js"></script>
 
 </body>
