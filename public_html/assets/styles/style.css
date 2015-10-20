@@ -20,7 +20,9 @@ body{
   min-height: 100%;
   padding-bottom: 40px;
   background-color: #d2e5eb;
-  box-sizing: border-box;  
+  box-sizing: border-box;
+  position: relative;
+  z-index: 10;  
 }
 
 .flex{
@@ -198,37 +200,42 @@ menu a:hover{
   line-height: 19px;
 }
 
+/* Блок авторизации / регистрации */
+
+.block-login{
+  position: fixed;
+  z-index: 16;
+  top: -350px;
+  left: 50%;
+  height: 350px;
+  width: 1000px;
+  margin-left: -500px;
+  margin-top: -175px;
+  background-color: #67b5d1;
+  transition: all .5s;
+}
+
+.form-auth{
+  background-color: #00F;
+}
+
+.show-login .block-login{
+  top: 50%;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
 /* main */
 
-main{
 
-}
-
-.main-flex{
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  justify-content: center;
-  font-size: 23px;
-}
-
-.left-sidebar{
-  height: 100%;
-  width: 200px;
-
-}
-
-.main-content{
-  height: 100%;
-  width: 600px;
-
-}
-
-.right-sidebar{
-  height: 100%;
-  width: 200px;
-
-}
 
 /* news */
 

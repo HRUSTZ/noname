@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
   <link href='//fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-  <script src="/assets/js/sub-login.js"></script>
   <title><?=$title?></title>
 </head>
 <body>
+
+  <section class="block-login">
+    <form action="/authorization" method="POST" class="form-auth">
+      <input type="text" name="login" id="login" placeholder="Email:"/>
+      <input type="password" name="password" id="password" placeholder="Пароль:"/>
+      <input type="submit" value="Вход"  class="button-auth">
+      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+    </form>
+    <a class="registr" href="/registration"><span>Регистрация</span></a>
+  </section>
 
   <div class="container">
     
@@ -40,22 +49,10 @@
           <input type="text" placeholder="Поиск по сайту" required>
           <button type="submit"><img src="/assets/img/search.png" alt=""></button>
         </form>
-        <button class="login"><img src="/assets/img/key.png" alt=""></button>
-          
-          <div id="sub-login">
-            <section class="authorization-page">
-              <form action="/authorization" method="POST" class="form-auth">
-                <input type="text" name="login" id="login" placeholder="Email:"/>
-                <input type="password" name="password" id="password" placeholder="Пароль:"/>
-                <input type="submit" value="Вход"  class="button-auth">
-                <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-              </form>
-            </section>
-            <a class="registr" href="/registration"><span>Регистрация</span></a>
-          </div>
- 
+        <button class="login"><img src="/assets/img/key.png" alt=""></button> 
       </div>
     </menu>
+    
     
     <?=$content?>
 
@@ -66,6 +63,9 @@
       <span>2015 © ООО "Коракс"</span>
     </div>
   </footer>
+
+<script src="/assets/js/classie1.js"></script>
+<script src="/assets/js/sub-login.js"></script>
 
 </body>
 </html>
