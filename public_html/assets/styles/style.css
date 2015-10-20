@@ -326,14 +326,31 @@ menu a:hover{
 }
 
 .page-selector{
+  height: 30px;
+  width: 900px;
+  margin: 25px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;;
 
 }
 
-.switch-item{
-
+.page-selector>a{
+   text-decoration: none;
+   color: #343434;
+   font-size: 18px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0px 8px;
 }
 
-switch-item-cur{
+.switch-item-cur{
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid #343434;
 
 }
 
