@@ -326,18 +326,20 @@ menu a:hover{
 }
 
 .page-selector{
-  height: 30px;
+  height: 40px;
   width: 900px;
-  margin: 25px auto;
+  margin: 50px auto;
   display: flex;
   align-items: center;
-  justify-content: center;;
+  justify-content: center;
+  border: 1px solid #036ca6;
+  background-color: #fff;;
 
 }
 
 .page-selector>a{
    text-decoration: none;
-   color: #343434;
+   color: #036ca6;
    font-size: 18px;
    display: flex;
    align-items: center;
@@ -350,7 +352,7 @@ menu a:hover{
   height: 30px;
   width: 30px;
   border-radius: 50%;
-  border: 2px solid #343434;
+  border: 2px solid #036ca6;
 
 }
 
