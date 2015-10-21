@@ -28,9 +28,17 @@ body{
 }
 
 .wrap{
-  margin: 0 auto;
-  width: 1000px;
-  height: 100%;
+  box-shadow: 
+    4px 0 6px 0 rgba(0,0,0, .3),
+    -4px 0 6px 0 rgba(0,0,0, .3),
+    4px 0 6px 0 rgba(0,0,0, .1) inset,
+    -4px 0 6px 0 rgba(0,0,0, .1) inset;
+  height: 
+    100%;
+  width: 
+    1000px;
+  margin: 
+    0 auto;
 }
 
 /*header */
@@ -155,37 +163,42 @@ menu a:hover{
     width: 40px;
     cursor: pointer;
     outline: none;
-    border: none;
     margin: auto;
-    background: none;;;
+    background: none;
+    border-radius: 50%;
+    transition: all .5s;
+    border: 2px solid #036ca6;
 }
 
 .search-form button:hover{
-  border: 2px solid #fff;
-  border-radius: 50%;
+  border-color: #fff;
 }
 
 .login{
   height: 40px;
   width: 40px;
   margin: auto;
-  border: 0;
+  border: 2px solid #036ca6;
   outline: 0;
   background: none;
   cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.5s;
 }
 
 .login:hover{
-  border: 2px solid #fff;
-  border-radius: 50%;
+  border-color: #fff;
 }
 
 #sub-login{
   display: none;
-  height: 350px;
-  width: 1000px;
+  height: 400px;
   background-color: #f00;
-  margin:0 auto;
+  position:absolute;
+  left:50%;
+  width:1000px;
+  margin-left:-500px;
+  z-index:1;
 }
 
 .registr{
@@ -232,7 +245,54 @@ menu a:hover{
 
 /* main */
 
+main{
+  display: flex;
+  
+}
 
+.block-about{
+  width: 900px;
+  margin: 25px auto;
+
+}
+
+.block-about h1{
+  margin-bottom: 10px;
+}
+
+.block-last-news{
+  width: 900px;
+  margin: 25px auto;
+}
+
+.last-news{
+  width: 900px;
+}
+
+.last-post{
+  width: 240px;
+  height: 180px;
+  border: 1px solid #000;
+  margin: 25px auto;
+}
+
+.block-pop-products{
+  width: 900px;
+  margin: 0 auto 25px auto;
+
+}
+
+.pop-products{
+
+}
+
+.pop-product{
+  width: 240px;
+  height: 180px;
+  border: 1px solid #000;
+  margin: 25px auto;
+  
+}
 
 /* news */
 
@@ -362,13 +422,12 @@ menu a:hover{
 .products-content{
   width: 100%;
   flex-wrap: wrap;
-
 }
 
 .product{
   width: 400px;
   height: 300px;
-  margin: 50px 50px 0;
+  margin: 25px 50px;
   border: 1px solid #036ca6;
   box-sizing: border-box;
   position: relative;
@@ -419,14 +478,14 @@ menu a:hover{
 
 .product-btn{
   border: 2px solid #fff;
-  outline: 0;
   height: 40px;
   width: 120px;
-  background: 0;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
-  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-btn:hover{
@@ -463,6 +522,7 @@ footer{
   text-align: center;
   line-height: 40px;
   background-color: #036ca6;
+  min-width: 1000px;
 }
 
 footer span{

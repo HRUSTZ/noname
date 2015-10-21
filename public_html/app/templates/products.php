@@ -8,7 +8,7 @@
         <div class="product-info flex">
           <a class="product-name" href="/products/number/<?= $value[id]?>"><?= $value[name]?></a>
           <p class="product-description"><?= $value[description]?></p>
-          <button class="product-btn" src="/products/number/<?= $value[id]?>">Купить</button>
+          <a class="product-btn flex" href="/products/number/<?= $value[id]?>">Купить</a>
         </div>
       </article>
       <? endforeach; ?>
