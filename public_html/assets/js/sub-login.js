@@ -6,7 +6,7 @@ window.onload = function() {
   btnLogin.addEventListener('click', openLogin);
   
   function openLogin() {
-    subLogin.style.display == 'none' ? subLogin.style.display = 'block' : subLogin.style.display = 'none';
+    subLogin.style.display == 'none' ? subLogin.style.display = 'flex' : subLogin.style.display = 'none';
   }
 }
 //(function(window){

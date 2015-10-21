@@ -38,7 +38,7 @@ body{
   width: 
     1000px;
   margin: 
-    0 auto;
+    0 auto;;
 }
 
 /*header */
@@ -104,6 +104,10 @@ header{
   align-items: center;
   color: #343434;
   text-decoration: none;
+}
+
+.social-info a:hover{
+  font-weight: bold;
 }
 
 .social-info p{
@@ -193,19 +197,41 @@ menu a:hover{
 #sub-login{
   display: none;
   height: 400px;
-  background-color: #f00;
+  background-color: #565656;
   position:absolute;
   left:50%;
   width:1000px;
   margin-left:-500px;
   z-index:1;
+  align-items:center;
+}
+
+.form-auth{
+  background-color: #fff;
+  height: 300px;
+  width: 400px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;;
+}
+
+.form-auth input{
+  width: 320px;
+  margin: auto;
+  height: 30px;
 }
 
 .registr{
-  height: 20px;
-  margin-top: -40px;
-  background-color: brown;
-  line-height: 19px;
+  margin: auto;
+  display: flex;
+  height: 40px;
+  width: 160px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
 }
 
 /* Блок авторизации / регистрации 
@@ -529,5 +555,3 @@ footer span{
   color: #fff;
 }
 
-a.registr{
-}
