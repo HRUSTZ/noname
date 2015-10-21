@@ -30,170 +30,121 @@ body{
     -4px 0 6px 0 rgba(0,0,0, .3),
     4px 0 6px 0 rgba(0,0,0, .1) inset,
     -4px 0 6px 0 rgba(0,0,0, .1) inset;
-  height: 
-    100%;
-  width: 
-    1000px;
-  margin: 
-    0 auto;;
+  height: 100%;
+  width: 1000px;
+  margin: 0 auto;
 }
 
-/*header */
+/*-------------------------------------- ШАПКА САЙТА --------------------------------------*/
 
 header{
   height: 150px;
-  width: 100%;
-}
-
-.head-contacts{
-  display: flex;
-  height: 100%;
-  margin: auto;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 18px;
   font-family: 'Roboto Slab', serif;
+  font-size: 18px;
 }
-
-.logo-img{
-  height: 100px;
-  width: 100px;
+.head-contacts{
+  margin: auto;
 }
-
 .name-info{
   font-size: 34px;
   font-weight: 900;
   text-transform: uppercase;
 }
-
 .margin{
   margin-left: 29px;
 }
-
-.bold-text{
-  font-weight: bold;
+.phone-icon,
+.marker-icon{
   font-size: 24px;
+  font-weight: bold;
 }
-
 .marker-icon:before{
   content: '';
-  display: block;
   float: left;
   height: 24px;
   width: 24px;
   margin-right: 5px;
   background: url('/assets/img/marker.png');
 }
-
 .phone-icon:before{
   content: '';
-  display: block;
   float: left;
   height: 24px;
   width: 24px;
   margin-right: 5px;
   background: url('/assets/img/phone.png');
 }
-
 .social-info a{
   width: 200px;
   margin-bottom: 5px;
   align-items: center;
-  color: #343434;
-  text-decoration: none;
 }
-
 .social-info a:hover{
   font-weight: bold;
 }
-
 .social-info p{
   margin-left: 5px;
 }
 
-/* menu */
+/*-------------------------------------- МЕНЮ САЙТА --------------------------------------*/
 
 menu{
-  width: 100%;
   height: 50px;
-  font-weight: bold;
   font-size: 20px;
   background-color: #036ca6;
 }
-
-menu .wrap > a{
+menu .wrap > a{ 
+  box-sizing: border-box;
   display: flex;
-  box-sizing: border-box; 
   height: 40px;
   width: 150px;
   margin: auto;
   border: 2px solid #036ca6;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   color: #fff;
-  text-decoration: none;
   transition: all .5s;
 }
-
 menu a:hover{
   border-color: #fff;
 }
-
 .search-form{
   height: 40px;
   width: 440px;
-  box-sizing: border-box;
   margin: auto 0;
 }
-
 .search-form input{
-  width: 390px;
-  height: 100%;
-  border: 0;
-  padding-left: 10px;
   box-sizing: border-box; 
+  width: 390px;
+  padding-left: 10px;
+  border: 0;
 }
-
 .search-form input:focus{
   outline: 0;
-  background: #fff;
 }
-
-.search-form button{
+menu button{
     height: 40px;
     width: 40px;
-    cursor: pointer;
-    outline: none;
     margin: auto;
-    background: none;
-    border-radius: 50%;
-    transition: all .5s;
     border: 2px solid #036ca6;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    transition: all .5s;
 }
-
 .search-form button:hover{
   border-color: #fff;
 }
-
-.login{
-  height: 40px;
-  width: 40px;
-  margin: auto;
-  border: 2px solid #036ca6;
-  outline: 0;
-  background: none;
-  cursor: pointer;
-  border-radius: 50%;
-  transition: all 0.5s;
-}
-
 .login:hover{
   border-color: #fff;
 }
 
+/*------------------------------------ БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ ------------------------------------*/
+
 #sub-login{
   display: none;
-  height: 400px;
+  height: 210px;
   background-color: #565656;
   position:absolute;
   left:50%;
@@ -205,7 +156,7 @@ menu a:hover{
 
 .form-auth{
   background-color: #fff;
-  height: 300px;
+  height: 180px;
   width: 400px;
   margin-left: 50px;
   display: flex;
@@ -266,7 +217,7 @@ menu a:hover{
 
 */
 
-/* main */
+/*-------------------------------------- ГЛАВНАЯ СТРАНИЦА --------------------------------------*/
 
 main{
   display: flex;
@@ -317,7 +268,7 @@ main{
   
 }
 
-/* news */
+/*-------------------------------------- СТРАНИЦА ВСЕХ НОВОСТЕЙ --------------------------------------*/
 
 .block-news{
 
@@ -436,11 +387,7 @@ main{
   border: 2px solid #036ca6;
 }
 
-/* Страница продукты */
-
-.block-products{
-
-}
+/*-------------------------------------- СТРАНИЦА ВСЕХ ПРОДУКТОВ --------------------------------------*/
 
 .products-content{
   width: 100%;
@@ -469,14 +416,12 @@ main{
   height: 100%;
   top: 0;
   left: 0;
-  flex-direction: column;
   background-color: #036ca6;
   width: 100%;
   opacity: 0;
-  backface-visibility: hidden;
   transition: transform 0.3s, opacity 0.3s;
-  justify-content: space-around;
-  align-items: center;
+  backface-visibility: hidden;
+  flex-direction: column;
 }
 
 .product-info:hover{
@@ -486,32 +431,61 @@ main{
 }
 
 .product-name{
-  text-decoration: none;
-  font-family: 'Roboto Slab', serif;
-  font-size: 28px;
+  font-size: 30px;
   color: #fff;
+  width: 380px;
+  height: 50px;
+  border-bottom: 2px solid #fff;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 
 .product-description{
-  text-align: center;
-  color: #fff;
+  color: #FFF;
   font-size: 16px;
+  display: block;
+  width: 320px;
+  margin: 20px auto 0;
+  height: 130px;
 }
 
-.product-btn{
+.product-price{
+  display: а;
+  width: 320px;
+  margin: 0 auto;
+  height: 48px;
+  color: #fff;
+  font-size: 30px;
+
+}
+
+.product-btns{
+  width: 320px;
+  height: 68px;
+  display: flex;
+  margin: 0 auto;
+  
+}
+
+.add-product-btn,
+.more-product-btn{
   border: 2px solid #fff;
   height: 40px;
-  width: 120px;
+  width: 140px;
   color: #fff;
   text-transform: uppercase;
   font-size: 18px;
   text-decoration: none;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
-.product-btn:hover{
+.add-product-btn:hover,
+.more-product-btn:hover{
   background: #fff;
   color: #036ca6;
 }
@@ -536,19 +510,15 @@ main{
   background-color: #ccc;
 }
 
-/*footer*/
+/*-------------------------------------- ПОДВАЛ САЙТА --------------------------------------*/
 
 footer{
-  width: 100%;
   height: 40px;
-  margin-top: -40px;
-  text-align: center;
-  line-height: 40px;
-  background-color: #036ca6;
   min-width: 1000px;
+  margin-top: -40px;
+  background-color: #036ca6;
 }
-
 footer span{
+  margin: auto;
   color: #fff;
 }
-

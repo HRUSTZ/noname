@@ -12,16 +12,16 @@
     
     <header>
       <div class="wrap flex">
-        <a class="head-contacts" href="/main"><img class="logo-img" src="/assets/img/logo.png" alt="ООО Коракс"></a>
-        <div class="head-contacts name-info">Коракс</div>
+        <a class="head-contacts" href="/main"><img src="/assets/img/logo.png" alt="ООО Коракс"></a>
+        <a class="head-contacts name-info" href="/main">Коракс</a>
         <div class="head-contacts">
           <p class="margin">Ростов-на-Дону,</p>
-          <p class="bold-text marker-icon">ул. Тургеневская, 55</p>
+          <p class="marker-icon">ул. Тургеневская, 55</p>
           <p class="margin">ежедневно, 10:00 - 20:00</p>
         </div>
         <div class="head-contacts">
           <p class="margin">8 (863)</p>
-          <p class="bold-text phone-icon">322-22-33</p>
+          <p class="phone-icon">322-22-33</p>
         </div>
         <div class="head-contacts social-info">
           <a class="flex" href="#"><img src="/assets/img/logo-vk.png" alt="VK"><p>ВКонтакте</p></a>
@@ -32,9 +32,9 @@
 
     <menu>
       <div class="wrap flex">
-        <a href="/main"><span>Главная</span></a>
-        <a href="/news"><span>Новости</span></a>
-        <a href="/products"><span>Каталог</span></a>
+        <a href="/main">Главная</a>
+        <a href="/news">Новости</a>
+        <a href="/products">Каталог</a>
         <form class="search-form flex">
           <input type="text" placeholder="Поиск по сайту" required>
           <button type="submit"><img src="/assets/img/search.png" alt=""></button>
@@ -59,7 +59,7 @@
   </div>
   
   <footer>
-    <div class="wrap">
+    <div class="wrap flex">
       <span>2015 © ООО "Коракс"</span>
     </div>
   </footer>
