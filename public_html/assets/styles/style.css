@@ -15,11 +15,11 @@ body{
 }
 
 .container{
+  box-sizing: border-box;
   width: 100%;
   min-width: 1000px;
   min-height: 100%;
   padding-bottom: 40px;
-  box-sizing: border-box;
   background: linear-gradient(to top, #d7ebf3, #fff);  
 }
 
@@ -41,13 +41,13 @@ header{
 }
 
 .head-contacts{
-  height: 100%;
   display: flex;
+  height: 100%;
+  margin: auto;
   flex-direction: column;
   justify-content: center;
   font-size: 18px;
   font-family: 'Roboto Slab', serif;
-  margin: auto;
 }
 
 .logo-img{
@@ -56,9 +56,9 @@ header{
 }
 
 .name-info{
-  text-transform: uppercase;
-  font-weight: 900;
   font-size: 34px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .margin{
@@ -72,30 +72,30 @@ header{
 
 .marker-icon:before{
   content: '';
-  height: 24px;
-  float: left;
-  background: url('/assets/img/marker.png');
   display: block;
+  float: left;
+  height: 24px;
   width: 24px;
   margin-right: 5px;
+  background: url('/assets/img/marker.png');
 }
 
 .phone-icon:before{
   content: '';
   display: block;
-  background: url('/assets/img/phone.png');
-  width: 24px;
-  height: 24px;
   float: left;
+  height: 24px;
+  width: 24px;
   margin-right: 5px;
+  background: url('/assets/img/phone.png');
 }
 
 .social-info a{
-  align-items: center;
-  text-decoration: none;
-  color: #343434;
   width: 200px;
   margin-bottom: 5px;
+  align-items: center;
+  color: #343434;
+  text-decoration: none;
 }
 
 .social-info p{
@@ -113,17 +113,16 @@ menu{
 }
 
 menu .wrap > a{
-  height: 40px;
   display: flex;
   box-sizing: border-box; 
+  height: 40px;
+  width: 150px;
+  margin: auto;
+  border: 2px solid #036ca6;
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin: auto;
   text-decoration: none;
-  width: 150px;
-  border: 2px solid #036ca6;
-  border-radius: 20px;
   transition: all .5s;
 }
 
@@ -343,16 +342,15 @@ menu a:hover{
    display: flex;
    align-items: center;
    justify-content: center;
-   margin: 0px 8px;
+   height: 30px;
+   width: 30px;
+   margin: 0px 2px;
 }
 
 .switch-item-cur{
   font-weight: bold;
-  height: 30px;
-  width: 30px;
   border-radius: 50%;
   border: 2px solid #036ca6;
-
 }
 
 /* Страница продукты */
@@ -402,6 +400,7 @@ menu a:hover{
 .product-info:hover{
   opacity: 1;
   transform: translate(10px, 10px);
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
 }
 
 .product-name{
@@ -433,7 +432,6 @@ menu a:hover{
 .product-btn:hover{
   background: #fff;
   color: #036ca6;
-
 }
 
 /*registration*/

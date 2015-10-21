@@ -34,7 +34,7 @@
       <div class="wrap flex">
         <a href="/main"><span>Главная</span></a>
         <a href="/news"><span>Новости</span></a>
-        <a href="/product"><span>Каталог</span></a>
+        <a href="/products"><span>Каталог</span></a>
         <form class="search-form flex">
           <input type="text" placeholder="Поиск по сайту" required>
           <button type="submit"><img src="/assets/img/search.png" alt=""></button>

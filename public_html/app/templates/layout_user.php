@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
-  <script src="/assets/js/sub-login.js"></script>
+  <link href='//fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
   <title><?=$title?></title>
 </head>
 <body>
@@ -11,51 +11,48 @@
   <div class="container">
     
     <header>
-      <div class="wrap">
-        <a class="logo-link head-con" href="#"><img class="logo-img" src="assets/img/logo.png" height="208" width="211" alt=""></a>
-        <div class="name-info head-con">
-          <p>Название компании</p>
-          <p>Коротко о сайте</p>
+      <div class="wrap flex">
+        <a class="head-contacts" href="/main"><img class="logo-img" src="/assets/img/logo.png" alt="ООО Коракс"></a>
+        <div class="head-contacts name-info">Коракс</div>
+        <div class="head-contacts">
+          <p class="margin">Ростов-на-Дону,</p>
+          <p class="bold-text marker-icon">ул. Тургеневская, 55</p>
+          <p class="margin">ежедневно, 10:00 - 20:00</p>
         </div>
-        <div class="address-info head-con">
-          <p>Ростов-на-Дону,</p>
-          <p>ул. Тургеневская, 55</p>
-          <p>ежедневно, 10:00 - 20:00</p>
+        <div class="head-contacts">
+          <p class="margin">8 (863)</p>
+          <p class="bold-text phone-icon">322-22-33</p>
         </div>
-        <div class="phone-info head-con">
-          <p>8 (863)</p>
-          <p>322-22-33</p>
-        </div>
-        <div class="social-info head-con">
-          <p>Мы в соц. сетях</p>
-          <a href="#"><img src="" alt="VK"></a>
-          <a href="#"><img src="" alt="OK"></a>
+        <div class="head-contacts social-info">
+          <a class="flex" href="#"><img src="/assets/img/logo-vk.png" alt="VK"><p>ВКонтакте</p></a>
+          <a class="flex" href="#"><img src="/assets/img/logo-ok.png" alt="OK"><p>Одноклассники</p></a>
         </div>
       </div>
     </header>
 
     <menu>
-      <div class="wrap">
-        <li><a href="/main">Главная</a></li>
-        <li><a href="/news">Новости</a></li>
-        <li><a href="/product">Каталог</a></li>
-        <form class="search-form" action="">
+      <div class="wrap flex">
+        <a href="/main"><span>Главная</span></a>
+        <a href="/news"><span>Новости</span></a>
+        <a href="/products"><span>Каталог</span></a>
+        <form class="search-form flex">
           <input type="text" placeholder="Поиск по сайту" required>
-          <button type="submit">Искать</button>
+          <button type="submit"><img src="/assets/img/search.png" alt=""></button>
         </form>
-        <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-        <li><a href="/exit" >Выход</a></li>
+        <button class="login"><img src="/assets/img/key.png" alt=""></button> 
       </div>
     </menu>
     
-    <? if($admin):?>
-      Администратор
-      <a href="/panel">Панеь управления</a>
-    <? endif; ?>
-    <?= $name ?>
-    <?= $login ?>
-    <img src="<?= $photo ?>" height="100" width="100">
-    <a href="/profile_edit">Редактировать профиль</a>
+
+  <section id="sub-login">
+    <form action="/authorization" method="POST" class="form-auth">
+      <input type="text" name="login" id="login" placeholder="Email:"/>
+      <input type="password" name="password" id="password" placeholder="Пароль:"/>
+      <input type="submit" value="Вход"  class="button-auth">
+      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+    </form>
+    <a class="registr" href="/registration"><span>Регистрация</span></a>
+  </section>
     
     <?=$content?>
 
@@ -63,9 +60,12 @@
   
   <footer>
     <div class="wrap">
-      <span>2015 © Компания</span>
+      <span>2015 © ООО "Коракс"</span>
     </div>
   </footer>
+
+
+<script src="/assets/js/sub-login.js"></script>
 
 </body>
 </html>

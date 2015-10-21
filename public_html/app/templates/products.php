@@ -6,9 +6,9 @@
       <article class="product">
         <img class="product-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
         <div class="product-info flex">
-          <a class="product-name" href="#"><?= $value[name]?></a>
+          <a class="product-name" href="/products/number/<?= $value[id]?>"><?= $value[name]?></a>
           <p class="product-description"><?= $value[description]?></p>
-          <button class="product-btn">Купить</button>
+          <button class="product-btn" src="/products/number/<?= $value[id]?>">Купить</button>
         </div>
       </article>
       <? endforeach; ?>
@@ -19,5 +19,5 @@
 
   </div>
 </section>
-        <?= $value[id]?>
+       
         
