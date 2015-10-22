@@ -1,54 +1,50 @@
 <main>
   <div class="wrap">
     
-    <section class="block-about">
-      <h1>О компании</h1>
-      <p><?= $cont[text][maintext]?></p>
+    <section class="main-info block-about">
+      <div class="about-layer">
+        <div class="about-content">
+          <h1>О компании</h1>
+          <p><?= $cont[text][maintext]?></p>
+        </div>
+      </div>
     </section>
 
-    <section class="block-last-news">
+
+    <section class="main-info  block-best-products">
+      <h1>Популярные товары</h1>
+      <div class="best-products flex">
+        <? foreach($cont[products] as $value): ?>
+        <article class="best-product">        
+          <img class="best-product-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
+          <div class="best-product-info flex">
+            <a class="best-product-name" href="/products/number/<?= $value[id]?>"><?= $value[name]?></a>
+            <p class="best-product-description"><?= $value[description]?></p>
+            <p class="best-product-price"><?= $value[price]?> руб.</p>
+            <a class="more-best-product-btn flex" href="/products/number/<?= $value[id]?>">Подробнее</a>
+          </div>
+        </article>
+        <? endforeach; ?>
+      </div>
+      <a href="/products">Посмотреть все товары</a>
+    </section>
+
+    <section class="main-info block-last-news">
       <h1>Последние новости</h1>
-      <? foreach($cont[news] as $value): ?>
-      <?= $value[id]?>
-      <?= $value[name]?>
-      <?= $value[photo]?>
-      <?= $value[price]?>
-      <? endforeach; ?>
       <div class="last-news flex">
-        <article class="last-post">        
+      
+        <? foreach($cont[news] as $value): ?>
+          <article class="last-post">        
+            <a class="last-post-top" href="/news/article/<?= $value[id]?>"><img class="last-post-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
+            <div class="last-post-bot">
+              <a class="last-post-description" href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
+              <div class="last-post-date"><?= $value[date]?></div>
+            </div>
+          </article>
+        <? endforeach; ?>
 
-        </article>
-        <article class="last-post">
-
-        </article>
-        <article class="last-post">
-
-        </article>
       </div>
       <a href="/news">Все новости</a>
     </section>  
-
-    <section class="block-pop-products">
-      <h1>Популярные товары</h1>
-      <? foreach($cont[products] as $value): ?>
-      <?= $value[id]?>
-      <?= $value[name]?>
-      <?= $value[photo]?>
-      <?= $value[price]?>
-      <? endforeach; ?>
-      <div class="pop-products flex">
-        <article class="pop-product">        
-
-        </article>
-        <article class="pop-product">
-
-        </article>
-        <article class="pop-product">
-
-        </article>
-      </div>
-      <a href="/products">Все товары</a>
-    </section>
-
   </div>
 </main>

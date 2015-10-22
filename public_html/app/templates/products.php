@@ -9,10 +9,7 @@
           <a class="product-name" href="/products/number/<?= $value[id]?>"><?= $value[name]?></a>
           <p class="product-description"><?= $value[description]?></p>
           <p class="product-price"><?= $value[price]?> руб.</p>
-          <div class="product-btns"> 
-            <a class="more-product-btn flex" href="/products/number/<?= $value[id]?>">Подробнее</a>
-            <a class="add-product-btn flex" href="#">В корзину</a>
-          </div>
+          <a class="more-product-btn flex" href="/products/number/<?= $value[id]?>">Подробнее</a>
         </div>
       </article>
       <? endforeach; ?>
