@@ -46,8 +46,8 @@
 
     <section id="sub-login">
       <form action="/authorization" method="POST" class="form-auth">
-        <input type="text" name="login" id="login" placeholder="Email:"/>
-        <input type="password" name="password" id="password" placeholder="Пароль:"/>
+        <input type="email" name="login" id="login" placeholder="Email:" required autofocus/>
+        <input type="password" name="password" id="password" placeholder="Пароль:" required/>
         <input type="submit" value="Вход"  class="button-auth">
         <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
       </form>
