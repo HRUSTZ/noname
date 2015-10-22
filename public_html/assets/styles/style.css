@@ -151,7 +151,7 @@ menu button{
 /*------------------------------------ БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ ------------------------------------*/
 
 #sub-login{
-  height: 210px;
+  height: 250px;
   background-color: #565656;
   position:absolute;
   left:50%;
@@ -572,105 +572,48 @@ menu button{
 
 /*-------------------------------------- СТРАНИЦА ВСЕХ ПРОДУКТОВ --------------------------------------*/
 
-.products-content{
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.product{
-  width: 400px;
-  height: 300px;
-  margin: 25px 50px;
-  border: 1px solid #036ca6;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.product-img{
-  height: 100%;
-  width: 100%;
-  position: relative;
-  display: block;
-  background-color: #343434;
-}
-
-.product-info{
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #036ca6;
-  width: 100%;
-  opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
-  backface-visibility: hidden;
-  flex-direction: column;
-}
-
-.product-info:hover{
-  opacity: 1;
-  transform: translate(10px, 10px);
-  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
-}
-
-.product-name{
-  font-size: 30px;
-  color: #fff;
-  width: 380px;
-  height: 50px;
-  border-bottom: 2px solid #fff;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-}
-
-.product-description{
-  color: #FFF;
-  font-size: 16px;
-  display: block;
-  width: 320px;
-  margin: 20px auto 0;
-  height: 130px;
-}
-
-.product-price{
-  display: а;
-  width: 320px;
-  margin: 0 auto;
-  height: 48px;
-  color: #fff;
-  font-size: 30px;
-
-}
-
-.product-btns{
-  width: 320px;
-  height: 68px;
-  display: flex;
-  margin: 0 auto;
+.block-products{
   
 }
-
-.add-product-btn,
-.more-product-btn{
-  border: 2px solid #fff;
-  height: 40px;
-  width: 140px;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 18px;
-  text-decoration: none;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+.product{
+  width: 300px;
+  height: 435px;
+  margin: 50px auto;
+  border: 1px solid #036ca6;
+  flex-direction: column;
 }
-
-.add-product-btn:hover,
-.more-product-btn:hover{
-  background: #fff;
+.product-img{
+  width: 300px;
+  height: 225px;
+}
+.product-img img{
+  height: 225px;
+  width: 300px;
+}
+.product-name{
+  font-size: 24px;
+  margin: 10px 15px 5px;
+  overflow: hidden;
   color: #036ca6;
+  height: 60px;
+  text-align: center;
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+.product-name:hover{
+  color: #028ec9;
+}
+.product-description{
+  font-size: 16px;
+  margin: 0 15px 5px;
+  border-bottom: 1px solid #aaa;
+  overflow: hidden;
+  height: 110px;
+}
+.product-price{
+  font-size: 22px;
+  color: #343434;
+  margin: 5px auto;
 }
 
 /*registration*/
@@ -704,4 +647,7 @@ footer{
 footer span{
   margin: auto;
   color: #fff;
+}
+.block-products{
+  flex-wrap: wrap;;
 }
