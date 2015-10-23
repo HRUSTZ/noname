@@ -43,7 +43,7 @@ if ($_POST){
   if (!$control){
     $hash = md5(md5($password1));
     $token = md5(uniqid(genCode(8)));
-    $photo = "/files/users/default.jpg";
+    $photo = "/files/users/default.png";
     $admin = false;
     $q = $mysqli->query("INSERT INTO Users (login, hash, token, name, photo, admin) VALUES ('$login', '$hash', '$token', '$name', '$photo', '$admin')");
     header("Location: /main");
