@@ -146,10 +146,19 @@ menu .wrap > a:hover::before{
   box-sizing: border-box; 
   width: 390px;
   padding-left: 10px;
-  border: 0;
+  border: 1px solid #fff;
+  background: #fff;
+  font-size: 14px;
+  font-weight: bold;
 }
 .search-form input:focus{
   outline: 0;
+}
+:focus::-webkit-input-placeholder{
+  color: transparent;
+}
+::-webkit-input-placeholder{
+  color: #565656;
 }
 menu button{
     height: 40px;
@@ -594,7 +603,7 @@ menu button{
 /*-------------------------------------- СТРАНИЦА ВСЕХ ПРОДУКТОВ --------------------------------------*/
 
 .block-products{
-  
+  flex-wrap: wrap;
 }
 .product{
   width: 300px;
@@ -668,7 +677,4 @@ footer{
 footer span{
   margin: auto;
   color: #fff;
-}
-.block-products{
-  flex-wrap: wrap;;
 }
