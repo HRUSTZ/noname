@@ -76,10 +76,6 @@ if($action == 'edit_login'){ //изменение логина/имени
   } else{
     echo('Не выбрана новая фотография');
   } 
-} elseif($action == ''){
-  //говнокод
-} else{
-  error('404');
 }
 
 $result[login] = $login;

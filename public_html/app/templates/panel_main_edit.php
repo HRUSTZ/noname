@@ -9,7 +9,6 @@
     <tr>
       <th>Товар</th>
       <th>Номер на главной</th>
-      <th>ID</th>
     </tr>
     <? foreach($cont[products] as $value): ?> 
       <tr>
