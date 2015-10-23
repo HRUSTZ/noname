@@ -4,8 +4,8 @@
     <section class="main-info block-about">
       <div class="about-layer">
         <div class="about-content">
-          <h1>О компании</h1>
-          <p><?= $cont[text][maintext]?></p>
+          <h1><?= $cont[text][title]?></h1>
+          <p><?= $cont[text][about]?></p>
         </div>
       </div>
     </section>

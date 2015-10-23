@@ -1,7 +1,7 @@
 <?
 global $mysqli;
 
-$q = $mysqli -> query("SELECT maintext FROM Data");
+$q = $mysqli -> query("SELECT * FROM Data");
 $result[text] = $q -> fetch_assoc();
 
 $q = $mysqli -> query("SELECT * FROM News ORDER BY id DESC LIMIT 0, 2");

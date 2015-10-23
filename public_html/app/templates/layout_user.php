@@ -39,7 +39,7 @@
           <input type="text" placeholder="Поиск по сайту" required>
           <button type="submit"><img src="/assets/img/search.png" alt=""></button>
         </form>
-        <button class="login"><img src="/assets/img/key.png" alt=""></button> 
+        <button class="login"><img src="/assets/img/in.png" alt=""></button> 
       </div>
     </menu>
     
