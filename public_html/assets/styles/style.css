@@ -72,7 +72,7 @@ header{
   height: 24px;
   width: 24px;
   margin-right: 5px;
-  background: url('/assets/img/marker.png');
+  background: url(/assets/img/marker.png);
 }
 .phone-icon:before{
   content: '';
@@ -80,7 +80,7 @@ header{
   height: 24px;
   width: 24px;
   margin-right: 5px;
-  background: url('/assets/img/phone.png');
+  background: url(/assets/img/phone.png);
 }
 .social-info a{
   width: 200px;
@@ -107,14 +107,35 @@ menu .wrap > a{
   height: 40px;
   width: 150px;
   margin: auto;
-  border: 2px solid #036ca6;
+  border: 1px solid #fff;
   align-items: center;
   justify-content: center;
   color: #fff;
-  transition: all .5s;
+  z-index: 1;
+  transition: all .4s;
+  transition-timing-function: ease;
+  position: relative;
+}
+menu .wrap > a::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  opacity: 0;
+  transform: scale3d(0.7, 1, 1);
+  transition: transform .4s, opacity .4s;
+  transition-timing-function: ease;
 }
 menu a:hover{
-  border-color: #fff;
+  color: #036ca6;
+}
+menu .wrap > a:hover::before{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
 .search-form{
   height: 40px;
