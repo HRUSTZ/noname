@@ -7,7 +7,7 @@ function tlog($str){ //функция логирования
   fwrite($h, $t . ' [' . $w . '] ' . $str . "\n");
 }
 
-function tpl($tpl, $cont = "", $next = ""){ //прогрузка тимплейта
+function tpl($tpl, $cont = "", $page = ""){ //прогрузка тимплейта
   $path = $_SERVER['DOCUMENT_ROOT'].'/app/templates/'.$tpl.'.php';
   ob_start();
   if(!include($path)) error('load template error => '.$path);
@@ -61,4 +61,64 @@ function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
 function momentNotice($text){
   echo "<script>function addEvent(element, eventName, fn) {if (element.addEventListener)element.addEventListener(eventName, fn, false);else if (element.attachEvent)element.attachEvent('on' + eventName, fn);}
          addEvent(window, 'load', function(){ notice(' ".$text." ') }); </script>";
+}
+
+function rus_date() {
+  // Перевод
+  $translate = array(
+    "am" => "дп",
+    "pm" => "пп",
+    "AM" => "ДП",
+    "PM" => "ПП",
+    "Monday" => "Понедельник",
+    "Mon" => "Пн",
+    "Tuesday" => "Вторник",
+    "Tue" => "Вт",
+    "Wednesday" => "Среда",
+    "Wed" => "Ср",
+    "Thursday" => "Четверг",
+    "Thu" => "Чт",
+    "Friday" => "Пятница",
+    "Fri" => "Пт",
+    "Saturday" => "Суббота",
+    "Sat" => "Сб",
+    "Sunday" => "Воскресенье",
+    "Sun" => "Вс",
+    "January" => "Января",
+    "Jan" => "Янв",
+    "February" => "Февраля",
+    "Feb" => "Фев",
+    "March" => "Марта",
+    "Mar" => "Мар",
+    "April" => "Апреля",
+    "Apr" => "Апр",
+    "May" => "Мая",
+    "May" => "Мая",
+    "June" => "Июня",
+    "Jun" => "Июн",
+    "July" => "Июля",
+    "Jul" => "Июл",
+    "August" => "Августа",
+    "Aug" => "Авг",
+    "September" => "Сентября",
+    "Sep" => "Сен",
+    "October" => "Октября",
+    "Oct" => "Окт",
+    "November" => "Ноября",
+    "Nov" => "Ноя",
+    "December" => "Декабря",
+    "Dec" => "Дек",
+    "st" => "ое",
+    "nd" => "ое",
+    "rd" => "е",
+    "th" => "ое"
+  );
+  // если передали дату, то переводим ее
+  if(func_num_args() > 1){
+    $timestamp = func_get_arg(1);
+    return strtr(date(func_get_arg(0), $timestamp), $translate);
+  } else {
+    // иначе текущую дату
+    return strtr(date(func_get_arg(0)), $translate);
+  }
 }

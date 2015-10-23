@@ -1,4 +1,4 @@
 <?= $cont[name]?>
 <img src="<?= $cont[photo]?>">
 <?= $cont[text]?>
-<?= $cont[date]?>
+<?echo rus_date("j F, Y", strtotime($cont[date]));?>

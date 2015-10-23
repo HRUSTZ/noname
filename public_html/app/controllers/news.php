@@ -33,12 +33,12 @@ if($control == 'article'){
     $result = $q -> fetch_all(MYSQLI_ASSOC);
   }
   
-  $next[p1] = '/news/page/';
-  $next[p2] = $id;
-  $next[p3] = $count[0];
+  $page[p1] = '/news/page/';
+  $page[p2] = $id;
+  $page[p3] = $count[0];
   
   $title = "Новости";
-  $content = tpl("articles", $result, $next);
+  $content = tpl("articles", $result, $page);
 } else{
   error ('404');
 }

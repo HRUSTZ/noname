@@ -13,14 +13,14 @@
             <p><?= $value[text]?></p>
           </div>
           <div class="more flex">
-            <p><?= $value[date]?></p>
+            <p><?echo rus_date("j F Y", strtotime($value[date]));?></p>
             <a href="/news/article/<?= $value[id]?>">Подробнее</a>
           </div>
         </div>
       </article>
       <? endforeach; ?>
       
-      <?page($next[p1], $next[p2], $next[p3]);?>
+      <?page($next[p1], $page[p2], $page[p3]);?>
 
     </section>
 

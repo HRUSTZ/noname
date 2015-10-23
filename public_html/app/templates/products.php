@@ -7,5 +7,5 @@
     <p class="product-price"><?= $value[price]?> руб.</p>
   </article>
   <? endforeach; ?>
-  <?page($next[p1], $next[p2], $next[p3], 12);?>       
+  <?page($page[p1], $page[p2], $page[p3], 9);?>       
 </section>        
