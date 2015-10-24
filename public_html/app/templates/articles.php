@@ -1,6 +1,6 @@
 <section class="block-news">
 
-  <div class="wrap flex">
+  <div class="wrap flex shadow">
       
     <section class="news-content flex">
 

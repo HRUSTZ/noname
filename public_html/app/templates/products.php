@@ -1,4 +1,4 @@
-<section class="block-products wrap flex">
+<section class="block-products wrap flex shadow">
   <? foreach($cont[cont] as $value): ?>         
   <article class="product flex">
     <a class="product-img" href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>

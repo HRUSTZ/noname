@@ -1,5 +1,5 @@
 <main>
-  <div class="wrap">
+  <div class="wrap shadow">
     
     <section class="main-info block-about">
       <div class="about-layer">
