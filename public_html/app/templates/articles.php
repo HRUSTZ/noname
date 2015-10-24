@@ -4,7 +4,7 @@
       
     <section class="news-content flex">
 
-      <? foreach($cont as $value): ?>
+      <? foreach($cont[cont] as $value): ?>
       <article class="post">
         <a class="post-left" href="/news/article/<?= $value[id]?>"><img class="post-picture" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
         <div class="post-right">
@@ -20,7 +20,7 @@
       </article>
       <? endforeach; ?>
       
-      <?page($page[p1], $page[p2], $page[p3]);?>
+      <?page($cont[page][p1], $cont[page][p2], $cont[page][p3]);?>
 
     </section>
 

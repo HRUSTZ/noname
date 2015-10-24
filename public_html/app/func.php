@@ -7,7 +7,7 @@ function tlog($str){ //функция логирования
   fwrite($h, $t . ' [' . $w . '] ' . $str . "\n");
 }
 
-function tpl($tpl, $cont = "", $page = ""){ //прогрузка тимплейта
+function tpl($tpl, $cont = ""){ //прогрузка тимплейта
   $path = $_SERVER['DOCUMENT_ROOT'].'/app/templates/'.$tpl.'.php';
   ob_start();
   if(!include($path)) error('load template error => '.$path);
@@ -120,4 +120,29 @@ function rus_date(){ //Перевод даты
     // иначе текущую дату
     return strtr(date(func_get_arg(0)), $translate);
   }
+}
+
+function translate($string){
+  $replace = [
+    'а' => 'a',   'б' => 'b',
+    'в' => 'v',   'г' => 'g',
+    'д' => 'd',   'е' => 'e',
+    'ё' => 'yo',  'ж' => 'j',
+    'з' => 'z',   'и' => 'i',
+    'й' => 'y',   'к' => 'k',
+    'л' => 'l',   'м' => 'm',
+    'н' => 'n',   'о' => 'o',
+    'п' => 'p',   'р' => 'r',
+    'с' => 's',   'т' => 't',
+    'у' => 'u',   'ф' => 'f',
+    'х' => 'h',   'ц' => 'ts',
+    'ч' => 'ch',  'ш' => 'sh',
+    'щ' => 'sch', 'ъ' => '',
+    'ы' => 'i',   'ь' => '',
+    'э' => 'e',   'ю' => 'ju',
+    'я' => 'ja',  ' ' => '_'
+  ];
+  $string = mb_strtolower($string, 'utf-8');
+  $string = strtr($string, $replace);
+  return preg_replace('~[^\w\-\.]~', null, $string);
 }

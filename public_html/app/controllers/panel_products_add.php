@@ -2,23 +2,23 @@
 $action = $query[3];
 
 if($action == 'add'){
-  if($_POST[name] != '' && $_POST[text] != ''){
+  if($_POST[name] != '' && $_POST[description] != '' && $_POST[price] != ''){
     $control = false;
     
     $name = $_POST[name];
-    $text = $_POST[text];
-    $date = date("Y-m-d H:i:s");
+    $description = $_POST[description];
+    $price = $_POST[price];
     if($_FILES[photo][error] != 0){
-      $photo = '/files/news/default.jpg';
+      $photo = '/files/products/default.jpg';
     } else{
-      $photo = '/files/news/'.translate($_FILES[photo][name]);      
+      $photo = '/files/products/'.translate($_FILES[photo][name]);      
       if(!move_uploaded_file($_FILES['photo']['tmp_name'], ROOT.$photo)){
         $control = 'Ошибка при загрузке фотографии';
       }
     }
     
     if(!$control){
-      $mysqli -> query("INSERT INTO News(name, text, photo, date) VALUES('$name', '$text', '$photo', '$date')");
+      $mysqli -> query("INSERT INTO Products(name, description, photo, price) VALUES('$name', '$description', '$photo', '$price')");
       header('Location: /panel');
       exit();
     } else{
@@ -29,5 +29,5 @@ if($action == 'add'){
   }
 }
 
-$title = 'Добавление новости';
-$content = tpl('panel_news_add', $result);
+$title = 'Добавление товара';
+$content = tpl('panel_products_add', $result);

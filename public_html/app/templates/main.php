@@ -38,7 +38,7 @@
             <a class="last-post-top" href="/news/article/<?= $value[id]?>"><img class="last-post-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
             <div class="last-post-bot">
               <a class="last-post-description" href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
-              <div class="last-post-date"><?= $value[date]?></div>
+              <div class="last-post-date"><?echo rus_date("j F Y", strtotime($value[date]));?></div>
             </div>
           </article>
         <? endforeach; ?>
