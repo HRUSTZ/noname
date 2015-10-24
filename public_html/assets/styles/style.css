@@ -43,12 +43,13 @@ header{
   font-size: 18px;
 }
 .head-contacts{
-  margin: auto;
+  margin: auto;;
 }
 .name-info{
   font-size: 34px;
   font-weight: 900;
   text-transform: uppercase;
+  color: #000;
 }
 .margin{
   margin-left: 29px;
@@ -78,6 +79,7 @@ header{
   width: 200px;
   align-items: center;
   margin: 5px 0;
+  color: #000;
 }
 .social-info a:hover{
   font-weight: bold;
@@ -96,8 +98,8 @@ menu{
 menu .wrap > a{ 
   display: flex;
   height: 40px;
-  width: 150px;
-  margin: auto 0 auto 10px;
+  width: 160px;
+  margin: auto 0 auto 5px;
   border: 1px solid #fff;
   align-items: center;
   justify-content: center;
@@ -131,7 +133,7 @@ menu .wrap > a:hover::before{
 .search-form{
   height: 40px;
   width: 444px;
-  margin: auto 10px;
+  margin: auto 5px;
 }
 .search-form input{ 
   width: 394px;
@@ -167,7 +169,7 @@ menu button{
     color: #fff;
     position: relative;
     z-index: 1;
-    margin: auto 10px auto 0;
+    margin: auto 5px auto 0;
 }
 menu button::before{
   content: '';
@@ -195,7 +197,7 @@ menu button:hover::before{
   color: #036ca6;
 }
 
-/*------------------------------------ БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ ------------------------------------*/
+/*-------------------------------- БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ --------------------------------*/
 
 #sub-login{
   height: 250px;
@@ -276,7 +278,8 @@ menu button:hover::before{
 
 .main-info{
   height: 450px;
-  width: 1000px;
+  width: 994px;
+  margin: auto;
 }
 
 .block-about{
