@@ -18,7 +18,7 @@ if($action == 'add'){
     }
     
     if(!$control){
-      $mysqli -> query("INSERT INTO Products(name, description, photo, price) VALUES('$name', '$description', '$photo', '$price')");
+      $mysqli -> query("INSERT INTO Products(name, description, photo, price, main) VALUES('$name', '$description', '$photo', '$price', '-')");
       header('Location: /panel');
       exit();
     } else{
