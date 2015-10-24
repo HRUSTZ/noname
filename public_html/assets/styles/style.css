@@ -1,4 +1,5 @@
 @import url(/assets/styles/reset.css);
+@import url(/assets/styles/fonts.css);
 
 html{
   height: 100%;
@@ -25,10 +26,10 @@ body{
 }
 
 .wrap{
-  height: 100%;
   width: 1000px;
   margin: 0 auto;
-  box-shadow: 0 0 10px 1px rgba(0,0,0,0.3) inset;;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.3) inset;
+  height: 100%;
 }
 
 /*-------------------------------------- ШАПКА САЙТА --------------------------------------*/
@@ -148,29 +149,52 @@ menu .wrap > a:hover::before{
 ::-webkit-input-placeholder{
   color: #565656;
 }
+menu .fa-search,
+menu .fa-sign-in{
+  font-size: 24px;
+  width: 24px;
+}
 menu button{
-    height: 40px;
-    width: 40px;
+    transition: all .5s;
+    border: 1px solid #fff;
     margin: auto;
-    border: 2px solid #036ca6;
-    border-radius: 50%;
     outline: none;
     cursor: pointer;
     background: none;
-    transition: all .5s;
+    height: 40px;
+    width: 40px;
+    color: #fff;
+    position: relative;
+    z-index: 1;
 }
+menu button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  opacity: 0;
+  transform: scale3d(0.7, 1, 1);
+  transition: transform .4s, opacity .4s;
+  transition-timing-function: ease;
+}
+menu button:hover::before{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+.login:hover,
 .search-form button:hover{
-  border-color: #fff;
-}
-.login:hover{
-  border-color: #fff;
+  color: #036ca6;
 }
 
 /*------------------------------------ БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ ------------------------------------*/
 
 #sub-login{
   height: 250px;
-  background-color: #565656;
+  background-color: #036ca6;
   position:absolute;
   left:50%;
   width:1000px;
@@ -178,15 +202,15 @@ menu button{
   z-index:1;
   align-items:center;
   display:none;
+  box-shadow:0 0 10px 1px rgba(0,0,0,0.3);
 }
 
 .form-auth{
-  background-color: #fff;
-  height: 180px;
-  width: 400px;
-  margin-left: 50px;
+  height: 100%;
+  width: 50%;
   display: flex;
-  flex-direction: column;;
+  flex-direction: column;
+  background-color: #fff;;
 }
 
 .form-auth input{
@@ -538,6 +562,13 @@ menu button{
   color: #036ca6;
   display: block;
   margin-bottom: 10px;
+  max-height: 50px;
+  overflow: hidden;
+}
+
+.description p{
+  max-height: 195px;
+  overflow: hidden;
 }
 
 .description a:hover{

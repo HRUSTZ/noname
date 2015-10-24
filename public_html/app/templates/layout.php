@@ -37,9 +37,9 @@
         <a href="/products">Каталог</a>
         <form class="search-form flex">
           <input type="text" placeholder="Поиск по сайту" required>
-          <button type="submit"><img src="/assets/img/search.png" alt=""></button>
+          <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <button class="login"><img src="/assets/img/key.png" alt=""></button> 
+        <button class="login"><i class="fa fa-sign-in"></i></button>
       </div>
     </menu>
     
@@ -51,7 +51,7 @@
         <input type="submit" value="Вход"  class="button-auth">
         <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
       </form>
-      <a class="registr" href="/registration"><span>Регистрация</span></a>
+      <a class="registr" href="/registration">Регистрация</a>
     </section>
     
     <?=$content?>
