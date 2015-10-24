@@ -32,7 +32,7 @@ if($_POST){
   $control = control($login, $password, $user);
   if (!$control){
     $_SESSION['login'] = $user['login'];
-    $token = $_SESSION['token'] = md5(uniqid(genCode(8)));
+    $token = $_SESSION['token'] = md5(uniqid(genCode()));
     $q = $mysqli->query("UPDATE Users SET token = '$token' WHERE login = '$login'");
     
     $link = $_SESSION['link'];
