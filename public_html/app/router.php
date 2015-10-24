@@ -6,15 +6,19 @@ if($query[1] == "") $query[1] = "main";
 $controller = ROOT."/app/controllers/".$query[1].".php";
 
 if(isset($token) && isset($login)){
-  $q = $mysqli->query("SELECT * FROM Users WHERE login = '$login'");
-  $control = $q -> fetch_assoc();
-  if($control[token] == $token){
+  if(!$bdToken){
+    $q = $mysqli -> query("SELECT * FROM Users WHERE login = '$login'");
+    $user = $q -> fetch_assoc();
+    $bdToken = $_SESSION['bdToken'] = $user[token];
+  }
+  
+  if($bdToken == $token){
     $isAuth = true;
     
-    $id = $control[id];
-    $name = $control[name];
-    $photo = $control[photo];
-    if($control[admin] == true){
+    $id = $user[id];
+    $name = $user[name];
+    $photo = $user[photo];
+    if($user[admin] == true){
       $admin = true;
     }
   }

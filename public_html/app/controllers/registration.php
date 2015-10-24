@@ -42,7 +42,7 @@ if ($_POST){
   $control = control($login, $password1, $password2, $name);
   if (!$control){
     $hash = md5(md5($password1));
-    $token = md5(uniqid(genCode(8)));
+    $token = md5(uniqid(genCode()));
     $photo = "/files/users/default.png";
     $admin = false;
     $q = $mysqli->query("INSERT INTO Users (login, hash, token, name, photo, admin) VALUES ('$login', '$hash', '$token', '$name', '$photo', '$admin')");

@@ -1,8 +1,8 @@
 <?//ядерный файл
 session_start();
 
-$token = $_SESSION['token'];
 $login = $_SESSION['login'];
+$token = $_SESSION['token'];
 
 require_once("config.php");
 require_once("func.php");
