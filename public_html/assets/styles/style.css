@@ -28,19 +28,7 @@ body{
   height: 100%;
   width: 1000px;
   margin: 0 auto;
-  box-shadow: 4px 0 6px 0 rgba(0,0,0, .3),
-
-
-
-    -4px 0 6px 0 rgba(0,0,0, .3),
-
-
-
-    4px 0 6px 0 rgba(0,0,0, .1) inset,
-
-
-
-    -4px 0 6px 0 rgba(0,0,0, .1) inset;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.3) inset;;
 }
 
 /*-------------------------------------- ШАПКА САЙТА --------------------------------------*/
@@ -84,8 +72,8 @@ header{
 }
 .social-info a{
   width: 200px;
-  margin-bottom: 5px;
   align-items: center;
+  margin: 5px 0;
 }
 .social-info a:hover{
   font-weight: bold;
@@ -258,7 +246,7 @@ menu button{
 /*-------------------------------------- ГЛАВНАЯ СТРАНИЦА --------------------------------------*/
 
 .main-info{
-  height: 400px;
+  height: 450px;
   width: 1000px;
 }
 
@@ -303,22 +291,20 @@ menu button{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 2px solid #036ca6;
 }
 
-.block-best-products > a,
+.block-last-news h1,
 .block-best-products h1{
   color: #036ca6;
   font-size: 28px;
   font-weight: bold;
+  align-self: flex-start;
+  margin-left: 50px;
 }
 
 .block-best-products > a:hover{
   color: #028ec9;
-}
-
-.best-products{
-  width: 100%;
-  
 }
 
 .best-product{
@@ -326,7 +312,7 @@ menu button{
   height: 225px;
   border: 1px solid #036ca6;
   position: relative;
-  margin: auto;
+  margin: 0 12px;
 }
 
 .best-product-img{
@@ -420,6 +406,16 @@ menu button{
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  height: 500px;;
+}
+
+
+
+.main-info > a{
+  color: #036ca6;
+  text-decoration: underline;
+  font-size: 24px;
+  
 }
 
 .last-news{
@@ -427,42 +423,42 @@ menu button{
 }
 
 .last-post{
-  height: 275px;
-  width: 300px;
+  height: 350px;
+  width: 400px;
   border: 1px solid #036ca6;
-  margin: auto;;
+  margin: auto;
 }
 
 .last-post-top{
   display: block;
-  width: 300px;
-  height: 225px; 
+  width: 400px;
+  height: 300px; 
 }
 
 .last-post-img{
   height: 100%;
   width: 100%;
-  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
 }
 
 .last-post-bot{
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: 49px;
+  width: 400px;
   justify-content: space-between;
 }
 
 .last-post-description{
   width: 100%;
-  height: 25px;
   text-decoration: none;
-  font-size: 24px;
-  font-weight: bold;
-  font-family: 'Roboto Slab', serif;
+  font-size: 19px;
   color: #036ca6;
   display: block;
   margin: 5px 0;
+  height: 25px;
+  overflow: hidden;
+  padding-left: 5px;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
 }
 
 .last-post-description a:hover{
@@ -477,6 +473,7 @@ menu button{
   font-size: 12px;
   font-weight: 600;
   align-items: flex-end;
+  padding-left: 5px;
 }
 
 
@@ -608,17 +605,18 @@ menu button{
 .product{
   width: 300px;
   height: 435px;
-  margin: 50px auto;
   border: 1px solid #036ca6;
   flex-direction: column;
+  box-sizing: border-box;
+  margin: 25px 0 25px 25px;
 }
 .product-img{
-  width: 300px;
+  width: 298px;
   height: 225px;
 }
 .product-img img{
   height: 225px;
-  width: 300px;
+  width: 298px;
 }
 .product-name{
   font-size: 24px;
@@ -677,4 +675,7 @@ footer{
 footer span{
   margin: auto;
   color: #fff;
+}
+
+article.product.flex{
 }
