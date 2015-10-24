@@ -91,11 +91,10 @@ menu{
   background-color: #036ca6;
 }
 menu .wrap > a{ 
-  box-sizing: border-box;
   display: flex;
   height: 40px;
   width: 150px;
-  margin: auto;
+  margin: auto 0 auto 10px;
   border: 1px solid #fff;
   align-items: center;
   justify-content: center;
@@ -128,17 +127,17 @@ menu .wrap > a:hover::before{
 }
 .search-form{
   height: 40px;
-  width: 440px;
-  margin: auto 0;
+  width: 444px;
+  margin: auto 10px;
 }
-.search-form input{
-  box-sizing: border-box; 
-  width: 390px;
-  padding-left: 10px;
+.search-form input{ 
+  width: 394px;
   border: 1px solid #fff;
   background: #fff;
   font-size: 14px;
   font-weight: bold;
+  padding-left: 10px;
+  margin-right: 10px;;;
 }
 .search-form input:focus{
   outline: 0;
@@ -157,7 +156,6 @@ menu .fa-sign-in{
 menu button{
     transition: all .5s;
     border: 1px solid #fff;
-    margin: auto;
     outline: none;
     cursor: pointer;
     background: none;
@@ -166,6 +164,7 @@ menu button{
     color: #fff;
     position: relative;
     z-index: 1;
+    margin: auto 10px auto 0;
 }
 menu button::before{
   content: '';
@@ -184,6 +183,9 @@ menu button::before{
 menu button:hover::before{
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+.search-form button{
+  margin: 0;
 }
 .login:hover,
 .search-form button:hover{
