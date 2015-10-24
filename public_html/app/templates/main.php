@@ -2,7 +2,7 @@
   <div class="wrap shadow">
     
     <section class="main-info block-about">
-      <div class="about-layer">
+      <div class="about-layer shadow">
         <div class="about-content">
           <h1><?= $cont[text][title]?></h1>
           <p><?= $cont[text][about]?></p>
