@@ -9,7 +9,7 @@ html{
 body{
   height: 100%;
   width: 100%;
-  font: 16px/1.5em Arial;
+  font: 16px/1.5em 'Roboto Slab', serif;
 }
 
 .container{
@@ -39,7 +39,6 @@ body{
 
 header{
   height: 150px;
-  font-family: 'Roboto Slab', serif;
   font-size: 18px;
 }
 .head-contacts{
@@ -47,7 +46,7 @@ header{
 }
 .name-info{
   font-size: 34px;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000;
 }
@@ -142,7 +141,7 @@ menu .wrap > a:hover::before{
   font-size: 14px;
   font-weight: bold;
   padding-left: 10px;
-  margin-right: 10px;;;
+  margin-right: 5px;
 }
 .search-form input:focus{
   outline: 0;
@@ -510,7 +509,7 @@ menu button:hover::before{
 
 
 
-/*-------------------------------------- СТРАНИЦА ВСЕХ НОВОСТЕЙ --------------------------------------*/
+/*---------------------------------- СТРАНИЦА ВСЕХ НОВОСТЕЙ ----------------------------------*/
 
 .block-news{
 
@@ -575,8 +574,9 @@ menu button:hover::before{
 }
 
 .description p{
-  max-height: 195px;
+  max-height: 240px;
   overflow: hidden;
+  font-size: 14px;;
 }
 
 .description a:hover{
@@ -636,7 +636,7 @@ menu button:hover::before{
   border: 2px solid #036ca6;
 }
 
-/*-------------------------------------- СТРАНИЦА ВСЕХ ПРОДУКТОВ --------------------------------------*/
+/*---------------------------------- СТРАНИЦА ВСЕХ ПРОДУКТОВ ----------------------------------*/
 
 .block-products{
   flex-wrap: wrap;
