@@ -27,7 +27,7 @@ function q($value){ //возвращает безопасную строчку
   return $value;
 }
 
-function genCode($length){ //генерация случайной строки
+function genCode($length = 8){ //генерация случайной строки
   $chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHI JKLMNOPRQSTUVWXYZ0123456789";
   $code = "";
   $clen = strlen($chars) - 1;
@@ -63,8 +63,7 @@ function momentNotice($text){
          addEvent(window, 'load', function(){ notice(' ".$text." ') }); </script>";
 }
 
-function rus_date() {
-  // Перевод
+function rus_date(){ //Перевод даты
   $translate = array(
     "am" => "дп",
     "pm" => "пп",
