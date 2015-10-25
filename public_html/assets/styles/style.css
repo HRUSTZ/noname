@@ -666,48 +666,69 @@ menu button:hover::before{
 .block-products{
   flex-wrap: wrap;
 }
+.catalog{
+  padding-top: 25px;
+  
+}
+.catalog h1{
+    color: #036ca6;
+    height: 25px;
+    font-size: 28px;
+    text-transform: uppercase;
+    margin: 0 0 25px 25px;
+}
 .product{
-  width: 300px;
-  height: 435px;
+  height: 516px;
   border: 1px solid #036ca6;
-  flex-direction: column;
   box-sizing: border-box;
-  margin: 25px 0 25px 25px;
+  margin: 0 0 25px 25px;
+  width: 300px;
+  background-color: #fff;
 }
 .product-img{
   width: 298px;
   height: 225px;
+  display: block;
 }
 .product-img img{
-  height: 225px;
-  width: 298px;
+  height: 100%;
+  width: 100%;
 }
 .product-name{
-  font-size: 24px;
-  margin: 10px 15px 5px;
+  font-size: 18px;
   overflow: hidden;
-  color: #036ca6;
-  height: 60px;
-  text-align: center;
-  border-top: 1px solid #aaa;
-  padding-top: 10px;
+  margin: 25px 25px 10px 25px;
+  max-height: 50px;
+  height: 50px;
 }
-.product-name:hover{
+.product-name a{
+  color: #036ca6;
+  
+}
+.product-name a:hover{
   color: #028ec9;
 }
 .product-description{
-  font-size: 16px;
-  margin: 0 15px 5px;
-  border-bottom: 1px solid #aaa;
+  font-size: 12px;
   overflow: hidden;
-  height: 110px;
+  height: 142px;
+  margin: 0 25px;
+  text-align: justify;
+  border-top: 1px solid #565656;
+  border-bottom: 1px solid #565656;
 }
 .product-price{
-  font-size: 22px;
-  color: #343434;
-  margin: 5px auto;
+  font-size: 20px;
+  color: #565656;
+  height: 25px;
+  margin: 10px 25px 25px 25px;
+  overflow: hidden;
 }
 
+.product-price i{
+  margin-left: 5px;
+  
+}
 /*registration*/
 
 .registration{

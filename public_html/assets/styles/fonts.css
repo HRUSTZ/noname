@@ -27,10 +27,14 @@
   content: "\f090";
 }
 
-.fa-arrow-left:before{
-  content: "\f060";
+.fa-long-arrow-left:before{
+  content: "\f177";
 }
 
-.fa-arrow-right:before{
-  content: "\f061"
+.fa-long-arrow-right:before{
+  content: "\f178";
+}
+
+.fa-rub:before{
+  content: "\f158";
 }

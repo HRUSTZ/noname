@@ -41,7 +41,7 @@ function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
   $page = $p3 / $p4;
   if($page > 1){
     echo'<div class="page-selector">';
-    echo'<a class="switch-item" href="'.$p1.'1" title="В конец"><i class="fa fa-arrow-left"></i></a>';
+    echo'<a class="switch-item" href="'.$p1.'1" title="В конец"><i class="fa fa-long-arrow-left"></i></a>';
     for($i = ($p2 - 3); $i < ($page + 1); $i++){
       if($i > 0 && $i <= ($p2 + 3)){
         if($p2 == $i){
@@ -53,7 +53,7 @@ function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
       }
     }
     $page = ceil($page);
-    echo'<a class="switch-item" href="'.$p1.$page.'" title="В конец"><i class="fa fa-arrow-right"></i></a>';
+    echo'<a class="switch-item" href="'.$p1.$page.'" title="В конец"><i class="fa fa-long-arrow-right"></i></a>';
     echo'</div>';
   }
 }
