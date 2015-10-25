@@ -2,8 +2,8 @@
 
   <div class="wrap flex shadow">
       
-    <section class="news-content flex">
-
+    <section class="news-content">
+      <h1>Все новости</h1>
       <? foreach($cont[cont] as $value): ?>
       <article class="post">
         <a class="post-left" href="/news/article/<?= $value[id]?>"><img class="post-picture" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
