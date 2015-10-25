@@ -100,7 +100,7 @@ header{
 menu{
   height: 50px;
   font-size: 20px;
-  background-color: #036ca6;
+  background: linear-gradient(to top,#036ca6, #028ec9);
 }
 menu .wrap > a{ 
   display: flex;
@@ -755,7 +755,7 @@ footer{
   height: 40px;
   min-width: 1000px;
   margin-top: -40px;
-  background-color: #036ca6;
+  background: linear-gradient(to top,#036ca6, #028ec9);
 }
 footer span{
   margin: auto;

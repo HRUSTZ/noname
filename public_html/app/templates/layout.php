@@ -30,7 +30,7 @@
       </div>
     </header>
 
-    <menu>
+    <menu class="shadow">
       <div class="wrap flex">
         <a href="/main">Главная</a>
         <a href="/news">Новости</a>
@@ -58,7 +58,7 @@
 
   </div>
   
-  <footer>
+  <footer class="shadow">
     <div class="wrap flex">
       <span>2015 © ООО "Коракс"</span>
     </div>
