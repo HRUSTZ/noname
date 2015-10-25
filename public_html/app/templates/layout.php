@@ -32,11 +32,11 @@
 
     <menu>
       <div class="wrap flex">
-        <a href="/main">Главная</a>
-        <a href="/news">Новости</a>
-        <a href="/products">Каталог</a>
+        <a href="/main">ГЛАВНАЯ</a>
+        <a href="/news">НОВОСТИ</a>
+        <a href="/products">КАТАЛОГ</a>
         <form class="search-form flex">
-          <input type="text" placeholder="Поиск по сайту" required>
+          <input type="text" placeholder="ПОИСК ПО САЙТУ" required>
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
         <button class="login"><i class="fa fa-sign-in"></i></button>
