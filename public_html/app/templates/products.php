@@ -22,3 +22,8 @@
   </div>        
   <?page($cont[page][p1], $cont[page][p2], $cont[page][p3], $cont[page][p4]);?>
 </section>       
+
+
+
+
+<a href="/products">Все категории (придумай что написать вместо все категории)</a>
