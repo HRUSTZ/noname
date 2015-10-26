@@ -42,6 +42,9 @@ if($control){
   $sqlQuery = $mysqli -> query("SELECT id, name FROM Category");
   $result[cat] = $sqlQuery -> fetch_all(MYSQLI_ASSOC);
   
+  if($parameter) $result[title] = 'категория '.$parameter;
+  else $result[title] = 'все товары';
+  
   $count = $mysqli -> query($sqlCount) -> fetch_row();
   
   if(!$idPage){

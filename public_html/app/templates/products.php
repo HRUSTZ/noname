@@ -8,7 +8,7 @@
       <? endforeach; ?>
     </section>
     <section class="catalog-products">
-      <h1>Все товары</h1>
+      <h1><?= $cont[title]?></h1>
       <section class="block-products flex">
         <? foreach($cont[cont] as $value): ?>         
         <article class="product">
