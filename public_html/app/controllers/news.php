@@ -1,7 +1,8 @@
 <?
+//global $mysqli;
+
 $control = $query[2];
 $id = $query[3];
-global $mysqli;
 
 if($control == '') $control = 'page';
 
@@ -33,10 +34,15 @@ if($control == 'article'){
     $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
   }
   
-  $result[page] = array('/news/page/', $id, $count[0]);
+  $result[page] = array('/news/page/', $id, $count[0], '5', true);
+  
+  if(!$result[cont]){
+    $result[clean] = 'По указанным параметрам не найдено ни одной новости.';
+    $result[page][4] = false;
+  }
   
   $title = "Новости";
   $content = tpl("articles", $result);
 } else{
-  error ('404');
+  error ('Станица не найдена');
 }

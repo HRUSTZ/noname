@@ -8,7 +8,7 @@
       <? endforeach; ?>
     </section>
     <section class="catalog-products">
-      <h1><?= $cont[title];?></h1>
+      <h1><?= $cont[title]?></h1>
       <section class="block-products flex">
         <? foreach($cont[cont] as $value): ?>         
         <article class="product">
@@ -18,10 +18,10 @@
           <p class="product-price"><?= $value[price]?><i class="fa fa-rub"></i></p>
         </article>
         <? endforeach; ?>
-        <?= $cont[clean]; //выводится если нет ниодного товара на странице(удали как прочтешь)?>
+        <?= $cont[clean] //выводится если нет ниодного товара на странице(удали как прочтешь)?>
       </section>
     </section>
   </div>        
-  <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3], $cont[page][4]);?>
+  <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3], $cont[page][4])?>
 </section>       
 

@@ -1,9 +1,10 @@
 <?
-global $mysqli;
+//global $mysqli;
 
 $module = $query[2];
 $modulePage = $query[3];
 $idPage = $query[4];
+if($idPage != '' && !is_numeric($idPage)) error('Станица не найдена');
 
 $control = false;
 
