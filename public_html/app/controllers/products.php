@@ -8,7 +8,7 @@ if($idPage != '' && !is_numeric($idPage)) error('Станица не найде�
 
 $control = false;
 
-if($module == 'number'){
+if($module == 'number' && $modulePage != ''){
   $sqlQuery = $mysqli -> query("SELECT * FROM Products WHERE id = '$modulePage'");
   $result = $sqlQuery -> fetch_assoc();
   
