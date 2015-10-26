@@ -4,7 +4,7 @@
       <h1>Категории</h1>
       <a href="/products">Все товары</a>
       <? foreach($cont[cat] as $value): ?>
-        <a href="/products/category/<?= $value[id]?>"><?= $value[name]?></a>
+        <a href="/products/<?= $value[name]?>"><?= $value[translation]?></a>
       <? endforeach; ?>
     </section>
     <section class="catalog-products">
@@ -21,5 +21,5 @@
       </section>
     </section>
   </div>        
-  <?page($cont[page][p1], $cont[page][p2], $cont[page][p3], $cont[page][p4]);?>
+  <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3]);?>
 </section>       

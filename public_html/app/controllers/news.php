@@ -33,9 +33,7 @@ if($control == 'article'){
     $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
   }
   
-  $result[page][p1] = '/news/page/';
-  $result[page][p2] = $id;
-  $result[page][p3] = $count[0];
+  $result[page] = array('/news/page/', $id, $count[0]);
   
   $title = "Новости";
   $content = tpl("articles", $result);

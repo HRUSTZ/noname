@@ -20,7 +20,7 @@
       </article>
       <? endforeach; ?>
       
-      <?page($cont[page][p1], $cont[page][p2], $cont[page][p3]);?>
+      <?page($cont[page][0], $cont[page][1], $cont[page][2]);?>
 
     </section>
 
