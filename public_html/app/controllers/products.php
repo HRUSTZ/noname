@@ -53,12 +53,16 @@ if($control){
     $start = ($idPage - 1) * 6;
     $sqlQuery = $mysqli -> query(str_replace('START', $start, $sqlPage));
     $result[cont] = $sqlQuery -> fetch_all(MYSQLI_ASSOC);
-    
   }
   
   $result[cat] = $sqlQuery = $mysqli -> query("SELECT * FROM Category") -> fetch_all(MYSQLI_ASSOC);
   $count = $mysqli -> query($sqlCount) -> fetch_row();
-  $result[page] = array($controlPage, $idPage, $count[0], '6');
+  $result[page] = array($controlPage, $idPage, $count[0], '6', true);
+  
+  if(!$result[cont]){
+    $result[clean] = 'По указанным параметрам не найдено ни одного товара.';
+    $result[page][4] = false;
+  }
 }
 
 $content = tpl($path, $result);

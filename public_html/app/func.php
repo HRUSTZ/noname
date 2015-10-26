@@ -37,9 +37,9 @@ function genCode($length = 8){ //генерация случайной стро�
   return $code;
 }
 
-function page($p1, $p2, $p3, $p4 = 5){ //переключение страниц
+function page($p1, $p2, $p3, $p4 = 5, $p5 = true){ //переключение страниц
   $page = $p3 / $p4;
-  if($page > 1){
+  if($page > 1 && $p5 == true){
     echo'<div class="page-selector">';
     echo'<a class="switch-item" href="'.$p1.'1" title="В конец"><i class="fa fa-long-arrow-left"></i></a>';
     for($i = ($p2 - 3); $i < ($page + 1); $i++){
