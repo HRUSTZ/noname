@@ -1,12 +1,12 @@
 window.onload = function() { 
-  var subLogin = document.getElementById('sub-login');
-  var btnLogin = document.getElementsByClassName('login')[0];
+  var dropForm = document.getElementById('drop-form');
+  var openLoginForm = document.getElementsByClassName('open-login-form')[0];
   
-  subLogin.style.display = 'none';
-  btnLogin.addEventListener('click', openLogin);
+  dropForm.style.display = 'none';
+  openLoginForm.addEventListener('click', openLogin);
   
   function openLogin() {
-    subLogin.style.display == 'none' ? subLogin.style.display = 'flex' : subLogin.style.display = 'none';
+    dropForm.style.display == 'none' ? dropForm.style.display = 'flex' : dropForm.style.display = 'none';
   }
 }
 //(function(window){

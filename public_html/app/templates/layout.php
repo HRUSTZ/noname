@@ -39,16 +39,25 @@
           <input type="text" placeholder="Поиск по сайту" required>
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <button class="login"><i class="fa fa-sign-in"></i></button>
+        <button class="open-login-form"><i class="fa fa-sign-in"></i></button>
       </div>
     </menu>
     
 
-    <section id="sub-login">
-      <form action="/authorization" method="POST" class="form-auth">
-        <input type="email" name="login" id="login" placeholder="Email:" required autofocus/>
-        <input type="password" name="password" id="password" placeholder="Пароль:" required/>
-        <input type="submit" value="Вход"  class="button-auth">
+    <section id="drop-form">
+      <form action="/authorization" method="POST" class="login-form shadow" autocomplete="on">
+        <h1>Авторизация</h1>
+        <p>
+          <label for="user-email">Email</label>  
+          <input type="email" name="user-email" id="user-email" required autofocus/>
+        </p>
+        <p>
+          <label for="user-password">Пароль</label>  
+          <input type="password" name="user-password" id="user-password" required/>
+        </p>
+        <p class="login-btn">          
+          <input type="submit" value="Вход">
+        </p>
         <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
       </form>
       <a class="registr" href="/registration">Регистрация</a>

@@ -18,7 +18,8 @@ body{
   min-width: 1000px;
   min-height: 100%;
   padding-bottom: 40px;
-  background: linear-gradient(to top, #d7ebf3, #fff);  
+  background: linear-gradient(to top, #d7ebf3, #fff);
+  position: relative;  
 }
 
 .flex{
@@ -202,15 +203,15 @@ menu button:hover::before{
 .search-form button{
   margin: 0;
 }
-.login:hover,
+.open-login-form:hover,
 .search-form button:hover{
   color: #036ca6;
 }
 
 /*-------------------------------- БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ --------------------------------*/
 
-#sub-login{
-  height: 250px;
+#drop-form{
+  height: 328px;
   background-color: #036ca6;
   position:absolute;
   left:50%;
@@ -222,32 +223,120 @@ menu button:hover::before{
   box-shadow:0 0 10px 1px rgba(0,0,0,0.3) inset;
 }
 
-.form-auth{
-  height: 90%;
-  width: 450px;
-  display: flex;
-  flex-direction: column;
-  background-color: #fff;
-  margin-left: 50px;;
+.login-form{
+  width: 400px;
+  height: 228px;
+  margin: 25px;
+  padding: 25px;
+  background: #fff;
+
 }
 
-.form-auth input{
-  width: 320px;
-  margin: auto;
+.login-form h1{
+  text-align: center;
+  color: #036ca6;
+  font-size: 24px;
+
+}
+
+.login-form h1::after{
+    content:' ';
+    display:block;
+    width:100%;
+    height:2px;
+    margin-top:10px;
+    background: linear-gradient(left,
+                rgba(147,184,189,0) 0%,
+                rgba(147,184,189,0.8) 20%,
+                rgba(147,184,189,1) 53%,
+                rgba(147,184,189,0.8) 79%,
+                rgba(147,184,189,0) 100%);
+}
+
+.login-form label{
+  color: #036ca6;;
+  
+}
+
+.login-form input{
+  width: 386px;
+  padding-left: 10px;
+  margin: 5px 0;
+  color: #036ca6;
+  font-weight: bold;
   height: 30px;
+  font-size: 20px;
+  border: 1px solid #036ca6;
+}
+
+.login-btn{
+  height: 40px;
+  width: 150px;
+  position: relative;
+  text-transform: uppercase;
+  background: #fff;
+  cursor: pointer;
+  margin: 16px 125px 0 125px;
+  z-index: 1;
+}
+
+
+.login-btn input{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: 0;
+  margin: 0;
+
+}
+
+.login-btn::before,
+.registr::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: -1;
+  opacity: 0;
+  transform: scale3d(0.7, 1, 1);
+  transition: transform .4s, opacity .4s;
+  transition-timing-function: ease;
+}
+.login-btn::before{
+  background: #036ca6;
+}
+.login-btn:hover::before,
+.registr:hover::before{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+input[type="submit"]:hover{
+  color: #fff;
+}
+
+.registr:hover{
+  color: #036ca6;
 }
 
 .registr{
-  margin: auto;
+  position: relative;
   display: flex;
   height: 40px;
-  width: 160px;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
+  width: 200px;
   color: #fff;
   font-size: 24px;
   border: 2px solid #fff;
+  text-transform: uppercase;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  transition: all .4s;
+  transition-timing-function: ease;
+  z-index: 1;
 }
 
 /* Блок авторизации / регистрации 
@@ -665,10 +754,10 @@ menu button:hover::before{
 
 .block-products{
   flex-wrap: wrap;
+  width: 675px;
 }
 .catalog{
   padding-top: 25px;
-  
 }
 .catalog h1{
     color: #036ca6;
@@ -676,6 +765,13 @@ menu button:hover::before{
     font-size: 28px;
     text-transform: uppercase;
     margin: 0 0 25px 25px;
+}
+.catalog-products{
+  
+}
+.catalog-filter{
+  width: 325px;
+
 }
 .product{
   height: 516px;
@@ -756,6 +852,7 @@ footer{
   min-width: 1000px;
   margin-top: -40px;
   background: linear-gradient(to top,#036ca6, #028ec9);
+  position: relative;
 }
 footer span{
   margin: auto;
