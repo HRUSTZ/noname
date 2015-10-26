@@ -14,16 +14,17 @@ if($module == 'number'){
   
   $title = $result[name];
   $path = 'product'; 
-} elseif($module == 'category' && $parameter == 'all' || $module == ''){
+} elseif(($module == 'category' && $parameter == 'all') || $module == ''){
   $sql = "SELECT * FROM Products LIMIT 0, 6";
   $sqlPage = "SELECT * FROM Products LIMIT START, 6";
   $sqlCount = "SELECT COUNT(id) FROM Products";
   $controlPage = '/products/category/all/page/';
   
   $control = true;
+  
   $title = "Наши предложения";
   $path = 'products'; 
-} elseif($module == 'category'){
+} elseif($module == 'category' && $parameter){
   $sql = "SELECT * FROM Products WHERE category = '$parameter' LIMIT 0, 6";
   $sqlPage = "SELECT * FROM Products WHERE category = '$parameter' LIMIT START, 6";
   $sqlCount = "SELECT COUNT(id) FROM Products WHERE category = '$parameter'";
@@ -38,6 +39,9 @@ if($module == 'number'){
 }
 
 if($control){
+  $sqlQuery = $mysqli -> query("SELECT id, name FROM Category");
+  $result[cat] = $sqlQuery -> fetch_all(MYSQLI_ASSOC);
+  
   $count = $mysqli -> query($sqlCount) -> fetch_row();
   
   if(!$idPage){
