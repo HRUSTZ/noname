@@ -17,5 +17,5 @@
       </section>
     </section>
   </div>        
-  <?page($cont[page][p1], $cont[page][p2], $cont[page][p3], 9);?>
+  <?page($cont[page][p1], $cont[page][p2], $cont[page][p3], $cont[page][p4]);?>
 </section>       

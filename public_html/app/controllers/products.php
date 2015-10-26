@@ -1,44 +1,60 @@
 <?
-$control = $query[2];
-$id = $query[3];
 global $mysqli;
 
-if($control == '') $control = 'page';
+$module = $query[2];
+$parameter = $query[3];
+$modulePage = $query[4];
+$idPage = $query[5];
 
-if($control == 'number'){
-  if($id){
-    $q = $mysqli -> query("SELECT * FROM Products WHERE id='$id'");
-    $result = $q -> fetch_assoc();
-    
-    if($result){   
-      $title = $result[name];
-      $content = tpl("product", $result);
-    } else{
-      error('Нет статьи');
-    }
-  } else{
-    error('Нет товара');
-  }
-} elseif($control == 'page'){
-  $q = $mysqli -> query("SELECT COUNT(id) FROM Products");
-  $count = $q -> fetch_row();
+$control = false;
+
+if($module == 'number'){
+  $sqlQuery = $mysqli -> query("SELECT * FROM Products WHERE id = '$parameter'");
+  $result = $sqlQuery -> fetch_assoc();
   
-  if(!$id){
-    $id = '1';
-    $q = $mysqli -> query("SELECT * FROM Products LIMIT 0, 9");
-    $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
-  } else{
-    $start = ($id - 1) * 9;
-    $q = $mysqli -> query("SELECT * FROM Products LIMIT $start, 9");
-    $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
-  }
+  $title = $result[name];
+  $path = 'product'; 
+} elseif($module == 'category' && $parameter == 'all' || $module == ''){
+  $sql = "SELECT * FROM Products LIMIT 0, 6";
+  $sqlPage = "SELECT * FROM Products LIMIT START, 6";
+  $sqlCount = "SELECT COUNT(id) FROM Products";
+  $controlPage = '/products/category/all/page/';
   
-  $result[page][p1] = '/products/page/';
-  $result[page][p2] = $id;
-  $result[page][p3] = $count[0];
+  $control = true;
+  $title = "Наши предложения";
+  $path = 'products'; 
+} elseif($module == 'category'){
+  $sql = "SELECT * FROM Products WHERE category = '$parameter' LIMIT 0, 6";
+  $sqlPage = "SELECT * FROM Products WHERE category = '$parameter' LIMIT START, 6";
+  $sqlCount = "SELECT COUNT(id) FROM Products WHERE category = '$parameter'";
+  $controlPage = '/products/category/'.$parameter.'/page/';
+  
+  $control = true;
   
   $title = "Наши предложения";
-  $content = tpl("products", $result);
+  $path = 'products'; 
 } else{
-  error ('404');
+  error('Станица не найдена');
 }
+
+if($control){
+  $count = $mysqli -> query($sqlCount) -> fetch_row();
+  
+  if(!$idPage){
+    $idPage = '1';
+    $sqlQuery = $mysqli -> query($sql);
+    $result[cont] = $sqlQuery -> fetch_all(MYSQLI_ASSOC);
+  } else{
+    $start = ($idPage - 1) * 6;
+    $sqlQuery = $mysqli -> query(str_replace('START', $start, $sqlPage));
+    $result[cont] = $sqlQuery -> fetch_all(MYSQLI_ASSOC);
+    
+  }
+  
+  $result[page][p1] = $controlPage;
+  $result[page][p2] = $idPage;
+  $result[page][p3] = $count[0];
+  $result[page][p4] = '6';
+}
+
+$content = tpl($path, $result);
