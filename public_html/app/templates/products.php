@@ -2,6 +2,7 @@
   <div class="catalog-content flex">
     <section class="catalog-filter">
       <h1>Категории</h1>
+      <a href="/products">Все товары</a>
       <? foreach($cont[cat] as $value): ?>
         <a href="/products/category/<?= $value[id]?>"><?= $value[name]?></a>
       <? endforeach; ?>
@@ -22,8 +23,3 @@
   </div>        
   <?page($cont[page][p1], $cont[page][p2], $cont[page][p3], $cont[page][p4]);?>
 </section>       
-
-
-
-
-<a href="/products">Все категории (придумай что написать вместо все категории)</a>
