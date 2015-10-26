@@ -845,6 +845,44 @@ input[type="submit"]:hover{
   background-color: #ccc;
 }
 
+/*-------------------------------- СТРАНИЦА ОДНОЙ НОВОСТИ ----------------------------*/
+
+.article-page{
+  padding-top: 25px;
+  background: #fff;
+  min-height: 100%;
+}
+
+.article-title{
+  color: #036ca6;
+  height: 25px;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin: 0 0 25px 25px;
+}
+
+.article-img{
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 0 25px 25px;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+
+}
+
+.article-text{
+  margin: 0 25px 25px 25px;
+  text-align: justify;
+  width: 950px;
+
+}
+
+.article-date{
+  margin: 0 0 25px 25px;
+  color: #565656;
+  font-size: 14px;
+
+}
+
 /*-------------------------------------- ПОДВАЛ САЙТА --------------------------------------*/
 
 footer{
