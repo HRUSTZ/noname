@@ -850,7 +850,7 @@ input[type="submit"]:hover{
 .article-page{
   padding-top: 25px;
   background: #fff;
-  min-height: 100%;
+  min-height: 100%;;
 }
 
 .article-title{
@@ -858,19 +858,20 @@ input[type="submit"]:hover{
   height: 25px;
   font-size: 28px;
   text-transform: uppercase;
-  margin: 0 0 25px 25px;
+  margin-bottom: 25px;
 }
 
 .article-img{
-  max-width: 800px;
-  max-height: 600px;
-  margin: 0 0 25px 25px;
+  max-width: 400px;
+  max-height: 300px;
+  margin: 0 25px 10px 25px;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
+  float: left;
 
 }
 
 .article-text{
-  margin: 0 25px 25px 25px;
+  margin: 0 25px 25px 25pxs;
   text-align: justify;
   width: 950px;
 
@@ -880,6 +881,7 @@ input[type="submit"]:hover{
   margin: 0 0 25px 25px;
   color: #565656;
   font-size: 14px;
+  clear: both;
 
 }
 
