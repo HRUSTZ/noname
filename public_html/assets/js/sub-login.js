@@ -9,6 +9,17 @@ window.onload = function() {
     dropForm.style.display == 'none' ? dropForm.style.display = 'flex' : dropForm.style.display = 'none';
   }
 }
+
+function notice(text){
+  var d=document.createElement('div');
+  d.innerHTML = text;
+  d.classList.add('notice');
+  document.body.appendChild(d);
+  
+  setTimeout( function() { 
+  document.body.removeChild(d)
+  } , 11000)
+}
 //(function(window){
 /*(function( window ){
  
