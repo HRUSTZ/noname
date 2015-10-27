@@ -5,17 +5,23 @@
 </form>
 
 <form action="/panel/main_edit/products_edit" method="POST">
+  <? foreach($cont[products] as $value): ?>
+    <input type="text" name="t<?=$value[main]?>" placeholder="Номер <?=$value[main]?>-го товара" value="<?=$value[id]?>"/>
+  <? endforeach; ?>
+  <input type="submit" value="Подтведить">
+</form>
+  Все товары на сайте
   <table>
     <tr>
+      <th>Номер</th>
       <th>Товар</th>
-      <th>Номер на главной</th>
     </tr>
-    <? foreach($cont[products] as $value): ?> 
+    <? foreach($cont[allProducts] as $value): ?> 
       <tr>
+        <td><?=$value[id]?></td>
         <td><?=$value[name]?></td>
-        <td><input type="text" name="<?=$value[id]?>" placeholder="Введите номер вывода на странице:" value="<?=$value[main]?>"/></td>
       </tr>
     <? endforeach; ?>
   </table>
-  <input type="submit" value="Подтведить">
-</form>
+
+  

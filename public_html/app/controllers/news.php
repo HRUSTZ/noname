@@ -1,6 +1,6 @@
 <?
 //global $mysqli;
-momentNotice("нотис");
+
 $control = $query[2];
 $id = $query[3];
 
