@@ -18,16 +18,12 @@ body{
   color: #fff;
   border: 1px solid #fff;
   padding: 15px;
-  top: -100px;
+  top: 100px;
   left: 50%;
   z-index: 99;
   width: 300px;
   margin-left: -150px;
   text-align: center;
-  -moz-animation: slideup 10s;
-  -webkit-animation: slideup 10s;
-  -o-animation: slideup 10s;
-  animation: slideup 10s;
 }
 
 .container{
