@@ -36,7 +36,7 @@
         <a href="/news">Новости</a>
         <a href="/products">Каталог</a>
         <form class="search-form flex">
-          <input type="text" placeholder="Поиск по сайту" required>
+          <input type="text" placeholder="Поиск пока не работает, скоро сделаем :)" required>
           <button type="submit"><i class="fa fa-search"></i></button>
         </form>
         <button class="open-login-form"><i class="fa fa-sign-in"></i></button>

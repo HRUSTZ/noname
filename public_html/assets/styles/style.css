@@ -12,6 +12,24 @@ body{
   font: 16px/1.5em 'Roboto Slab', serif;
 }
 
+.notice {
+  background-color:rgba(0, 121, 107, 0.6);
+  position: fixed;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px;
+  top: -100px;
+  left: 50%;
+  z-index: 99;
+  width: 300px;
+  margin-left: -150px;
+  text-align: center;
+  -moz-animation: slideup 10s;
+  -webkit-animation: slideup 10s;
+  -o-animation: slideup 10s;
+  animation: slideup 10s;
+}
+
 .container{
   box-sizing: border-box;
   min-width: 1000px;
@@ -552,7 +570,7 @@ input[type="submit"]:hover{
 .block-last-news{
   height: 525px;
   width: 1000px;
-  padding: 25px 0;
+  padding-bottom: 25px;
 }
 
 
