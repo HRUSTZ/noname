@@ -29,11 +29,11 @@ body{
 .container{
   box-sizing: border-box;
   min-width: 1000px;
-  min-height: 100%;
   padding-bottom: 40px;
   background: linear-gradient(to top, #d7ebf3, #fff);
-  position: relative;
+  min-height: 100%;
   width: 100%;
+  position: relative;
 }
 
 .flex{
@@ -382,7 +382,9 @@ input[type="submit"]:hover{
 
 /*-------------------------------------- ГЛАВНАЯ СТРАНИЦА --------------------------------------*/
 
-.main-info{
+main{
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .block-about{
@@ -630,6 +632,8 @@ input[type="submit"]:hover{
 /*---------------------------------- СТРАНИЦА ВСЕХ НОВОСТЕЙ ----------------------------------*/
 
 .block-news{
+  margin: 0 auto;
+  width: 1000px;
 
 }
 
@@ -762,6 +766,8 @@ input[type="submit"]:hover{
 }
 .catalog{
   padding-top: 25px;
+  width: 1000px;
+  margin: 0 auto;
 }
 .catalog h1{
     color: #036ca6;
@@ -853,6 +859,8 @@ input[type="submit"]:hover{
 
 .article-page{
   padding-top: 25px;
+  width: 1000px;
+  margin: 0 auto;
 }
 
 .article-title{
@@ -893,8 +901,8 @@ footer{
   height: 40px;
   min-width: 1000px;
   margin-top: -40px;
-  position: relative;
   background: linear-gradient(to top,#036ca6, #028ec9);
+  position: relative;
 }
 footer span{
   margin: auto;

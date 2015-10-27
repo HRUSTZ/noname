@@ -1,4 +1,4 @@
-<section class="catalog wrap">
+<section class="catalog">
   <div class="catalog-content flex">
     <section class="catalog-filter">
       <h1>Категории</h1>

@@ -1,6 +1,6 @@
-<section class="block-news">
+<section class="block-news flex">
 
-  <div class="wrap flex">
+  
       
     <section class="news-content">
       <h1>Все новости</h1>
@@ -24,6 +24,6 @@
 
     </section>
 
-  </div>
+ 
 
 </section>

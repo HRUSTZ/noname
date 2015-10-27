@@ -1,5 +1,4 @@
 <main>
-  <div class="wrap">
     
     <section class="main-info block-about">
       <div class="about-layer shadow">
@@ -50,5 +49,6 @@
         <a href="/news">Все новости<i class="fa fa-long-arrow-right"></i></a>
       </div>
     </section>  
-  </div>
+
+
 </main>
