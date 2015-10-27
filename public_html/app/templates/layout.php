@@ -11,7 +11,7 @@
   <div class="container">
     
     <header>
-      <div class="wrap flex shadow">
+      <div class="wrap flex">
         <a class="head-contacts" href="/main"><img src="/assets/img/logo.png" alt="ООО Коракс"></a>
         <a class="head-contacts name-info" href="/main">Коракс</a>
         <div class="head-contacts">

@@ -2,7 +2,7 @@
   <div class="wrap">
     
     <section class="main-info block-about">
-      <div class="about-layer shadow-top">
+      <div class="about-layer shadow">
         <div class="about-content">
           <h1><?= $cont[text][title]?></h1>
           <p><?= $cont[text][about]?></p>
@@ -11,7 +11,7 @@
     </section>
 
 
-    <section class="main-info  block-best-products shadow-top">
+    <section class="main-info  block-best-products">
       <h1>Популярные товары</h1>
       <div class="best-products flex">
         <? foreach($cont[products] as $value): ?>
@@ -26,10 +26,12 @@
         </article>
         <? endforeach; ?>
       </div>
-      <a href="/products">Все товары</a>
+      <div class="right-link">
+        <a href="/products">Все товары<i class="fa fa-long-arrow-right"></i></a>
+      </div>
     </section>
 
-    <section class="main-info block-last-news shadow-bot">
+    <section class="main-info block-last-news">
       <h1>Последние новости</h1>
       <div class="last-news flex">
       
@@ -44,7 +46,9 @@
         <? endforeach; ?>
 
       </div>
-      <a href="/news">Все новости</a>
+      <div class="right-link">
+        <a href="/news">Все новости<i class="fa fa-long-arrow-right"></i></a>
+      </div>
     </section>  
   </div>
 </main>

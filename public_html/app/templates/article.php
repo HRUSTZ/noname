@@ -1,4 +1,4 @@
-<article class="article-page wrap shadow">
+<article class="article-page wrap">
     <img class="article-img" src="<?= $cont[photo]?>" alt="<?= $cont[name]?>">
     <h1 class="article-title"><?= $cont[name]?></h1>
     <p class="article-text"><?= $cont[text]?></p>

@@ -14,12 +14,12 @@ body{
 
 .container{
   box-sizing: border-box;
-  width: 100%;
   min-width: 1000px;
   min-height: 100%;
   padding-bottom: 40px;
   background: linear-gradient(to top, #d7ebf3, #fff);
-  position: relative;  
+  position: relative;
+  width: 100%;
 }
 
 .flex{
@@ -28,14 +28,6 @@ body{
 
 .shadow{
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.3) inset;
-}
-
-.shadow-top{
-  box-shadow: 0 3px 10px 1px rgba(0,0,0,0.3) inset; 
-}
-
-.shadow-bot{
-  box-shadow: 0 -3px 10px 1px rgba(0,0,0,0.3) inset;
 }
 
 .wrap{
@@ -51,7 +43,7 @@ header{
   font-size: 18px;
 }
 .head-contacts{
-  margin: auto;;
+  margin: auto;
 }
 .name-info{
   font-size: 34px;
@@ -442,19 +434,26 @@ input[type="submit"]:hover{
   height: 25px;
 }
 
-.block-best-products > a{
-  display: block;
-  font-size: 18px;
-  height: 25px;
-  margin: 25px 0 0 25px;
-  color: #036ca6;
-  text-decoration: underline;
-  width: 120px;
-  text-transform: uppercase;
+.right-link{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 25px;
   
 }
 
-.block-best-products > a:hover{
+.right-link > a{
+  font-size: 18px;
+  color: #036ca6;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.right-link i{
+  margin-left: 10px;
+}
+
+.right-link > a:hover{
   color: #028ec9;
 }
 
@@ -558,17 +557,7 @@ input[type="submit"]:hover{
 
 
 
-.block-last-news > a{
-  display: block;
-  font-size: 18px;
-  height: 25px;
-  margin: 25px 0 0 25px;
-  color: #036ca6;
-  text-transform: uppercase;
-  text-decoration: underline;
-  width: 130px;
-  
-}
+
 
 .last-news{
 }
@@ -578,7 +567,8 @@ input[type="submit"]:hover{
   width: 462.5px;
   border: 1px solid #036ca6;
   margin-left: 25px;
-  box-sizing: border-box;;
+  box-sizing: border-box;
+  background: #fff;
 }
 
 .last-post-top{
@@ -849,8 +839,6 @@ input[type="submit"]:hover{
 
 .article-page{
   padding-top: 25px;
-  background: #fff;
-  min-height: 100%;;
 }
 
 .article-title{
@@ -862,8 +850,8 @@ input[type="submit"]:hover{
 }
 
 .article-img{
-  max-width: 400px;
-  max-height: 300px;
+  max-width: 500px;
+  max-height: 375px;
   margin: 0 25px 10px 25px;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
   float: left;
@@ -871,7 +859,7 @@ input[type="submit"]:hover{
 }
 
 .article-text{
-  margin: 0 25px 25px 25pxs;
+  margin: 0 25px 25px 25px;
   text-align: justify;
   width: 950px;
 
@@ -891,8 +879,8 @@ footer{
   height: 40px;
   min-width: 1000px;
   margin-top: -40px;
-  background: linear-gradient(to top,#036ca6, #028ec9);
   position: relative;
+  background: linear-gradient(to top,#036ca6, #028ec9);
 }
 footer span{
   margin: auto;
