@@ -1,6 +1,6 @@
 window.onload = function() { 
   var dropForm = document.getElementById('drop-form');
-  var openLoginForm = document.getElementsByClassName('open-login-form')[0];
+  var openLoginForm = document.getElementsByClassName('signin-btn')[0];
   
   dropForm.style.display = 'none';
   openLoginForm.addEventListener('click', openLogin);

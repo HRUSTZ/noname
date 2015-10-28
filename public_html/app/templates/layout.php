@@ -9,40 +9,46 @@
 <body>
 
   <div class="container">
-    
     <header>
-      <div class="wrap flex">
-        <a class="head-contacts" href="/main"><img src="/assets/img/logo.png" alt="ООО Коракс"></a>
-        <a class="head-contacts name-info" href="/main">Коракс</a>
-        <div class="head-contacts">
-          <p class="margin">Ростов-на-Дону,</p>
-          <p class="marker-icon">ул. Тургеневская, 55</p>
-          <p class="margin">ежедневно, 10:00 - 20:00</p>
-        </div>
-        <div class="head-contacts">
-          <p class="margin">8 (863)</p>
-          <p class="phone-icon">322-22-33</p>
-        </div>
-        <div class="head-contacts social-info">
-          <a class="flex" href="#"><img src="/assets/img/logo-vk.png" alt="VK"><p>ВКонтакте</p></a>
-          <a class="flex" href="#"><img src="/assets/img/logo-ok.png" alt="OK"><p>Одноклассники</p></a>
-        </div>
+      <a class="header-content" href="/main"><img class="company-logo" src="/assets/img/logo.png" alt="ООО Коракс"></a>
+      <a class="header-content company-name" href="/main">Коракс</a>
+      <div class="header-content company-address">
+        <p>Ростов-на-Дону</p>
+        <p class="address-icon">ул. Социалистическая, 88</p>
+        <p>ежедневно, 10:00-20:00</p>
+      </div>
+      <div class="header-content company-phone">
+        <p>8 (863)</p>
+        <p class="phone-icon">777-77-77</p>
+      </div>
+      <div class="header-content company-social">
+        <a href="#">
+          <img src="/assets/img/logo-vk.png" alt="">
+          <p>Вконтакте</p>
+        </a>
+        <a href="#">
+          <img src="/assets/img/logo-ok.png" alt="">
+          <p>Одноклассники</p>
+         </a>
       </div>
     </header>
 
-    <menu class="shadow">
-      <div class="wrap flex">
-        <a href="/main">Главная</a>
-        <a href="/news">Новости</a>
-        <a href="/products">Каталог</a>
-        <form class="search-form flex">
-          <input type="text" placeholder="Поиск пока не работает, скоро сделаем :)" required>
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-        <button class="open-login-form"><i class="fa fa-sign-in"></i></button>
-      </div>
-    </menu>
-    
+    <nav>
+      <ul class="nav-content">
+          <a class="nav-btn button button-anim" href="/main">Главная</a>
+          <a class="nav-btn button button-anim" href="/news">Новости</a>
+          <a class="nav-btn button button-anim" href="/products">Каталог</a>
+          <form class="search-form" action="">
+            <input type="text" placeholder="Поиск по сайту" required>
+            <button class="search-btn button button-anim" type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+          <button class="signin-btn button button-anim">
+            <i class="fa fa-sign-in"></i>
+          </button>
+      </ul>
+    </nav>
 
     <section id="drop-form">
       <form action="/authorization" method="POST" class="login-form shadow" autocomplete="on">
@@ -62,19 +68,17 @@
       </form>
       <a class="registr" href="/registration">Регистрация</a>
     </section>
-    
+
     <?=$content?>
 
+    <footer>2015 © ООО"Коракс"</footer>    
+
   </div>
-  
-  <footer class="shadow">
-    <div class="wrap flex">
-      <span>2015 © ООО "Коракс"</span>
-    </div>
-  </footer>
 
 
 <script src="/assets/js/sub-login.js"></script>
 
 </body>
 </html>
+
+  
