@@ -24,6 +24,13 @@ if($action == 'text_edit' && $_POST != ''){
 }
 
 if($action == 'products_edit' && $_POST != ''){
+  $mysqli -> query("UPDATE Products SET main = '-' WHERE main = '1' || main = '2' || main = '3'");
+  print_r($_POST);
+  $mysqli -> query("UPDATE Products SET main = '1' WHERE id = '$_POST[t1]'");
+  $mysqli -> query("UPDATE Products SET main = '2' WHERE id = '$_POST[t2]'");
+  $mysqli -> query("UPDATE Products SET main = '3' WHERE id = '$_POST[t3]'");
+  
+  /*
   $t1 = $_POST[t1];
   $t2 = $_POST[t2];
   $t3 = $_POST[t3];
@@ -32,12 +39,6 @@ if($action == 'products_edit' && $_POST != ''){
   $t2Old = $result[products][1][id];
   $t3Old = $result[products][2][id];
   
-  if($t1 != $t1Old && $t2 != $t2Old && $t3 != $t3Old){
-    for($i = 1; $i = 3; $i++){
-      $mysqli -> query("UPDATE Products SET main = '-' WHERE id = '$result[products][$i][id]'");
-    }
-  }
-  /*
   $control = 0;
   
   foreach($_POST as $value){
