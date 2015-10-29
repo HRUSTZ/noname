@@ -11,10 +11,10 @@ body{
   font: 16px/1.5em Noto Sans, sans-serif;
 }
 .container{
-  position: relative;
   width: 100%;
-  min-width: 1280px;
+  min-width: 1152px;
   min-height: 100%;
+  position: relative;
 }
 .notice {
   background-color:rgba(0, 121, 107, 0.6);
@@ -65,9 +65,8 @@ body{
 header{
   display: flex;
   height: 110px;
-  width: 1280px;
+  width: 1152px;
   margin: 0 auto;
-  font-size: 22px;
 }
 .header-content{
   margin: auto;
@@ -75,11 +74,6 @@ header{
 .company-logo{
   max-height: 100px;
   max-width: 150px;
-}
-.company-name{
-  font-size: 50px;
-  font-weight: bold;
-  color: #000;
 }
 .company-phone,
 .company-address{
@@ -89,7 +83,7 @@ header{
 .address-icon{
   position: relative;
   margin: 5px 0; 
-  font-size: 26px;
+  font-size: 24px;
   font-weight: bold;
 }
 .address-icon:before{
@@ -129,7 +123,7 @@ header{
 
 
 nav{
-  height: 62px;
+  height: 50px;
   width: 100%;
   background: linear-gradient(to top, #036ca6, #028ec9);
   box-shadow: 0 0 10px rgba(0,0,0,.5) inset;
@@ -137,50 +131,50 @@ nav{
 .nav-content{
   display: flex;
   height: 100%;
-  width: 1280px;
+  width: 1152px;
   margin: 0 auto;
   align-items: center;
 }
 .nav-btn{
   display: flex;
-  width: 205px;
-  height: 40px;
-  margin-right: 10px;
-  border: 1px solid #fff;
+  width: 120px;
+  height: 34px;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
   text-transform: uppercase;
   color: #fff;
+  margin-left: 8px;
 }
 .nav-btn:hover{
   color: #036ca6;
 }
 .search-form{
   display: flex;
-  height: 42px;
+  height: 34px;
+  margin-left: 304px;
 }
 .search-form input{
   height: 100%;
-  width: 515px;
+  width: 370px;
   padding: 0 0 0 10px;
   border: 0;
   outline: 0;
-  font-size: 20px; 
+  font-size: 16px; 
 }
 ::-webkit-input-placeholder{
   color: #036ca6;
+  font-weight: bold;
 }
 .signin-btn,
 .search-btn{
-  height: 42px;
-  width: 42px;
-  margin-left: 10px;
+  height: 34px;
+  width: 34px;
+  margin-left: 8px;
   padding: 0;
-  border: 1px solid #fff;
   cursor: pointer;
   background: 0;
   color: #fff;
+  border: 0;
 }
 .signin-btn i,
 .search-btn i{
@@ -198,7 +192,7 @@ nav{
   background-color: #036ca6;
   position:absolute;
   left:50%;
-  width:1280px;
+  width: 1152px;
   margin-left:-640px;
   display:none;
   z-index:2;
@@ -242,7 +236,7 @@ nav{
   color: #036ca6;
   font-weight: bold;
   height: 30px;
-  font-size: 20px;
+  font-size: 16px;
   border: 1px solid #036ca6;
 }
 
@@ -305,7 +299,7 @@ input[type="submit"]:hover{
   height: 40px;
   width: 200px;
   color: #fff;
-  font-size: 24px;
+  font-size: 16px;
   border: 2px solid #fff;
   text-transform: uppercase;
   margin: auto;
@@ -361,103 +355,152 @@ input[type="submit"]:hover{
   padding-bottom: 50px;
 }
 .main-about{
-  position: relative;
   height: 400px;
-  width: 1280px;
-  margin: 0 auto;
-  background: url(/assets/img/city.png) center no-repeat;
-  background-size: cover;
+  width: 1152px;
+  margin: 25px auto;
+  display: flex;
 }
-.upper-layer{
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 400px;
-  width: 100%;
-  background: rgba(238, 238, 238, .85);
+.about-img{
+  width: 742px;
+  height: 100%;
+  border-right: 8px solid #343434;
 }
 .about-content{
-  position: relative;
-  z-index: 1;
   height: 100%;
-  padding-top: 50px;
+  width: 402px;
+  background: #036ca6;
+  color: #fff;
 }
 .about-content h1{
-  font-size: 34px;
+  font-size: 24px;
   font-weight: bold;
-  color: #000;
   text-align: center;
   text-transform: uppercase;
+  margin: 25px 0;
 }
 .about-content p{
-  width: 800px;
-  margin: 50px auto;
   text-align: justify;
-  color: #000;
-  font-size: 18px;
+  margin: 0 25px;
+}
+.main-services{
+  width: 1152px;
+  margin: 0 auto 25px;
+  background: #036ca6;
+  padding-top: 25px;
+}
+.main-services h1{
+  text-align: center;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #fff;
+
+}
+.main-services-content{
+  display: flex;
+  height: 397px;
+
+}
+.main-service{
+  width: 350px;
+  margin-left: 25px;
+  background: #fff;
+  height: 372px;
+}
+.main-service p i{
+  font-size: 40px;
+  color: #036ca6;
+  margin-top: 25px;
+
+}
+.main-service p{
+  text-align: center;
+  margin: 0 25px 25px;
+
+}
+.main-art-and-prod{
+  display: flex;
+  width: 1152px;
+  margin: 0 auto 25px;
+  background: #036ca6;
+
 }
 .main-articles{
-  width: 100%;
-  padding-top: 50px;
+  position: relative;
+  width: 776px;
+  padding-top: 25px;
+}
+.main-articles:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 773px;
+  height: 100%;
+  width: 1px;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(255,255,255,1), rgba(0,0,0,0));;
+}
+.main-articles:before{
+  
 }
 .main-products{
-  width: 100%;
-  padding-top: 50px;
-  background: rgba(238, 238, 238, .85);
+  width: 376px;
+  padding-top: 25px;
 }
-.main-products-content,
+.main-products-content{
+  
+}
 .main-articles-content{
-  width: 1280px;
-  margin: 0 auto;
+  margin: 25px 25px 25px 0;
 }
 .main-products h1,
 .main-articles h1{
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   text-align: center;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 24px;
   text-transform: uppercase;
+  color: #fff;;
 }
 .main-products-block,
 .main-articles-block{
-  display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
 .main-article{
-  height: 400px;
-  width: 398px;
-  margin-left: 20px;
+  height: 225px;
+  width: 684px;
   text-align: justify;
+  display: flex;
+  border-left: 8px solid #343434;
+  background: #fff;
+  margin: 0 51px 25px 25px;
 }
 .main-article-img{
-  height: 298px;
-  width: 398px;
+  height: 175px;
+  width: 233px;
+  margin: 25px;
 }
 .main-article-name{
   display: block;
   max-height: 72px;
   margin: 0 5px;
-  font-size: 14px;
   overflow: hidden;
 }
 .main-article-date{
   margin-left: 5px;
+  font-size: 14px;
 }
 .main-product{
   position: relative;
-  height: 298px;
-  width: 398px;
-  margin-left: 20px;
+  height: 225px;
+  width: 300px;
+  margin: 0 25px 25px 51px;;
 }
 .main-right-link{
   display: flex;
   justify-content: flex-end;  
 }
 .main-right-link a{
-  margin: 0 50px 50px 0;
-  color: #000;
-  font-size: 20px;
+  margin: 0 51px 25px 0;
+  color: #fff;
   text-decoration: underline;
 }
 .main-right-link i{
@@ -466,8 +509,8 @@ input[type="submit"]:hover{
 }
 
 .best-product-img{
-  height: 100%;
-  width: 100%;
+  height: 225px;
+  width: 300px;
 }
 
 .best-product-info{
@@ -493,7 +536,7 @@ input[type="submit"]:hover{
   font-size: 26px;
   color: #fff;
   width: 280px;
-  height: 50px;
+  height: 30px;
   border-bottom: 2px solid #fff;
   margin: 0 auto;
   display: flex;
@@ -508,7 +551,7 @@ input[type="submit"]:hover{
   display: block;
   width: 240px;
   margin: 20px auto 0;
-  height: 130px;
+  height: 78px;
 }
 
 .best-product-price{
@@ -893,6 +936,5 @@ footer{
   justify-content: center;
   background: linear-gradient(to top, #036ca6, #028ec9);
   box-shadow: 0 0 10px rgba(0,0,0,.5) inset;
-  font-size: 18px;
   color: #fff;
 }

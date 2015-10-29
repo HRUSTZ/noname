@@ -38,3 +38,7 @@
 .fa-rub:before{
   content: "\f158";
 }
+
+.fa-star:before{
+  content: "\f005";
+}

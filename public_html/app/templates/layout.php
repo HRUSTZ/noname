@@ -11,7 +11,6 @@
   <div class="container">
     <header>
       <a class="header-content" href="/main"><img class="company-logo" src="/assets/img/logo.png" alt="ООО Коракс"></a>
-      <a class="header-content company-name" href="/main">Коракс</a>
       <div class="header-content company-address">
         <p>Ростов-на-Дону</p>
         <p class="address-icon">ул. Социалистическая, 88</p>
@@ -71,7 +70,7 @@
 
     <?=$content?>
 
-    <footer>2015 © ООО"Коракс"</footer>    
+    <footer>2015 © ООО "Коракс"</footer>    
 
   </div>
 
