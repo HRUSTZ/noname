@@ -15,6 +15,7 @@ body{
   min-width: 1152px;
   min-height: 100%;
   position: relative;
+  background: #eef;
 }
 .notice {
   background-color:rgba(0, 121, 107, 0.6);
@@ -352,7 +353,7 @@ input[type="submit"]:hover{
 .main-content{
   position: relative;
   width: 100%;
-  padding-bottom: 50px;
+  padding-bottom: 50px;;
 }
 .main-about{
   height: 400px;
@@ -499,7 +500,7 @@ input[type="submit"]:hover{
   justify-content: flex-end;  
 }
 .main-right-link a{
-  margin: 0 51px 25px 0;
+  margin: 0 56px 25px 0;
   color: #fff;
   text-decoration: underline;
 }
@@ -528,7 +529,6 @@ input[type="submit"]:hover{
 
 .best-product-info:hover{
   opacity: .85;
-  transform: translate(10px, 10px);
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
 }
 
@@ -795,6 +795,7 @@ input[type="submit"]:hover{
   padding-top: 25px;
   width: 1000px;
   margin: 0 auto;
+  padding-bottom: 50px;;
 }
 .catalog h1{
     color: #036ca6;
