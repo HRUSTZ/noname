@@ -465,20 +465,12 @@ input[type="submit"]:hover{
 }
 .main-articles{
   position: relative;
-  width: 776px;
+  width: 750px;
   padding-top: 25px;
-}
-.main-articles:after{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 773px;
-  height: 100%;
-  width: 1px;
-  background: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(255,255,255,1), rgba(0,0,0,0));;
-}
-.main-articles:before{
-  
+  border-right: 2px solid;
+  border-image: linear-gradient(to top, rgba(0, 0, 0, 0),
+                                        rgba(255,255,255,1),
+                                        rgba(0, 0, 0, 0)) 0 100% 0 0;
 }
 .main-products{
   width: 376px;
@@ -504,12 +496,12 @@ input[type="submit"]:hover{
 }
 .main-article{
   height: 225px;
-  width: 684px;
+  width: 692px;
   text-align: justify;
   display: flex;
   border-left: 8px solid #343434;
   background: #fff;
-  margin: 0 51px 25px 25px;
+  margin: 0 25px 25px 25px;
 }
 .main-article-img{
   height: 175px;
@@ -537,7 +529,7 @@ input[type="submit"]:hover{
   justify-content: flex-end;  
 }
 .main-right-link a{
-  margin: 0 56px 25px 0;
+  margin: 0 25px 25px 0;
   color: #fff;
   text-decoration: underline;
 }
@@ -700,7 +692,7 @@ input[type="submit"]:hover{
   margin: 0 auto;
   padding: 25px 0 50px;
 }
-.news-content{
+.news-block{
   padding-top: 25px;
   background: #036ca6;
 }
@@ -717,9 +709,9 @@ input[type="submit"]:hover{
 .news-article{
   width: 875px;
   height: 275px;
-  margin: 0 auto 25px;
   background: #fff;
   display: flex;
+  margin: 0 auto 25px;
 }
 .news-article-img{
   height: 225px;
@@ -730,7 +722,10 @@ input[type="submit"]:hover{
   width: 500px;
   height: 225px;
   margin: 25px 25px 25px 0;
-}
+
+  border: 0;
+.border:last-of-type{
+}}
 .news-article-name{
   font-size: 19px;
   color: #000;
@@ -747,16 +742,56 @@ input[type="submit"]:hover{
 .news-article-date{
   font-size: 14px;
 }
+.border{
+  width: 875px;
+  margin: 25px auto 0;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to left, rgba(0, 0, 0, 0),
+                                         rgba(0, 0, 0, 0),
+                                         rgba(255,255,255,1),
+                                         rgba(0, 0, 0, 0),
+                                         rgba(0, 0, 0, 0)) 0 0 100%;
+}
+.border:last-of-type{
+  border: 0;
+}
 
 
 /*============================= СТРАНИЦА ВСЕХ ПРОДУКТОВ ==================================*/
 
 
 .products{
-
+  width: 1152px;
+  margin: 0 auto;
+  padding: 25px 0 50px 0;
 }
 .products-content{
+  background: #036ca6;
+  display: flex;
+}
+.products-filter{
+  width: 277px;
+}
+.products-filter h1,
+.products-catalog h1{
+  font-size: 24px;
+  margin: 25px 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
 
+}
+.products-catalog{
+  width: 875px;
+
+}
+.products-catalog-content{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.product{
+  
 }
 
 

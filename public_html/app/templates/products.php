@@ -12,7 +12,7 @@
       <section class="products-catalog-content">
         <? foreach($cont[cont] as $value): ?>         
         <article class="product">
-          <a class="product-img" href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
+          <a href="/products/number/<?= $value[id]?>"><img class="product-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
           <h2 class="product-name"><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></h2>
           <p class="product-description"><?= $value[description]?></p>
           <p class="product-price"><?= $value[price]?><i class="fa fa-rub"></i></p>
