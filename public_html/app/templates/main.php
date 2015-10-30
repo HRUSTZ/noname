@@ -36,6 +36,7 @@
           <a href="/news/article/<?= $value[id]?>"><img class="main-article-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
           <div class="main-articles-content">
             <a class="main-article-name" href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
+            <?= $value[description]?>
             <p class="main-article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
           </div>
         </article>

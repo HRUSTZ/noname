@@ -10,7 +10,7 @@
         <div class="post-right">
           <div class="description">
             <a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
-            <p><?= $value[text]?></p>
+            <p><?= $value[description]?></p>
           </div>
           <div class="more flex">
             <p><?echo rus_date("j F Y", strtotime($value[date]))?></p>
