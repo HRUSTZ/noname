@@ -1,15 +1,15 @@
-<section class="catalog">
-  <div class="catalog-content flex">
-    <section class="catalog-filter">
+<section class="products">
+  <div class="products-content">
+    <section class="products-filter">
       <h1>Категории</h1>
       <a href="/products">Все товары</a>
       <? foreach($cont[cat] as $value): ?>
         <a href="/products/<?= $value[name]?>"><?= $value[translation]?></a>
       <? endforeach; ?>
     </section>
-    <section class="catalog-products">
+    <section class="products-catalog">
       <h1><?= $cont[title]?></h1>
-      <section class="block-products flex">
+      <section class="products-catalog-content">
         <? foreach($cont[cont] as $value): ?>         
         <article class="product">
           <a class="product-img" href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
@@ -18,7 +18,7 @@
           <p class="product-price"><?= $value[price]?><i class="fa fa-rub"></i></p>
         </article>
         <? endforeach; ?>
-        <?= $cont[clean] //выводится если нет ниодного товара на странице(удали как прочтешь)?>
+        <?= $cont[clean]?>
       </section>
     </section>
   </div>        

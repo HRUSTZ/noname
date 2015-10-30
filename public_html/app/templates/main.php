@@ -1,7 +1,7 @@
 <section class="main-content">
   
   <section class="main-about">
-    <img class="about-img" src="/assets/img/city.png" alt="">
+    <img class="about-img" src="/assets/img/city.jpg" alt="">
     <section class="about-content">
       <h1><?= $cont[text][title]?></h1>
       <p><?= $cont[text][about]?></p>

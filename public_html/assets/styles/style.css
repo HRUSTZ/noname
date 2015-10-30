@@ -15,7 +15,7 @@ body{
   min-width: 1152px;
   min-height: 100%;
   position: relative;
-  background: #eef;
+  background: #d3e6fd;
 }
 .notice {
   background-color:rgba(0, 121, 107, 0.6);
@@ -50,14 +50,50 @@ body{
   background: #fff;
   z-index: -1;
   opacity: 0;
-  transform: scale3d(.5, .5, 1);
   transition: all .5s;
   transition-timing-function: ease;
+  transform: scale3d(.5, .5, 1);
 }
 .button-anim:hover::before{
   opacity: 1;
   transform: translate3d(0, 0, 0);
 }
+
+
+/*============================== ПЕРЕКЛЮЧАТЕЛЬ СТРАНИЦ ================================*/
+
+.page-selector{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 25px;;
+
+}
+
+.page-selector > a{
+  font-size: 24px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  margin: 0 5px 25px 0;
+}
+
+.switch-item{
+   color: #fff;
+}
+
+.switch-item-cur{
+  color: #036ca6;
+  background-color: #fff;
+}
+
+.switch-item:hover{
+  color: #028ec9;
+  background: #fff;
+}
+
 
 
 /*======================================== ШАПКА ========================================*/
@@ -417,6 +453,7 @@ input[type="submit"]:hover{
 .main-service p{
   text-align: center;
   margin: 0 25px 25px;
+  color: #343434;
 
 }
 .main-art-and-prod{
@@ -655,214 +692,76 @@ input[type="submit"]:hover{
 
 
 
-/*---------------------------------- СТРАНИЦА ВСЕХ НОВОСТЕЙ ----------------------------------*/
+/*============================== СТРАНИЦА ВСЕХ НОВОСТЕЙ =================================*/
 
-.block-news{
+
+.news{
+  width: 1152px;
   margin: 0 auto;
-  width: 1000px;
-  padding-bottom: 50px;
-
+  padding: 25px 0 50px;
 }
-
-
-
 .news-content{
-  width: 100%;
+  padding-top: 25px;
+  background: #036ca6;
 }
-
-.news-content h1{
-  color: #036ca6;
-  height: 25px;
-  font-size: 28px;
+.news-title h1{
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
   text-transform: uppercase;
-  margin: 25px 0 25px 25px;
+  color: #fff;
 }
-
-.post{
-  height: 350px;
-  width: 948px;
-  background-color: #fff;
-  border: 1px solid #036ca6;
+.news-title i{
+  margin-right: 10px;
+}
+.news-article{
+  width: 875px;
+  height: 275px;
+  margin: 0 auto 25px;
+  background: #fff;
   display: flex;
-  margin: 0 25px 25px;
 }
-
-.post:last-child{
-  margin: 50px auto;
+.news-article-img{
+  height: 225px;
+  width: 300px;
+  margin: 25px;
 }
-
-.post-left{
-  display: block;
-  width: 400px;
-  height: 300px;
-  margin: 25px; 
-}
-
-.post-picture{
-  height: 100%;
-  width: 100%;
-  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
-}
-
-.post-right{
-  width: 475px;
-  height: 300px;
+.news-articles-content{
+  width: 500px;
+  height: 225px;
   margin: 25px 25px 25px 0;
 }
-
-.description{
-  height: 275px;
-}
-
-.description a{
-  font-size: 24px;
-  margin-bottom: 25px;
-  max-height: 50px;
-  overflow: hidden;
-  font-weight: bold;
-  color: #036ca6;
+.news-article-name{
+  font-size: 19px;
+  color: #000;
   display: block;
-  min-height: 28px;
-}
-
-.description p{
-  max-height: 190px;
+  height: 48px;
+  margin-bottom: 5px;
+  font-weight: bold;
   overflow: hidden;
+}
+.news-article-description{
+  height: 144px;
+  margin-bottom: 4px;
+}
+.news-article-date{
   font-size: 14px;
 }
 
-.description a:hover{
-  color: #028ec9;
-}
 
-.more{
-  height: 25px;
-  justify-content: space-between;
-}
+/*============================= СТРАНИЦА ВСЕХ ПРОДУКТОВ ==================================*/
 
-.more p{
-  font-size: 12px;
-  font-weight: 600;
-  color: #565656;
-}
 
-.more a{
-  color: #565656;
-  font-size: 12px;
-}
+.products{
 
-.more a:hover{
-  color: #343434;
 }
-
-.page-selector{
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  margin-bottom: 25px;;
+.products-content{
 
 }
 
-.page-selector > a{
-  font-size: 24px;
-  width: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  margin-right: 5px;
-}
 
-.switch-item{
-   color: #036ca6;
-}
 
-.switch-item-cur{
-  color: #fff;
-  background-color: #036ca6;
-}
 
-.switch-item:hover{
-  color: #028ec9;
-}
-/*---------------------------------- СТРАНИЦА ВСЕХ ПРОДУКТОВ ----------------------------------*/
-
-.block-products{
-  flex-wrap: wrap;
-  width: 675px;
-}
-.catalog{
-  padding-top: 25px;
-  width: 1000px;
-  margin: 0 auto;
-  padding-bottom: 50px;;
-}
-.catalog h1{
-    color: #036ca6;
-    height: 25px;
-    font-size: 28px;
-    text-transform: uppercase;
-    margin: 0 0 25px 25px;
-}
-.catalog-products{
-  
-}
-.catalog-filter{
-  width: 325px;
-
-}
-.product{
-  height: 516px;
-  border: 1px solid #036ca6;
-  box-sizing: border-box;
-  margin: 0 0 25px 25px;
-  width: 300px;
-  background-color: #fff;
-}
-.product-img{
-  width: 298px;
-  height: 225px;
-  display: block;
-}
-.product-img img{
-  height: 100%;
-  width: 100%;
-}
-.product-name{
-  font-size: 18px;
-  overflow: hidden;
-  margin: 25px 25px 10px 25px;
-  max-height: 50px;
-  height: 50px;
-}
-.product-name a{
-  color: #036ca6;
-  
-}
-.product-name a:hover{
-  color: #028ec9;
-}
-.product-description{
-  font-size: 12px;
-  overflow: hidden;
-  height: 142px;
-  margin: 0 25px;
-  text-align: justify;
-  border-top: 1px solid #565656;
-  border-bottom: 1px solid #565656;
-}
-.product-price{
-  font-size: 20px;
-  color: #565656;
-  height: 25px;
-  margin: 10px 25px 25px 25px;
-  overflow: hidden;
-}
-
-.product-price i{
-  margin-left: 5px;
-  
-}
 /*registration*/
 
 .registration{
