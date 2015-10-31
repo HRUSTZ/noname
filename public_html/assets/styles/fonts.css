@@ -9,7 +9,6 @@
   font-weight: normal;
   font-style: normal;
 }
-
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -18,30 +17,30 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .fa-search:before {
   content: "\f002";
 }
-
 .fa-sign-in:before {
   content: "\f090";
 }
-
 .fa-long-arrow-left:before{
   content: "\f177";
 }
-
 .fa-long-arrow-right:before{
   content: "\f178";
 }
-
 .fa-rub:before{
   content: "\f158";
 }
-
 .fa-star:before{
   content: "\f005";
 }
 .fa-newspaper-o:before{
   content: "\f1ea";
+}
+.fa-user-plus:before{
+  content: "\f234";
+}
+.fa-users:before{
+  content: "\f0c0";
 }

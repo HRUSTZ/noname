@@ -1,7 +1,7 @@
 <section class="news">
       
   <section class="news-block">
-    <div class="news-title">
+    <div class="page-title">
       <h1><i class="fa fa-newspaper-o"></i>Все новости</h1>
     </div>
     <section class="news-content">

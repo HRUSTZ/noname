@@ -39,6 +39,7 @@ body{
   z-index: 1;
   transition: all .5s;
   transition-timing-function: ease;
+  outline: 0;
 }
 .button-anim::before{
   content: '';
@@ -93,7 +94,6 @@ body{
   color: #028ec9;
   background: #fff;
 }
-
 
 
 /*======================================== ШАПКА ========================================*/
@@ -225,126 +225,30 @@ nav{
 /*======================================== БЛОК РЕГИСТРАЦИИ/АВТОРИЗАЦИИ --------------------------------*/
 
 #drop-form{
-  height: 328px;
+  height: 392px;
   background-color: #036ca6;
   position:absolute;
   left:50%;
   width: 1152px;
-  margin-left:-640px;
+  margin-left:-576px;
   display:none;
   z-index:2;
   box-shadow:0 0 10px 1px rgba(0,0,0,0.3) inset;
   align-items:center;
 }
-
-.login-form{
-  width: 400px;
-  height: 228px;
-  margin: 25px;
+.drop-sign-in{
   padding: 25px;
-  background: #fff;
-
+  height: 350px;
 }
-
-.login-form h1{
-  text-align: center;
-  color: #036ca6;
-  font-size: 24px;
-
-}
-
-.login-form h1::after{
-    content:' ';
-    display:block;
-    width:100%;
-    height:2px;
-    margin-top:10px;
-}
-
-.login-form label{
-  color: #036ca6;;
-  
-}
-
-.login-form input{
-  width: 386px;
-  padding-left: 10px;
-  margin: 5px 0;
-  color: #036ca6;
-  font-weight: bold;
-  height: 30px;
-  font-size: 16px;
-  border: 1px solid #036ca6;
-}
-
-.login-btn{
-  height: 40px;
-  width: 150px;
-  position: relative;
-  text-transform: uppercase;
-  background: #fff;
-  cursor: pointer;
-  margin: 16px 125px 0 125px;
-  z-index: 1;
-}
-
-
-.login-btn input{
-  padding: 0;
-  height: 100%;
-  width: 100%;
-  background: 0;
-  margin: 0;
-
-}
-
-.login-btn::before,
-.registr::before{
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: -1;
-  opacity: 0;
-  transform: scale3d(0.7, 1, 1);
-  transition: transform .4s, opacity .4s;
-  transition-timing-function: ease;
-}
-.login-btn::before{
-  background: #036ca6;
-}
-.login-btn:hover::before,
-.registr:hover::before{
-  opacity: 1;
-  transform: translate3d(0, 0, 0);
-}
-
-input[type="submit"]:hover{
-  color: #fff;
-}
-
-.registr:hover{
-  color: #036ca6;
-}
-
-.registr{
-  position: relative;
+.drop-sign-up{
   display: flex;
-  height: 40px;
-  width: 200px;
-  color: #fff;
-  font-size: 16px;
-  border: 2px solid #fff;
-  text-transform: uppercase;
-  margin: auto;
-  justify-content: center;
   align-items: center;
-  transition: all .4s;
-  transition-timing-function: ease;
-  z-index: 1;
+  height: 100%;
+  width: 626px;
+  justify-content: center;
+}
+.drop-sign-up button{
+  border-color: #fff;
 }
 
 /* Блок авторизации / регистрации 
@@ -696,14 +600,14 @@ input[type="submit"]:hover{
   padding-top: 25px;
   background: #036ca6;
 }
-.news-title h1{
+.page-title h1{
   margin-bottom: 25px;
   text-align: center;
   font-size: 24px;
   text-transform: uppercase;
   color: #fff;
 }
-.news-title i{
+.page-title i{
   margin-right: 10px;
 }
 .news-article{
@@ -722,10 +626,7 @@ input[type="submit"]:hover{
   width: 500px;
   height: 225px;
   margin: 25px 25px 25px 0;
-
-  border: 0;
-.border:last-of-type{
-}}
+}
 .news-article-name{
   font-size: 19px;
   color: #000;
@@ -795,36 +696,16 @@ input[type="submit"]:hover{
 }
 
 
+/*========================= СТРАНИЦА ОДНОЙ НОВОСТИ ===========================*/
 
+.article{
 
-/*registration*/
-
-.registration{
-  height: 900px;
-  background-color: #ccc;
 }
-
-/*authorization*/
-
-.authorization-page{
-  height: 200px;
-}
-
-/*about*/
-
-.about{
-  height: 900px;
-  background-color: #ccc;
-}
-
-/*-------------------------------- СТРАНИЦА ОДНОЙ НОВОСТИ ----------------------------*/
-
-.article-page{
+.article-content{
   padding-top: 25px;
-  width: 1000px;
+  width: 1152px;
   margin: 0 auto;
 }
-
 .article-title{
   color: #036ca6;
   height: 25px;
@@ -832,30 +713,83 @@ input[type="submit"]:hover{
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-
 .article-img{
   max-width: 500px;
   max-height: 375px;
   margin: 0 25px 10px 25px;
   box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
   float: left;
-
 }
-
 .article-text{
   margin: 0 25px 25px 25px;
   text-align: justify;
   width: 950px;
-
 }
-
 .article-date{
   margin: 0 0 25px 25px;
   color: #565656;
   font-size: 14px;
   clear: both;
-
 }
+
+
+/*==================== СТРАНИЦЫ АВТОРИЗАЦИИ/РЕГИСТРАЦИИ =========================*/
+
+.sign-up,
+.sign-in{
+  width: 1152px;
+  margin: 0 auto;
+  padding: 25px 0 50px;
+}
+.sign-up-content,
+.sign-in-content{
+  background: #036ca6;
+  padding: 25px 0;
+  margin-bottom: 25px;
+}
+.sign-up-form{
+  height: 362px;
+  width: 426px;
+}
+.sign-in-form{
+  height: 210px;
+  width: 426px;
+}
+.form{
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+}
+.form input{
+  width: 414px;
+  padding-left: 10px;
+  margin: 10px auto;
+  color: #036ca6;
+  font-weight: bold;
+  height: 30px;
+  font-size: 16px;
+  border: 1px solid #036ca6;
+  display: block;
+}
+.form label{
+  color: #036ca6; 
+}
+.form-btn:hover{
+  color: #036ca6;
+}
+.form-btn{
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  text-transform: uppercase;
+  margin: 14px 137px 0;
+  padding: 0;
+  outline: 0;
+  background: #036ca6;
+  border: 1px solid #036ca6;
+  color: #fff;
+}
+
 
 /*======================================== ПОДВАЛ ========================================*/
 

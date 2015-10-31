@@ -1,14 +1,26 @@
-<section class="registration">
-  <div class="wrap">
-    <div class="popup">
-      <form action="/registration" method="POST">
-        <input type="text" class="text reg" name="login" placeholder="Email:" maxlength="32"/>
-        <input type="password" class="text reg" name="password1" maxlength="16" placeholder="Пароль:"/>
-        <input type="password" class="text reg" name="password2" maxlength="16" placeholder="Повторите пароль:"/>
-        <input type="name" class="text reg" name="name" placeholder="Ваше имя: "/>
-        <input type="checkbox" name="check">Согласен с условием
-        <input type="submit" value="Регистрация">
-      </form>
+<section class="sign-up">
+  <section class="sign-up-content">
+    <div class="page-title">
+      <h1><i class="fa fa-user-plus"></i>Регистрация</h1>
     </div>
-  </div>
+    <form class="form sign-up-form" action="/registration" method="POST">
+      <div>
+        <label for="name">Фамилия и имя</label>
+        <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="user-email">Email</label>
+        <input type="email" id="user-email" required>
+      </div>
+      <div>
+        <label for="password1">Пароль</label>
+        <input type="password" id="password1" required>
+      </div>
+      <div>
+        <label for="password2">Повторите пароль</label>
+        <input type="password" id="password2" required>
+      </div>
+      <button class="form-btn button button-anim" type="submit">Регистрация</button> 
+    </form>
+  </section>
 </section>
