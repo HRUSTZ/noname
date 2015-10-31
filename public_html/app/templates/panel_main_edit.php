@@ -9,7 +9,7 @@
 Изменение "достоинств/услуг"
 <form action="/panel/main_edit/services_edit" method="POST">
   <? foreach($cont[servicesText] as $value): ?>
-    <input type="text" name="s<?=$value[id]?>" value="<?=$value[about]?>"/>
+    <textarea name="s<?=$value[id]?>"><?=$value[about]?></textarea>
   <? endforeach; ?>
   <input type="submit" value="Подтведить">
 </form>
@@ -35,5 +35,3 @@
       </tr>
     <? endforeach; ?>
   </table>
-
-  

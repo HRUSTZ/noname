@@ -49,7 +49,7 @@ if($action == 'products_edit' && $_POST){
   if($t1 == $t2 || $t2 == $t3 || $t1 == $t3){
     $control = 'Введены одинаковые значения';
   }
-  
+    
   if(!$control){
     $mysqli -> query("UPDATE Products SET main = '-' WHERE main = '1' || main = '2' || main = '3'");
     
