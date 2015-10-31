@@ -65,12 +65,25 @@ function page($p1, $p2, $p3, $p4 = 5, $p5 = true){ //переключение с
   }
 }
 
-function momentNotice($text){
+function momentNotice($text){ //мгновенный вывод оповещения
   echo "<script>function addEvent(element, eventName, fn) {if (element.addEventListener)element.addEventListener(eventName, fn, false);else if (element.attachEvent)element.attachEvent('on' + eventName, fn);}
          addEvent(window, 'load', function(){ notice(' ".$text." ') }); </script>";
 }
+ 
+function inputNotice($text){ //ввод оповещения в сессию
+  $_SESSION['notice'] = $text;
+}
 
-function rus_date(){ //Перевод даты
+function outputNotice(){ //вывод оповещения из сессии
+  $notice = $_SESSION['notice'];
+  if($notice){
+    unset($_SESSION['notice']);
+    echo "<script>function addEvent(element, eventName, fn) {if (element.addEventListener)element.addEventListener(eventName, fn, false);else if (element.attachEvent)element.attachEvent('on' + eventName, fn);}
+          addEvent(window, 'load', function(){ notice(' ".$notice." ') }); </script>";
+  }
+}
+
+function rus_date(){ //перевод даты
   $translate = array(
     "am" => "дп",
     "pm" => "пп",
@@ -119,17 +132,16 @@ function rus_date(){ //Перевод даты
     "rd" => "е",
     "th" => "ое"
   );
-  // если передали дату, то переводим ее
-  if(func_num_args() > 1){
+  
+  if(func_num_args() > 1){ //если передали дату, то переводим ее
     $timestamp = func_get_arg(1);
     return strtr(date(func_get_arg(0), $timestamp), $translate);
-  } else {
-    // иначе текущую дату
+  } else { //иначе текущую дату
     return strtr(date(func_get_arg(0)), $translate);
   }
 }
 
-function translate($string){
+function translate($string){ //замена кириллицы латиницей
   $replace = [
     'а' => 'a',   'б' => 'b',
     'в' => 'v',   'г' => 'g',

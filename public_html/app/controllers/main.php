@@ -2,7 +2,9 @@
 global $mysqli;
 
 $q = $mysqli -> query("SELECT * FROM Data");
-$result[text] = $q -> fetch_assoc();
+$txt = $q -> fetch_all(MYSQLI_ASSOC);
+$result[mainText] = $txt[3];
+$result[servicesText] = array($txt[0], $txt[1], $txt[2]);
 
 $q = $mysqli -> query("SELECT * FROM News ORDER BY id DESC LIMIT 0, 3");
 $result[news] = $q -> fetch_all(MYSQLI_ASSOC);

@@ -1,63 +1,83 @@
 <?
 $action = $query[3];
 
-$q = $mysqli -> query("SELECT title, about FROM Data");
-$result[text] = $q -> fetch_assoc();
+if($action == 'text_edit' && $_POST){
+  $newTitle = $_POST[title];
+  $newAbout = $_POST[about];
+  
+  if($newTitle != '' && $newAbout != ''){
+    $mysqli -> query("UPDATE Data SET title = '$newTitle', about = '$newAbout' WHERE id = '4'");
+    inputNotice('Данные успешно изменены');
+    header('Location: /panel/main_edit');
+    exit();
+  } else{
+    inputNotice('Заполнены не все поля');
+  }
+}
+
+if($action == 'services_edit' && $_POST){
+  if($_POST[s1] != '' && $_POST[s2] != '' && $_POST[s3] != ''){
+    $i = 1;
+    
+    foreach($_POST as $value){
+      $mysqli -> query("UPDATE Data SET about = '$value' WHERE id = '$i'");
+      $i++;
+    }
+    
+    inputNotice('Данные успешно изменены');
+    header('Location: /panel/main_edit');
+    exit();
+  } else{
+    inputNotice('Заполнены не все поля');
+  }
+}
+  
+if($action == 'products_edit' && $_POST){
+  $t1 = $_POST[t1];
+  $t2 = $_POST[t2];
+  $t3 = $_POST[t3];
+  
+  $control = false;
+  
+  $q = $mysqli -> query("SELECT COUNT(*) FROM Products WHERE id = '$t1' || id = '$t2' || id = '$t3'");
+  $idProd = $q -> fetch_row();
+  
+  if($idProd[0] != 3){
+    $control = 'Введены номера несуществующих товаров';
+  }
+  
+  if($t1 == $t2 || $t2 == $t3 || $t1 == $t3){
+    $control = 'Введены одинаковые значения';
+  }
+  
+  if(!$control){
+    $mysqli -> query("UPDATE Products SET main = '-' WHERE main = '1' || main = '2' || main = '3'");
+    
+    $i = 1;
+    
+    foreach($_POST as $value){
+      $mysqli -> query("UPDATE Products SET main = '$i' WHERE id = '$value'");
+      $i++;
+    }  
+    
+    inputNotice('Данные успешно изменены');
+    header("Location: /panel/main_edit");
+    exit;
+  } else{
+    inputNotice($control);
+  }
+}
+
+$q = $mysqli -> query("SELECT * FROM Data");
+$txt = $q -> fetch_all(MYSQLI_ASSOC);
+$result[mainText] = $txt[3];
+$result[servicesText] = array($txt[0], $txt[1], $txt[2]);
 
 $q = $mysqli -> query("SELECT id, name, main  FROM Products WHERE main = '1' || main = '2' || main = '3' ORDER BY main");
 $result[products] = $q -> fetch_all(MYSQLI_ASSOC);
 
 $q = $mysqli -> query("SELECT id, name, main FROM Products");
 $result[allProducts] = $q -> fetch_all(MYSQLI_ASSOC);
-
-if($action == 'text_edit' && $_POST != ''){
-  $newTitle = $_POST[title];
-  $newAbout = $_POST[about];
-  
-  if($newTitle != '' && $newAbout != ''){
-    $mysqli -> query("UPDATE Data SET title = '$newTitle', about = '$newAbout' WHERE id = '1'");
-    header('Location: /panel/main_edit');
-    exit();
-  } else{
-    echo('Незаполнены все поля');
-  }
-}
-
-if($action == 'products_edit' && $_POST != ''){
-  $mysqli -> query("UPDATE Products SET main = '-' WHERE main = '1' || main = '2' || main = '3'");
-  print_r($_POST);
-  $mysqli -> query("UPDATE Products SET main = '1' WHERE id = '$_POST[t1]'");
-  $mysqli -> query("UPDATE Products SET main = '2' WHERE id = '$_POST[t2]'");
-  $mysqli -> query("UPDATE Products SET main = '3' WHERE id = '$_POST[t3]'");
-  
-  /*
-  $t1 = $_POST[t1];
-  $t2 = $_POST[t2];
-  $t3 = $_POST[t3];
-  
-  $t1Old = $result[products][0][id];
-  $t2Old = $result[products][1][id];
-  $t3Old = $result[products][2][id];
-  
-  $control = 0;
-  
-  foreach($_POST as $value){
-    if($value == '1')$control++;
-    if($value == '2')$control++;
-    if($value == '3')$control++;
-  }
-  
-  if($control == 3){
-    foreach ($_POST as $key => $value){
-      $mysqli -> query("UPDATE Products SET main = '$value' WHERE id = '$key'");
-    }
-    header('Location: /panel/main_edit');
-    exit();
-  } else{
-    echo('Порядок распределен неправильно');
-  }
-  */
-}
 
 $title = "Редактирование главной страницы";
 $content = tpl("panel_main_edit", $result);
