@@ -10,14 +10,14 @@
 
   <section class="main-services">
     <h1>Наши услуги</h1>
-    <? foreach($cont[servicesText] as $value): ?>
     <section class="main-services-content">
+    <? foreach($cont[servicesText] as $value): ?>
       <section class="main-service">
         <p><i class="fa fa-star"></i></p>
         <p><?= $value[about]?></p>
       </section>
-    </section>
     <? endforeach; ?>
+    </section>
   </section>
   
   <section class="main-art-and-prod">
