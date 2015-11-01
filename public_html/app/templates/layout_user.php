@@ -46,7 +46,6 @@
             </button>
           </form>
           <button class="user-signin-btn button button-anim">
-            <p class="menu-user-name"><?=$name?></p>
             <i class="fa fa-user"></i>
           </button>
           <section class="menu-user">
