@@ -225,15 +225,67 @@ nav{
   color: #036ca6;
 }
 .menu-user{
-  height: 413px;
-  width: 576px;
-  background: #036ca6;
+  height: 309px;
+  background: #fff url(/assets/img/texture.png);
   display: none;
   position: absolute;
   top: 50px;
   right: 0;
   z-index: 1;
   box-shadow:0 0 10px 1px rgba(0,0,0,0.3) inset;
+}
+.menu-profile{
+  display: flex;
+
+}
+.user-profile{
+  width: 376px;
+
+}
+.user-profile .page-title h1{
+  color: #036ca6;
+  margin-top: 25px;
+}
+.user-info{
+  display: flex;
+  
+}
+.user-img{
+  width: 144px;
+  height: 144px;
+  margin: 0 25px 25px;
+}
+.user-ne{
+
+}
+.user-ne p{
+  margin: 0 25px 5px 0;
+
+}
+.admin-profile{
+  width: 200px;
+
+}
+.user-btns{
+  display: flex;
+
+}
+.user-edit-btn,
+.user-exit-btn{
+      cursor: pointer;
+    height: 40px;
+    width: 150px;
+    outline: 0;
+    border: 1px solid #036ca6;
+    color: #fff;
+    padding: 0;
+      text-transform: uppercase;
+      background: #036ca6;
+      margin-left: 25px;;
+}
+.user-edit-btn:hover,
+.user-exit-btn:hover{
+  color: #036ca6;
 }
 
 
@@ -258,7 +310,9 @@ nav{
 .drop-sign-in{
   padding-top: 25px;
   border-bottom: 2px solid;
-  border-image: linear-gradient(to left, rgba(0, 0, 0, 0),                                            rgba(3,108,166,1),                                           rgba(0, 0, 0, 0)) 0 0 100%;
+  border-image: linear-gradient(to left, rgba(0, 0, 0, 0),
+                                         rgba(3,108,166,1),
+                                         rgba(0, 0, 0, 0)) 0 0 100%;
 }
 .drop-sign-in .page-title h1{
   color: #036ca6;
@@ -482,14 +536,12 @@ nav{
   position: absolute;
   top: 0;
   left: 0;
-  width: 250px;
-  height: 175px;
+  width: 300px;
+  height: 225px;
   background: rgba(255,255,255,.85);
   transition: all .5s;
   transition-timing-function: ease;
   opacity: 0;
-  transform: scale3d(.5, .5, 1);
-  padding: 25px;
 }
 .main-product-info:hover{
   opacity: 1;
@@ -498,21 +550,22 @@ nav{
 .main-product-info p{
   overflow: hidden;
   text-align: center;
-  color: #036ca6;
+  color: #036ca6;;
 }
 .main-product-name{
   height: 48px;
-  margin-bottom: 5px;
   font-size: 19px;
   font-weight: bold;
+  margin: 25px 25px 5px 25px;
 }
 .main-product-description{
   height: 96px;
-  margin-bottom: 5px;
+  margin: 0 25px 5px;;
 }
 .main-product-price{
   height: 24px;
   font-weight: bold;
+  margin: 0 25px;
 }
 .main-product-price i{
   margin-left: 5px;
@@ -530,6 +583,7 @@ nav{
 .news-block{
   padding-top: 25px;
   background: #036ca6 url(/assets/img/texture.png);
+  margin-bottom: 25px;
 }
 .page-title h1{
   margin-bottom: 25px;

@@ -49,17 +49,27 @@
             <i class="fa fa-user"></i>
           </button>
           <section class="menu-user">
-            <section class="user-profile">
-              <img src="" alt="">
-              <div class="user-info">
-                <p></p>
-                <p></p>
-                <button></button>
-              </div>
-            </section>
-            <section class="admin-profile">
-              
-            </section>
+            <div class="menu-profile">
+              <section class="admin-profile">
+                
+              </section>
+              <section class="user-profile">
+                <div class="page-title">
+                  <h1><i class="fa fa-user"></i>Профиль</h1>
+                </div>
+                <div class="user-info">
+                  <img class="user-img" src="" alt="">
+                  <div class="user-ne">
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                  </div>
+                </div>
+                <div class="user-btns">
+                  <a href=""><button class="user-edit-btn button button-anim">Редактировать</button></a>
+                  <a href="/exit"><button class="user-exit-btn button button-anim">Выход</button></a>
+                </div>
+              </section>
+            </div>
           </section>
       </ul>
     </nav>
