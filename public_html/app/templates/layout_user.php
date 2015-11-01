@@ -40,7 +40,7 @@
           <a class="nav-btn button button-anim" href="/products">Каталог</a>
           <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
           <form class="search-form" action="">
-            <input type="text" placeholder="Поиск по сайту" required>
+            <input type="text" placeholder="Поиск в мастерской, скоро сделаем :)" required>
             <button class="search-btn button button-anim" type="submit">
               <i class="fa fa-search"></i>
             </button>

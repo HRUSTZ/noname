@@ -1,7 +1,7 @@
 (function( window ){
 
   $('.user-signin-btn').on('click', function(){    
-      $('.menu-user').toggle("slow");
+      $('.menu-user').slideToggle("slow");
   });
 
   $('.signin-btn').on('click', function(){    

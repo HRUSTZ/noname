@@ -766,34 +766,43 @@ nav{
 /*========================= СТРАНИЦА ОДНОЙ НОВОСТИ ===========================*/
 
 .article{
+  width: 1152px;
+  margin: 0 auto;
+  padding: 25px 0 50px;
 
 }
 .article-content{
-  padding-top: 25px;
-  width: 1152px;
-  margin: 0 auto;
-}
-.article-title{
-  color: #036ca6;
-  height: 25px;
-  font-size: 28px;
-  text-transform: uppercase;
+  background: #036ca6;
+  padding: 25px 0;
   margin-bottom: 25px;
 }
+.article-title{
+  font-size: 24px;
+  margin: 0 25px 25px;
+  max-height: 48px;
+  overflow: hidden;
+  color: #fff;;
+}
+.article-title i{
+  margin-right: 10px;
+  
+}
 .article-img{
-  max-width: 500px;
-  max-height: 375px;
-  margin: 0 25px 10px 25px;
-  box-shadow: 0 0 10px 1px rgba(0,0,0,0.5);
-  float: left;
+  max-width: 800px;
+  max-height: 600px;
+  margin: 0 176px 25px;
+}
+.article-info{
+  background: #fff;
+  margin: 0 25px;
+  padding: 25px 0;
 }
 .article-text{
-  margin: 0 25px 25px 25px;
+  margin: 0 25px 25px;
   text-align: justify;
-  width: 950px;
 }
 .article-date{
-  margin: 0 0 25px 25px;
+  margin: 0 25px;
   color: #565656;
   font-size: 14px;
   clear: both;
