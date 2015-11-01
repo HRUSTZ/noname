@@ -2,10 +2,11 @@
 $action = $query[3];
 
 if($action == 'add'){
-  if($_POST[name] != '' && $_POST[text] != ''){
+  if($_POST[name] != '' && $_POST[description] != '' && $_POST[text] != ''){
     $control = false;
     
     $name = $_POST[name];
+    $description = $_POST[description];
     $text = $_POST[text];
     $date = date("Y-m-d H:i:s");
     if($_FILES[photo][error] != 0){
@@ -18,14 +19,15 @@ if($action == 'add'){
     }
     
     if(!$control){
-      $mysqli -> query("INSERT INTO News(name, text, photo, date) VALUES('$name', '$text', '$photo', '$date')");
+      $mysqli -> query("INSERT INTO News(name, description, text, photo, date) VALUES('$name', '$description', '$text', '$photo', '$date')");
+      inputNotice('Статья успешно добавлена');
       header('Location: /panel');
       exit();
     } else{
-      echo ($control);
+      inputNotice($control);
     }
   } else{
-    echo('Незаполнены все поля');
+    inputNotice('Незаполнены все поля');
   }
 }
 

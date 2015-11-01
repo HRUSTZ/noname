@@ -3,6 +3,12 @@
   <textarea name="description" placeholder="Описание товара:"></textarea>
   <input type="text" name="price" placeholder="Цена:"/>
   
+  <select name="cat" class="styled-input select" placeholder="Категория" id="number">
+  <?foreach($cont[cat] as $value): ?>
+    <option <?=($cont[category] == $value[id])?'selected':''?> value='<?=$value[id]?>'><?=$value[translation]?></option>
+  <? endforeach; ?>
+  </select>
+  
   <label for="photo">Главное изображение</label>
   <input id="photo" name="photo" type="file">
   
