@@ -3,13 +3,17 @@
   <section class="main-about">
     <img class="about-img" src="/assets/img/city.jpg" alt="">
     <section class="about-content">
-      <h1><?= $cont[mainText][title]?></h1>
+      <div class="page-title">
+        <h1><i class="fa fa-building-o"></i><?= $cont[mainText][title]?></h1>
+      </div>
       <p><?= $cont[mainText][about]?></p>
     </section>
   </section>
 
   <section class="main-services">
-    <h1>Наши услуги</h1>
+    <div class="page-title">
+      <h1><i class="fa fa-info"></i>Наши услуги</h1>
+    </div>
     <section class="main-services-content">
     <? foreach($cont[servicesText] as $value): ?>
       <section class="main-service">
@@ -23,7 +27,9 @@
   <section class="main-art-and-prod">
 
     <section class="main-articles">
-      <h1>Последние новости</h1>
+      <div class="page-title">
+        <h1><i class="fa fa-newspaper-o"></i>Последние новости</h1>
+      </div>
       <div class="main-articles-block">
         <? foreach($cont[news] as $value): ?>
         <article class="main-article">
@@ -47,7 +53,9 @@
 
     <section class="main-products">
       <section class="main-products-content">
-        <h1>Популярные товары</h1>
+        <div class="page-title">
+          <h1><i class="fa fa-shopping-cart"></i>Популярные товары</h1>
+        </div>
         <div class="main-products-block">
           <? foreach($cont[products] as $value): ?>
           <article class="main-product">

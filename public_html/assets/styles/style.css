@@ -333,17 +333,10 @@ nav{
   border-right: 8px solid #343434;
 }
 .about-content{
-  height: 100%;
   width: 402px;
   background: #036ca6 url(/assets/img/texture.png);
   color: #fff;
-}
-.about-content h1{
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 25px 0;
+  padding-top: 25px;
 }
 .about-content p{
   text-align: justify;

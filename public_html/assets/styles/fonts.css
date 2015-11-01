@@ -47,3 +47,12 @@
 .fa-user:before{
   content: "\f007";
 }
+.fa-building-o:before{
+  content: "\f0f7";
+}
+.fa-info:before{
+  content: "\f129";
+}
+.fa-shopping-cart:before{
+  content: "\f07a";
+}
