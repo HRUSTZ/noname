@@ -497,7 +497,7 @@ nav{
 }
 .main-article-nd{
   height: 155px;
-
+  width: 434px;
 }
 .main-article-img{
   height: 175px;
@@ -630,6 +630,7 @@ nav{
 }
 .news-article-nd{
   height: 205px;
+  width: 727px;
 }
 .news-article-name{
   overflow: hidden;
