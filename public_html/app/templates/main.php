@@ -3,27 +3,21 @@
   <section class="main-about">
     <img class="about-img" src="/assets/img/city.jpg" alt="">
     <section class="about-content">
-      <h1><?= $cont[text][title]?></h1>
-      <p><?= $cont[text][about]?></p>
+      <h1><?= $cont[mainText][title]?></h1>
+      <p><?= $cont[mainText][about]?></p>
     </section>
   </section>
 
   <section class="main-services">
     <h1>Наши услуги</h1>
+    <? foreach($cont[servicesText] as $value): ?>
     <section class="main-services-content">
       <section class="main-service">
         <p><i class="fa fa-star"></i></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repudiandae accusantium nihil, eius perferendis odio assumenda unde nam consectetur. Facilis, nihil, nesciunt. Rem a deleniti quis voluptatum accusamus natus consequuntur at. Provident laudantium ad, facilis, sapiente ea ipsa accusamus! Saepe accusamus culpa corrupti repudiandae veritatis asperiores vel quos quam, ipsam.</p>
-      </section>
-      <section class="main-service">
-        <p><i class="fa fa-star"></i></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor modi vel, consequatur, nulla quisquam ducimus nemo rem neque harum deserunt consectetur natus maiores similique eligendi magnam eius vitae fugit. Officia, vitae omnis tenetur sunt placeat non harum, est et nihil praesentium! Repellat corporis, iusto, atque nobis alias sed magnam nemo.</p>
-      </section>
-      <section class="main-service">
-        <p><i class="fa fa-star"></i></p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ut inventore accusamus autem atque, a temporibus repudiandae illo, iste consequatur praesentium modi odio accusantium perspiciatis. Dolor in aperiam nobis dignissimos quod, voluptate fugit iure facilis placeat! Quod similique voluptas, est quo commodi, fuga, a cupiditate beatae natus, officia aperiam amet.</p>
+        <p><?= $value[about]?></p>
       </section>
     </section>
+    <? endforeach; ?>
   </section>
   
   <section class="main-art-and-prod">

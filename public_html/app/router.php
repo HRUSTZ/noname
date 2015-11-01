@@ -6,13 +6,10 @@ if($query[1] == "") $query[1] = "main";
 $controller = ROOT."/app/controllers/".$query[1].".php";
 
 if(isset($token) && isset($login)){
-  if(!$bdToken){
-    $q = $mysqli -> query("SELECT * FROM Users WHERE login = '$login'");
-    $user = $q -> fetch_assoc();
-    $bdToken = $_SESSION['bdToken'] = $user[token];
-  }
+  $q = $mysqli -> query("SELECT * FROM Users WHERE login = '$login'");
+  $user = $q -> fetch_assoc();
   
-  if($bdToken == $token){
+  if($user[token] == $token){
     $isAuth = true;
     
     $id = $user[id];

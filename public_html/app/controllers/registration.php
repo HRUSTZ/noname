@@ -32,11 +32,6 @@ if ($_POST){
       $control = "Ваши пароли не совпадают";
       return $control;
     }
-    
-    if (!$_POST['check']){
-      $control = "Вы не согласились с условием";
-      return $control;
-    }
   }
   
   $control = control($login, $password1, $password2, $name);

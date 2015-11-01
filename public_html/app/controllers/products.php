@@ -56,7 +56,7 @@ if($control){
     $result[cont] = $sqlQuery -> fetch_all(MYSQLI_ASSOC);
   }
   
-  $result[cat] = $sqlQuery = $mysqli -> query("SELECT * FROM Category") -> fetch_all(MYSQLI_ASSOC);
+  $result[cat] = $sqlQuery = $mysqli -> query("SELECT * FROM Category ORDER BY translation") -> fetch_all(MYSQLI_ASSOC);
   $count = $mysqli -> query($sqlCount) -> fetch_row();
   $result[page] = array($controlPage, $idPage, $count[0], '6', true);
   

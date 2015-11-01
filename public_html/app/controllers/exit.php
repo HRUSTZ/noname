@@ -5,11 +5,15 @@ if(isset($token) && isset($login)){
 
   unset($_SESSION['login']);
   unset($_SESSION['token']);
-  unset($_SESSION['bdToken']);
-
-  $link = $_SESSION['link'];
+  
+  if($_SESSION['link'] == '/exit' || $_SESSION['link'] == '/'){
+    $link = '/';
+  } else{
+    $link = $_SESSION['link'];
+  }
+  
   unset($_SESSION['link']);
-
+  
   header("Location: $link");
   exit;
 } else{
