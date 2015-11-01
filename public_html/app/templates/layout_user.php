@@ -51,21 +51,28 @@
           <section class="menu-user">
             <div class="menu-profile">
               <section class="admin-profile">
-                
+                <? if($admin): ?>
+                  
+                    <h1>Администрирование</h1>
+                  
+                  <a href="/panel"><button class="user-exit-btn button button-anim">Панель управления</button></a>
+                  <a href="/panel/news_add"><button class="user-exit-btn button button-anim">+Новость</button></a>
+                  <a href="/panel/products_add"><button class="user-exit-btn button button-anim">+Товар</button></a>
+                <? endif; ?>
               </section>
               <section class="user-profile">
                 <div class="page-title">
                   <h1><i class="fa fa-user"></i>Профиль</h1>
                 </div>
                 <div class="user-info">
-                  <img class="user-img" src="" alt="">
+                  <img class="user-img" src="<?=$photo?>" alt="">
                   <div class="user-ne">
-                    <p>Lorem ipsum.</p>
-                    <p>Lorem ipsum dolor.</p>
+                    <p><?=$name?></p>
+                    <p><?=$login?></p>
                   </div>
                 </div>
                 <div class="user-btns">
-                  <a href=""><button class="user-edit-btn button button-anim">Редактировать</button></a>
+                  <a href="/profile_edit"><button class="user-edit-btn button button-anim">Редактировать</button></a>
                   <a href="/exit"><button class="user-exit-btn button button-anim">Выход</button></a>
                 </div>
               </section>
