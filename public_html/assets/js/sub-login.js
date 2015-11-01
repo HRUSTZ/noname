@@ -8,6 +8,8 @@
       $('.drop-form').slideToggle("slow");
   });
 
+})( window );
+
   function notice(text){
     var d=document.createElement('div');
     d.innerHTML = text;
@@ -19,7 +21,7 @@
     } , 11000)
   }
 
-})( window );
+
 
 /*(function( window ){
  
