@@ -46,18 +46,19 @@
             </button>
           </form>
           <button class="user-signin-btn button button-anim">
+            <p class="menu-user-name"><?=$name?></p>
             <i class="fa fa-user"></i>
           </button>
           <section class="menu-user">
             <div class="menu-profile">
               <section class="admin-profile">
                 <? if($admin): ?>
-                  
-                    <h1>Администрирование</h1>
-                  
-                  <a href="/panel"><button class="user-exit-btn button button-anim">Панель управления</button></a>
-                  <a href="/panel/news_add"><button class="user-exit-btn button button-anim">+Новость</button></a>
-                  <a href="/panel/products_add"><button class="user-exit-btn button button-anim">+Товар</button></a>
+                  <div class="page-title">
+                    <h1><i class="fa fa-user"></i>Администрирование</h1>
+                  </div>
+                  <a href="/panel"><button class="admin-btn button button-anim">Панель управления</button></a>
+                  <a href="/panel/news_add"><button class="admin-btn button button-anim">+Новость</button></a>
+                  <a href="/panel/products_add"><button class="admin-btn button button-anim">+Товар</button></a>
                 <? endif; ?>
               </section>
               <section class="user-profile">
@@ -65,7 +66,7 @@
                   <h1><i class="fa fa-user"></i>Профиль</h1>
                 </div>
                 <div class="user-info">
-                  <img class="user-img" src="<?=$photo?>" alt="">
+                  <img class="user-img" src="<?=$photo?>" alt="<?=$name?>">
                   <div class="user-ne">
                     <p><?=$name?></p>
                     <p><?=$login?></p>

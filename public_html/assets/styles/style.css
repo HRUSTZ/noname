@@ -90,7 +90,7 @@ body{
 }
 
 .switch-item:hover{
-  color: #028ec9;
+  color: #036ca6;
   background: #fff;
 }
 
@@ -206,26 +206,34 @@ nav{
 .signin-btn,
 .search-btn{
   height: 34px;
-  width: 34px;
   margin-left: 8px;
   padding: 0;
   cursor: pointer;
   background: 0;
   color: #fff;
   border: 0;
+  display: flex;
+  align-items: center;;
 }
-.user-signin-btn,
+.user-signin-btn i,
 .signin-btn i,
 .search-btn i{
   font-size: 24px;
+  margin: 0px 6px;
 }
 .user-signin-btn:hover,
 .signin-btn:hover,
 .search-btn:hover{
   color: #036ca6;
 }
+.menu-user-name{
+  text-transform: uppercase;
+  margin: 0 6px;
+  font-weight: bold;
+}
+
 .menu-user{
-  height: 309px;
+  height: 315px;
   background: #fff url(/assets/img/texture.png);
   display: none;
   position: absolute;
@@ -242,7 +250,7 @@ nav{
   width: 376px;
 
 }
-.user-profile .page-title h1{
+.menu-profile .page-title h1{
   color: #036ca6;
   margin-top: 25px;
 }
@@ -251,8 +259,8 @@ nav{
   
 }
 .user-img{
-  width: 144px;
-  height: 144px;
+  width: 150px;
+  height: 150px;
   margin: 0 25px 25px;
 }
 .user-ne{
@@ -260,11 +268,24 @@ nav{
 }
 .user-ne p{
   margin: 0 25px 5px 0;
+  color: #036ca6;
+  font-weight: bold;
 
 }
 .admin-profile{
+  width: 400px;
+}
+.admin-btn{
+  cursor: pointer;
+  height: 40px;
   width: 200px;
-
+  outline: 0;
+  border: 1px solid #036ca6;
+  color: #fff;
+  padding: 0;
+  text-transform: uppercase;
+  background: #036ca6;
+  margin-left: 25px;
 }
 .user-btns{
   display: flex;
@@ -272,17 +293,18 @@ nav{
 }
 .user-edit-btn,
 .user-exit-btn{
-      cursor: pointer;
-    height: 40px;
-    width: 150px;
-    outline: 0;
-    border: 1px solid #036ca6;
-    color: #fff;
-    padding: 0;
-      text-transform: uppercase;
-      background: #036ca6;
-      margin-left: 25px;;
+  cursor: pointer;
+  height: 40px;
+  width: 150px;
+  outline: 0;
+  border: 1px solid #036ca6;
+  color: #fff;
+  padding: 0;
+  text-transform: uppercase;
+  background: #036ca6;
+  margin-left: 25px;
 }
+.admin-btn:hover,
 .user-edit-btn:hover,
 .user-exit-btn:hover{
   color: #036ca6;
