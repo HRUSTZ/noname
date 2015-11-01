@@ -66,8 +66,7 @@ body{
 .page-selector{
   align-items: center;
   justify-content: center;
-  display: flex;
-  margin-bottom: 25px;;
+  display: flex;;
 
 }
 
@@ -443,7 +442,9 @@ nav{
   color: #000;
   font-size: 19px;
   font-weight: bold;
-
+}
+.main-article-name a:hover{
+  color: #565656;
 }
 .main-article-description{
   max-height: 96px;
@@ -608,32 +609,87 @@ nav{
   padding: 25px 0 50px 0;
 }
 .products-content{
-  background: #036ca6;
+  background: #036ca6 url(/assets/img/texture.png);
   display: flex;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  min-height: 350px;
 }
 .products-filter{
   width: 277px;
 }
-.products-filter h1,
-.products-catalog h1{
-  font-size: 24px;
-  margin: 25px 0;
-  text-align: center;
-  text-transform: uppercase;
+.products-filter p{
+  margin: 0 25px 25px;;
+}
+.products-filter p a{
   color: #fff;
-
+  font-size: 19px;
+  text-transform: uppercase;
+}
+.products-filter p i{
+  margin-right: 10px;
+}
+.products-filter p a:hover{
+  font-weight: bold;
 }
 .products-catalog{
   width: 875px;
-
 }
 .products-catalog-content{
   display: flex;
   flex-wrap: wrap;
-
 }
 .product{
-  
+  margin: 0 0 25px 25px;
+  background: #fff;
+  width: 400px;
+}
+.product-img{
+  height: 300px;
+  width: 400px;
+}
+.product-nd{
+  height: 217px;
+  width: 100%;  
+}
+.product-name{
+  max-height: 48px;
+  font-size: 20px;
+  margin: 0 25px 25px;
+  overflow: hidden;
+}
+.product-name a{
+  color: #000;
+}
+.product-name a:hover{
+  color: #565656;
+}
+.product-description{
+  max-height: 144px;
+  margin: 0 25px;
+  overflow: hidden;
+}
+.product-price{
+  font-size: 20px;
+  color: #565656;
+  text-align: center;
+  margin: 25px;
+  padding-top: 25px;
+  border-top: 2px solid;
+  border-image: linear-gradient(to left, rgba(0, 0, 0, 0),
+                                         rgba(0, 0, 0, 0),
+                                         rgba(0,0,0,1),
+                                         rgba(0, 0, 0, 0),
+                                         rgba(0, 0, 0, 0)) 100% 0 0;
+}
+.product-price i{
+  margin-left: 5px;
+}
+.products-clean{
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
 }
 
 

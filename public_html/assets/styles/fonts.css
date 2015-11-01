@@ -56,3 +56,9 @@
 .fa-shopping-cart:before{
   content: "\f07a";
 }
+.fa-chevron-right:before{
+  content: "\f054";
+}
+.fa-filter:before{
+  content: "\f0b0";
+}
