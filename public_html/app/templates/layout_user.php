@@ -38,6 +38,7 @@
           <a class="nav-btn button button-anim" href="/main">Главная</a>
           <a class="nav-btn button button-anim" href="/news">Новости</a>
           <a class="nav-btn button button-anim" href="/products">Каталог</a>
+          <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
           <form class="search-form" action="">
             <input type="text" placeholder="Поиск по сайту" required>
             <button class="search-btn button button-anim" type="submit">
