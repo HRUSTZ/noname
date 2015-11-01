@@ -1,26 +1,26 @@
-window.onload = function() { 
-  var dropForm = document.getElementById('drop-form');
-  var openLoginForm = document.getElementsByClassName('signin-btn')[0];
-  
-  dropForm.style.display = 'none';
-  openLoginForm.addEventListener('click', openLogin);
-  
-  function openLogin() {
-    dropForm.style.display == 'none' ? dropForm.style.display = 'flex' : dropForm.style.display = 'none';
-  }
-}
+(function( window ){
 
-function notice(text){
-  var d=document.createElement('div');
-  d.innerHTML = text;
-  d.classList.add('notice');
-  document.body.appendChild(d);
-  
-  setTimeout( function() { 
-  document.body.removeChild(d)
-  } , 11000)
-}
-//(function(window){
+  $('.user-signin-btn').on('click', function(){    
+      $('.menu-user').toggle("slow");
+  });
+
+  $('.signin-btn').on('click', function(){    
+      $('.drop-form').slideToggle("slow");
+  });
+
+  function notice(text){
+    var d=document.createElement('div');
+    d.innerHTML = text;
+    d.classList.add('notice');
+    document.body.appendChild(d);
+    
+    setTimeout( function() { 
+    document.body.removeChild(d)
+    } , 11000)
+  }
+
+})( window );
+
 /*(function( window ){
  
   'use strict';

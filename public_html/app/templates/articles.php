@@ -10,8 +10,12 @@
         <article class="news-article">
           <a href="/news/article/<?= $value[id]?>"><img class="news-article-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
           <div class="news-articles-content">
-            <a class="news-article-name" href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
-            <p class="news-article-description"><?= $value[description]?></p>
+            <div class="news-article-nd">
+              <div class="news-article-name">
+                <a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
+              </div>
+              <p class="news-article-description"><?= $value[description]?></p>
+            </div>
             <p class="news-article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
           </div>
         </article>

@@ -35,8 +35,12 @@
         <article class="main-article">
           <a href="/news/article/<?= $value[id]?>"><img class="main-article-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
           <div class="main-articles-content">
-            <a class="main-article-name" href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
-            <?= $value[description]?>
+            <div class="main-article-nd">
+              <div class="main-article-name">
+                <a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
+              </div>
+              <p class="main-article-description"><?= $value[description]?></p>
+            </div>
             <p class="main-article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
           </div>
         </article>
@@ -53,13 +57,14 @@
         <div class="main-products-block">
           <? foreach($cont[products] as $value): ?>
           <article class="main-product">
-            <img class="best-product-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
-            <div class="best-product-info flex">
-              <a class="best-product-name" href="/products/number/<?= $value[id]?>"><?= $value[name]?></a>
-              <p class="best-product-description"><?= $value[description]?></p>
-              <p class="best-product-price"><?= $value[price]?> руб.</p>
-              <a class="more-best-product-btn flex" href="/products/number/<?= $value[id]?>">Подробнее</a>
-            </div>            
+            <img class="main-product-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
+            <div class="main-product-info">
+              <a href="/products/number/<?= $value[id]?>">
+                <p class="main-product-name"><?= $value[name]?></p>
+                <p class="main-product-description"><?= $value[description]?></p>
+                <p class="main-product-price"><?= $value[price]?><i class="fa fa-rub"></i></p>
+              </a>            
+            </div>
           </article>
           <? endforeach; ?>
         </div>

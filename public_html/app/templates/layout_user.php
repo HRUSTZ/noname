@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
   <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <title><?=$title?></title>
 </head>
 <body>
@@ -43,30 +44,25 @@
               <i class="fa fa-search"></i>
             </button>
           </form>
-          <button class="signin-btn button button-anim">
-            <i class="fa fa-sign-in"></i>
+          <button class="user-signin-btn button button-anim">
+            <i class="fa fa-user"></i>
           </button>
+          <section class="menu-user">
+            <section class="user-profile">
+              <img src="" alt="">
+              <div class="user-info">
+                <p></p>
+                <p></p>
+                <button></button>
+              </div>
+            </section>
+            <section class="admin-profile">
+              
+            </section>
+          </section>
       </ul>
     </nav>
 
-    <section id="drop-form">
-      <form action="/authorization" method="POST" class="login-form shadow" autocomplete="on">
-        <h1>Авторизация</h1>
-        <p>
-          <label for="user-email">Email</label>  
-          <input type="email" name="user-email" id="user-email" required autofocus/>
-        </p>
-        <p>
-          <label for="user-password">Пароль</label>  
-          <input type="password" name="user-password" id="user-password" required/>
-        </p>
-        <p class="login-btn">          
-          <input type="submit" value="Вход">
-        </p>
-        <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-      </form>
-      <a class="registr" href="/registration">Регистрация</a>
-    </section>
 
     <?=$content?>
 

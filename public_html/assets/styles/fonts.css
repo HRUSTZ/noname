@@ -44,3 +44,6 @@
 .fa-users:before{
   content: "\f0c0";
 }
+.fa-user:before{
+  content: "\f007";
+}
