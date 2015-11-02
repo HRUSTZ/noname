@@ -66,9 +66,7 @@ body{
   align-items: center;
   justify-content: center;
   display: flex;;
-
 }
-
 .page-selector > a{
   font-size: 24px;
   width: 30px;
@@ -78,16 +76,13 @@ body{
   height: 30px;
   margin: 0 5px 25px 0;
 }
-
 .switch-item{
-   color: #fff;
+  color: #fff;
 }
-
 .switch-item-cur{
   color: #036ca6;
   background-color: #fff;
 }
-
 .switch-item:hover{
   color: #036ca6;
   background: #fff;
@@ -99,14 +94,14 @@ body{
 
 header{
   display: flex;
-  height: 110px;
+  height: 120px;
   width: 1152px;
   margin: 0 auto;
 }
 .header-content{
   margin: auto;
 }
-.company-logo{
+.company-logo{;
 }
 .company-phone,
 .company-address{
@@ -234,11 +229,9 @@ nav{
 }
 .menu-profile{
   display: flex;
-
 }
 .user-profile{
   width: 463px;
-
 }
 .menu-profile .page-title h1{
   color: #036ca6;
@@ -246,15 +239,11 @@ nav{
 }
 .user-info{
   display: flex;
-  
 }
 .user-img{
   width: 150px;
   height: 150px;
   margin: 0 25px 25px;
-}
-.user-ne{
-
 }
 .user-ne p{
   margin: 0 25px 5px 0;
@@ -280,7 +269,6 @@ nav{
 }
 .user-btns{
   display: flex;
-
 }
 .user-edit-btn,
 .user-exit-btn{
@@ -342,41 +330,6 @@ nav{
 .drop-sign-up button{
   margin: 25px;
 }
-
-/* Блок авторизации / регистрации 
-
-.block-login{
-  position: fixed;
-  z-index: 16;
-  top: -350px;
-  left: 50%;
-  height: 350px;
-  width: 1000px;
-  margin-left: -500px;
-  margin-top: -175px;
-  background-color: #67b5d1;
-  transition: all .5s;
-}
-
-.form-auth{
-  background-color: #00F;
-}
-
-.show-login .block-login{
-  top: 50%;
-}
-
-.mask {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 15;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, .8);
-}
-
-*/
 
 
 /*======================================== ГЛАВНАЯ СТРАНИЦА ========================================*/
@@ -1031,7 +984,6 @@ table td{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
 }
 .panel-news-products a{
   color: #000;
@@ -1041,6 +993,8 @@ table td{
 .panel-news-products a:hover{
   color: #565656;
 }
+
+
 /*======================================== ПОДВАЛ ========================================*/
 
 
