@@ -1019,7 +1019,23 @@ table td{
   height: 30px;
   text-align: center;
 }
+.panel-news{
+  justify-content: center;
+  background: #fff;
+  width: 1102px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 
+}
+.panel-news-products a{
+  color: #000;
+  font-size: 19px;
+  margin: 10px 25px;
+}
+.panel-news-products a:hover{
+  color: #565656;
+}
 /*======================================== ПОДВАЛ ========================================*/
 
 

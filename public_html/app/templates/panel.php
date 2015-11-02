@@ -15,7 +15,7 @@
       </div>
       <div class="admin-block-products panel-block">
         <a class="button button-anim" href="/panel_products_add">Добавить товар</a>  
-        <a class="button button-anim" href="/panel_products_edit">Редактировать товар</a>
+        <a class="button button-anim" href="/panel_products">Редактировать товар</a>
         <a class="button button-anim" href="/panel_category_edit">Редактировать категории</a>
       </div>
     </section>
