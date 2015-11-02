@@ -39,6 +39,13 @@ if($action == 'edit'){
   }
 }
 
+if($action == 'delete'){
+  $mysqli -> query("DELETE FROM News WHERE id = '$id'");
+  inputNotice('Новость удалена');
+  header('Location: /panel');
+  exit();
+}
+
 if($id){
 	$q = $mysqli -> query("SELECT name, description, text, photo FROM News WHERE id = '$id'");
   $result = $q -> fetch_assoc();

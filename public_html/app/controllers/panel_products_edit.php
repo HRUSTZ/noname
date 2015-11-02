@@ -40,6 +40,13 @@ if($action == 'edit'){
   }
 }
 
+if($action == 'delete'){
+  $mysqli -> query("DELETE FROM Products WHERE id = '$id'");
+  inputNotice('Товар удален');
+  header('Location: /panel');
+  exit();
+}
+
 if($id){
 	$q = $mysqli -> query("SELECT name, description, photo, price, category FROM Products WHERE id = '$id'");
   $result = $q -> fetch_assoc();

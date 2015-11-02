@@ -18,7 +18,7 @@
         </tr>
         <? foreach ($cont[cat] as $value): ?>
           <tr>
-            <td><input name="name" type="text" value="<?=$value[translation]?>"></td>
+            <td><input name="name[<?= $value[id]?>]" type="text" value="<?=$value[translation]?>"></td>
             <td><a href="/panel/category_edit/delete/<?= $value[id]?>">Удалить эту категорию</a></td>
           </tr>
         <? endforeach; ?> 
