@@ -716,7 +716,7 @@ nav{
   padding: 25px 0 50px;
 }
 .article-content{
-  background: #036ca6;
+  background: #036ca6 url(/assets/img/texture.png);
   padding: 25px 0;
   margin-bottom: 25px;
 }
@@ -762,9 +762,9 @@ nav{
   padding: 25px 0 50px;
 }
 .goods-content{
-  background: #036ca6;
   padding: 25px 0;
   margin-bottom: 25px;
+  background: #036ca6 url(/assets/img/texture.png);
 }
 .goods-info{
   display: flex;
