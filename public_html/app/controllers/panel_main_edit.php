@@ -51,7 +51,7 @@ if($action == 'products_edit' && $_POST){
   }
     
   if(!$control){
-    $mysqli -> query("UPDATE Products SET main = '-' WHERE main = '1' || main = '2' || main = '3'");
+    $mysqli -> query("UPDATE Products SET main = '0' WHERE main = '1' || main = '2' || main = '3'");
     
     $i = 1;
     

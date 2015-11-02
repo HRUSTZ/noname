@@ -12,8 +12,12 @@ if($module == 'number' && $modulePage != ''){
   $sqlQuery = $mysqli -> query("SELECT * FROM Products WHERE id = '$modulePage'");
   $result = $sqlQuery -> fetch_assoc();
   
-  $title = $result[name];
-  $path = 'product'; 
+  if($result){   
+    $title = $result[name];
+    $path = 'product'; 
+  } else{
+    error('Нет товара');
+  }
 } elseif($module == 'all' || $module == ''){
   $sql = "SELECT * FROM Products LIMIT 0, 6";
   $sqlPage = "SELECT * FROM Products LIMIT START, 6";

@@ -19,7 +19,7 @@ if($action == 'add'){
     }
     
     if(!$control){
-      $mysqli -> query("INSERT INTO Products(name, description, photo, price, category, main) VALUES('$name', '$description', '$photo', '$price', '$category', '-')");
+      $mysqli -> query("INSERT INTO Products(name, description, photo, price, category, main) VALUES('$name', '$description', '$photo', '$price', '$category', '0')");
       inputNotice('Товар успешно добавлен');
       header('Location: /panel');
       exit();

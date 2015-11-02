@@ -41,10 +41,15 @@ if($action == 'edit'){
 }
 
 if($action == 'delete'){
-  $mysqli -> query("DELETE FROM Products WHERE id = '$id'");
-  inputNotice('Товар удален');
-  header('Location: /panel');
-  exit();
+  $count = $mysqli -> query("SELECT COUNT(id) FROM Products WHERE id = '$id' && (main = '1' || main = '2' || main = '3')") -> fetch_row();
+  if($count[0] == 0){
+    $mysqli -> query("DELETE FROM Products WHERE id = '$id'");
+    inputNotice('Товар удален');
+    header('Location: /panel');
+    exit();
+  } else{
+    inputNotice('Сначала удалите товар из вывода на главную страницу');
+  }
 }
 
 if($id){
