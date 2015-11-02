@@ -29,13 +29,14 @@ if($action == 'edit'){
     
     if(!$control){
       $mysqli -> query("UPDATE Products SET name = '$newName', description = '$newDescription', price = '$newPrice', category = '$newCategory' $newPhoto WHERE id = '$id'");
+      inputNotice('Товар успешно изменен');
       header('Location: /panel');
       exit();
     } else{
-      echo($control);
+      inputNotice($control);
     }
   } else{
-    echo('Незаполнены все поля');
+    inputNotice('Незаполнены все поля');
   }
 }
 
