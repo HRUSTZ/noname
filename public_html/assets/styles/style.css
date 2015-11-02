@@ -15,7 +15,6 @@ body{
   min-width: 1152px;
   min-height: 100%;
   position: relative;
-  background: #d3e6fd;
 }
 .notice {
   background-color:rgba(0, 121, 107, 0.6);
@@ -108,8 +107,6 @@ header{
   margin: auto;
 }
 .company-logo{
-  max-height: 100px;
-  max-width: 150px;
 }
 .company-phone,
 .company-address{
@@ -770,7 +767,6 @@ nav{
   width: 1152px;
   margin: 0 auto;
   padding: 25px 0 50px;
-
 }
 .article-content{
   background: #036ca6;
@@ -786,12 +782,12 @@ nav{
 }
 .article-title i{
   margin-right: 10px;
-  
 }
 .article-img{
+  display: block;
   max-width: 800px;
   max-height: 600px;
-  margin: 0 176px 25px;
+  margin: 0 auto 25px;
 }
 .article-info{
   background: #fff;
@@ -850,19 +846,19 @@ nav{
   margin-left: 5px;
 }
 .goods-order{
-  margin: 0 25px 25px;
+  margin: 0 25px;
+  padding-bottom: 25px;
+  border-image: linear-gradient(to left, rgba(0, 0, 0, 0),
+                                         rgba(0, 0, 0, 0),
+                                         rgba(3,108,166,1),   
+                                         rgba(0, 0, 0, 0),  
+                                         srgba(0, 0, 0, 0)) 0 0 100%;
+  border-bottom: 2px solid;
 }
 .goods-description{
-  margin: 0 25px;
+  margin: 25px 25px 0;
   height: 144px;
   overflow-y: auto;
-  padding-top: 25px;
-  border-top: 2px solid;
-  border-image: linear-gradient(to left, rgba(0, 0, 0, 0),
-                                       rgba(0, 0, 0, 0),
-                                       rgba(3,108,166,1), 
-                                       rgba(0, 0, 0, 0),
-                                       rgba(0, 0, 0, 0)) 100% 0 0;
 }
 
 
@@ -924,6 +920,105 @@ nav{
   color: #fff;
 }
 
+
+/*============================= АДМИНИСТРИРОВАНИЕ ================================*/
+
+ 
+.admin-panel{
+  width: 1152px;
+  margin: 0 auto;
+  padding: 25px 0 50px;
+} 
+.admin-panel-content{
+  background: #036ca6 url(/assets/img/texture.png);
+  margin-bottom: 25px;
+  padding: 25px 0;
+}
+.admin-panel-content p{
+  color: #fff;
+  margin-left: 25px;
+  font-size: 19px;
+  font-weight: bold;
+}
+.admin-panel-blocks{
+  display: flex;
+}
+.panel-block{
+  width: 350px;
+  height: 350px;
+  margin: 25px 0 25px 25px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.admin-block-main a,
+.admin-block-products a,
+.admin-block-articles a{
+  background: #036ca6;
+  display: flex;
+  width: 300px;
+  height: 50px;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  border: 1px solid #036ca6;
+  margin: 5px 0;
+}
+.admin-block-main a:hover,
+.admin-block-products a:hover,
+.admin-block-articles a:hover{
+  color: #036ca6;
+}
+.form-main-edit{
+  width: 576px;
+  margin: 0 auto 25px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;;
+}
+.form-main-edit label{
+  margin: 5px 25px;
+  font-size: 19px;
+  text-align: center;
+}
+.form-main-edit textarea{
+  width: 514px;
+  resize: vertical;
+  min-height: 100px;
+  padding: 5px;
+  margin: 5px 25px;
+}
+.form-main-edit  input{
+  height: 40px;
+  margin: 5px 25px;
+  padding-left: 5px;
+}
+.form-main-edit input[type="submit"]{
+  width: 150px;
+  margin: 5px auto;
+  padding: 0;
+}
+.form-main-edit select{
+  width: 527px;
+  margin: 5px auto;
+
+}
+table{
+  width: 567px;
+  margin: 25px auto;
+  background: #fff;
+}
+table tr{
+  border: 1px solid #036ca6;
+}
+table td{
+  border: 1px solid #036ca6;
+  height: 30px;
+  text-align: center;
+}
 
 /*======================================== ПОДВАЛ ========================================*/
 
