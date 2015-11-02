@@ -986,10 +986,10 @@ nav{
 }
 .form-main-edit textarea{
   width: 514px;
-  resize: vertical;
-  min-height: 100px;
+  min-height: 200px;
   padding: 5px;
   margin: 5px 25px;
+  resize: vertical;
 }
 .form-main-edit  input{
   height: 40px;
@@ -1004,7 +1004,12 @@ nav{
 .form-main-edit select{
   width: 527px;
   margin: 5px auto;
-
+}
+.form-main-edit img{
+  width: 400px;
+  height: 300px;
+  display: block;
+  margin: 5px auto;
 }
 table{
   width: 567px;
