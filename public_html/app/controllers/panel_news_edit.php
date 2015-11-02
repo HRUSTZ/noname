@@ -50,4 +50,4 @@ if($id){
 }
 
 $title = 'Редактирование товара';
-$content = tpl('panel_products_edit', $result);
+$content = tpl('panel_news_edit', $result);

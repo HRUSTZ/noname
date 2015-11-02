@@ -24,13 +24,14 @@ if($action == 'edit_login'){ //изменение логина/имени
     if(!$control){
       $mysqli -> query("UPDATE Users SET login = '$newLogin', name = '$newName' WHERE id = '$id'");
       $_SESSION['login'] = $newLogin;
+      inputNotice('Профиль обновлён');
       header('Location: /profile_edit');
       exit();
     } else{
-      echo($control);
+      inputNotice($control);
     }
   } else{
-    echo('Не заполнены все поля');
+    inputNotice('Не заполнены все поля');
   } 
 } elseif($action == 'edit_password'){ //изменение пароля
   if($_POST['password1'] != '' && $_POST['password2'] != ''){
@@ -44,13 +45,14 @@ if($action == 'edit_login'){ //изменение логина/имени
     if(!$control){
       $newHash = md5(md5($newPass1));
       $q = $mysqli -> query("UPDATE Users SET hash = '$newHash' WHERE id = '$id'");
+      inputNotice('Пароль изменен');
       header('Location: /profile_edit');
       exit();
     } else{
-      echo($control);
+      inputNotice($control);
     }
   } else{
-    echo('Не заполнены все поля');
+    inputNotice('Не заполнены все поля');
   } 
 } elseif($action == 'edit_photo'){ //изменение фотографии
   if(!$_FILES[photo][error]){
@@ -68,13 +70,14 @@ if($action == 'edit_login'){ //изменение логина/имени
     
     if(!$control){
       $mysqli -> query("UPDATE Users SET photo = '$newPhoto' WHERE id = '$id'");
+      inputNotice('Фотография обновлена');
       header('Location: /profile_edit');
       exit();
     } else{
-      echo($control);
+      inputNotice($control);
     }
   } else{
-    echo('Не выбрана новая фотография');
+    inputNotice('Не выбрана новая фотография');
   } 
 }
 
