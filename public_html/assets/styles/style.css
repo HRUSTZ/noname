@@ -33,6 +33,7 @@ body{
 
 /*======================================== HOVER ДЛЯ КНОПОК ========================================*/
 
+
 .button{
   position: relative;
   z-index: 1;
@@ -61,6 +62,7 @@ body{
 
 
 /*============================== ПЕРЕКЛЮЧАТЕЛЬ СТРАНИЦ ================================*/
+
 
 .page-selector{
   align-items: center;
@@ -101,7 +103,7 @@ header{
 .header-content{
   margin: auto;
 }
-.company-logo{;
+.company-logo{
 }
 .company-phone,
 .company-address{
@@ -373,12 +375,10 @@ nav{
   text-transform: uppercase;
   margin-bottom: 25px;
   color: #fff;
-
 }
 .main-services-content{
   display: flex;
   height: 397px;
-
 }
 .main-service{
   width: 350px;
@@ -390,20 +390,17 @@ nav{
   font-size: 40px;
   color: #036ca6;
   margin-top: 25px;
-
 }
 .main-service p{
   text-align: center;
   margin: 0 25px 25px;
   color: #343434;
-
 }
 .main-art-and-prod{
   display: flex;
   width: 1152px;
   margin: 0 auto 25px;
   background: #036ca6 url(/assets/img/texture.png);
-
 }
 .main-articles{
   position: relative;
@@ -417,9 +414,6 @@ nav{
 .main-products{
   width: 350px;
   padding-top: 25px;
-}
-.main-products-content{
-  
 }
 .main-articles-content{
   margin: 25px 25px 25px 0;
@@ -469,7 +463,6 @@ nav{
 .main-article-description{
   max-height: 96px;
   overflow: hidden;
-
 }
 .main-article-date{
   font-size: 14px;
@@ -715,6 +708,7 @@ nav{
 
 
 /*========================= СТРАНИЦА ОДНОЙ НОВОСТИ ===========================*/
+
 
 .article{
   width: 1152px;

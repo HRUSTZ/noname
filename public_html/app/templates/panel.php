@@ -7,16 +7,16 @@
     <p>Количество товаров на сайте: <?= $cont[1] ?></p>
     <section class="admin-panel-blocks">
       <div class="admin-block-main panel-block">
-        <a class="button button-anim" href="/panel_main_edit">Редактировать главную</a>  
+        <a class="button button-anim" href="/panel/main_edit">Редактировать главную</a>  
       </div>
       <div class="admin-block-articles panel-block">
-        <a class="button button-anim" href="/panel_news_add">Добавить новость</a>
-        <a class="button button-anim" href="/panel_news">Редактировать новость</a>
+        <a class="button button-anim" href="/panel/news_add">Добавить новость</a>
+        <a class="button button-anim" href="/panel/news">Редактировать новость</a>
       </div>
       <div class="admin-block-products panel-block">
-        <a class="button button-anim" href="/panel_products_add">Добавить товар</a>  
-        <a class="button button-anim" href="/panel_products">Редактировать товар</a>
-        <a class="button button-anim" href="/panel_category_edit">Редактировать категории</a>
+        <a class="button button-anim" href="/panel/products_add">Добавить товар</a>  
+        <a class="button button-anim" href="/panel/products">Редактировать товар</a>
+        <a class="button button-anim" href="/panel/category_edit">Редактировать категории</a>
       </div>
     </section>
   </section>
