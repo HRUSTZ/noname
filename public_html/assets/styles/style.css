@@ -17,17 +17,26 @@ body{
   position: relative;
 }
 .notice {
-  background-color:rgba(0, 121, 107, 0.6);
-  position: fixed;
-  color: #fff;
-  border: 1px solid #fff;
-  padding: 15px;
-  top: 100px;
-  left: 50%;
   z-index: 99;
+  position: fixed;
+  top: 50%;
+  left: 50%;
   width: 300px;
-  margin-left: -150px;
+  margin: -56px 0 0 -150px;
+  padding: 15px;
+  border: 1px solid #fff;
   text-align: center;
+  color: #fff;
+  background: #036ca6;
+}
+.mask{
+  z-index: 98;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,.8);
 }
 
 
@@ -327,7 +336,7 @@ nav{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 25px;;
+  margin-bottom: 25px;
 }
 .drop-sign-up button{
   margin: 25px;

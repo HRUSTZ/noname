@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
@@ -89,7 +89,7 @@
   </div>
 
 
-<script src="/assets/js/sub-login.js"></script>
+<script src="/assets/js/main.js"></script>
 
 </body>
 </html>
