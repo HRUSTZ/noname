@@ -11,7 +11,6 @@
         <label for="photo">Главное изображение</label>
         <img src="<?=$cont[photo]?>">
         <input id="photo" name="photo" type="file">
-
         <input type="submit" value="Изменить">
         <a href="/panel/news_edit/<?=$cont[id]?>/delete">Удалить</a>
       </form>

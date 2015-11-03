@@ -828,9 +828,9 @@ nav{
 }
 .sign-up-content,
 .sign-in-content{
-  background: #036ca6;
   padding: 25px 0;
   margin-bottom: 25px;
+  background: #036ca6 url(/assets/img/texture.png);
 }
 .sign-up-form{
   height: 362px;
