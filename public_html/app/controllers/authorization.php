@@ -37,10 +37,13 @@ if($_POST){
     
     $link = $_SESSION['link'];
     unset($_SESSION['link']);
+
+    inputNotice('Вы успешно авторизировались');
     
     header("Location: $link");
+    exit;
   } else{
-    momentNotice($control);
+    inputNotice($control);
   }
 }
 

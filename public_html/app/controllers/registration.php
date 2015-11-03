@@ -41,10 +41,13 @@ if ($_POST){
     $photo = "/files/users/default.png";
     $admin = false;
     $q = $mysqli->query("INSERT INTO Users (login, hash, token, name, photo, admin) VALUES ('$login', '$hash', '$token', '$name', '$photo', '$admin')");
+    
+    inputNotice('Вы успешно зарегистрировались');
+    
     header("Location: /main");
     exit;
   } else{
-    echo($control);
+    inputNotice($control);
   }
 }
 
