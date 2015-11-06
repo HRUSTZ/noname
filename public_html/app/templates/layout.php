@@ -72,14 +72,11 @@
       </ul>
     </nav>
 
-    
-
     <?=$content?>
 
     <footer>2015 © ООО "Коракс"</footer>    
 
   </div>
-
 
 <script src="/assets/js/main.js"></script>
 
