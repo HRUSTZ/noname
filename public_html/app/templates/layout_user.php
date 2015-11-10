@@ -12,14 +12,14 @@
   <div class="container">
     <header>
       <a class="header-content" href="/main"><img class="company-logo" src="/assets/img/logo.png" alt="ООО Коракс"></a>
-      <div class="header-content company-address">
+      <a href="https://www.google.ru/maps/place/%D0%A1%D0%BE%D1%86%D0%B8%D0%B0%D0%BB%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F+%D1%83%D0%BB.,+88,+%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2-%D0%BD%D0%B0-%D0%94%D0%BE%D0%BD%D1%83,+%D0%A0%D0%BE%D1%81%D1%82%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB.,+344002/@47.2203296,39.7130453,17z/data=!3m1!4b1!4m2!3m1!1s0x40e3b90d0e6d1af3:0xa6f72092d1edca1e" class="header-content company-address">
         <p>Ростов-на-Дону</p>
         <p class="address-icon">ул. Социалистическая, 88</p>
-        <p>ежедневно, 10:00-20:00</p>
-      </div>
+        <p>ежедневно, 9:00-18:00, выходной - сб, вс</p>
+      </a>
       <div class="header-content company-phone">
         <p>8 (863)</p>
-        <p class="phone-icon">777-77-77</p>
+        <p class="phone-icon">279-91-63</p>
       </div>
       <div class="header-content company-social">
         <a href="#">

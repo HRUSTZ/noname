@@ -39,7 +39,7 @@
               <div class="main-article-name">
                 <a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a>
               </div>
-              <p class="main-article-description"><?= $value[description]?></p>
+              <pre><p class="main-article-description"><?= $value[description]?></p></pre>
             </div>
             <p class="main-article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
           </div>

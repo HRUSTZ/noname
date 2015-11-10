@@ -105,9 +105,9 @@ body{
 
 header{
   display: flex;
-  height: 120px;
-  width: 1152px;
+  height: 160px;
   margin: 0 auto;
+  width: 1180px;
 }
 .header-content{
   margin: auto;
@@ -115,6 +115,7 @@ header{
 .company-phone,
 .company-address{
   padding-left: 28px;
+  color: #000;
 }
 .phone-icon,
 .address-icon{
@@ -479,6 +480,10 @@ nav{
   height: 225px;
   width: 300px;
   margin: 0 25px 25px 25px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .main-right-link{
   display: flex;
@@ -493,8 +498,8 @@ nav{
   margin-left: 5px;
 }
 .main-product-img{
-  height: 225px;
-  width: 300px;
+  max-height: 225px;
+  max-width: 300px;
 }
 .main-product-info{
   position: absolute;
@@ -525,6 +530,7 @@ nav{
 .main-product-description{
   height: 96px;
   margin: 0 25px 5px;
+  white-space: pre-wrap;
 }
 .main-product-price{
   height: 24px;
@@ -547,6 +553,7 @@ nav{
 .news-block{
   margin-bottom: 25px;
   padding-top: 25px;
+  padding-bottom: 25px; 
   background: #036ca6 url(/assets/img/texture.png);
 }
 .page-title h1{
@@ -664,8 +671,17 @@ nav{
   background: #fff;
 }
 .product-img{
+  display: flex;
   height: 300px;
   width: 400px;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: center;
+  
+}
+.product-img img{
+  max-height: 300px;
+  max-width: 400px;
 }
 .product-nd{
   height: 217px;
@@ -687,6 +703,7 @@ nav{
   max-height: 144px;
   margin: 0 25px;
   overflow: hidden;
+  white-space: pre-wrap;
 }
 .product-price{
   margin: 25px;
@@ -765,6 +782,13 @@ nav{
   margin: 0 auto;
   padding: 25px 0 50px;
 }
+.goods-flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  margin-left: 25px;
+}
 .goods-content{
   padding: 25px 0;
   margin-bottom: 25px;
@@ -779,9 +803,9 @@ nav{
   color: #fff;
 }
 .goods-img{
-  height: 300px;
-  width: 400px;
   margin: 0 25px;
+  max-height: 300px;
+  max-width: 400px;
 }
 .goods-pod{
   height: 300px;
@@ -810,6 +834,7 @@ nav{
   height: 144px;
   margin: 25px 25px 0;
   overflow-y: auto;
+  white-space: pre-wrap;
 }
 
 

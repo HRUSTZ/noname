@@ -22,5 +22,5 @@ function notice(text){
   setTimeout( function() { 
   document.body.removeChild(d);
   document.body.removeChild(mask);
-  } , 5000)
+  } , 2000)
 }

@@ -16,10 +16,10 @@
       <section class="products-catalog-content">
         <? foreach($cont[cont] as $value): ?>         
         <article class="product">
-          <a href="/products/number/<?= $value[id]?>"><img class="product-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
+          <a class="product-img"  href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
           <div class="product-nd">
             <p class="product-name"><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></p>
-            <p class="product-description"><?= $value[description]?></p>
+            <pre><p class="product-description"><?= $value[description]?></p></pre>
           </div>
           <p class="product-price"><?= $value[price]?><i class="fa fa-rub"></i></p>
         </article>
