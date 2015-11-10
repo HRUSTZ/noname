@@ -9,6 +9,11 @@ if($action == 'add'){
     $description = $_POST[description];
     $price = $_POST[price];
     $category = $_POST[cat];
+    
+    if(!is_numeric($price)){
+      $control = 'Неправильно введена цена товара';
+    }
+    
     if($_FILES[photo][error] != 0){
       $photo = '/files/products/default.jpg';
     } else{

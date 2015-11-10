@@ -12,5 +12,5 @@ $result[news] = $q -> fetch_all(MYSQLI_ASSOC);
 $q = $mysqli -> query("SELECT id, name, description, photo, price, main  FROM Products WHERE main = '1' || main = '2' || main = '3' ORDER BY main");
 $result[products] = $q -> fetch_all(MYSQLI_ASSOC);
 
-$title = "Главная страница";
+$title = "Коракс";
 $content = tpl("main",$result);

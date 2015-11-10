@@ -11,6 +11,10 @@ if($action == 'edit'){
     $newPrice = $_POST[price];
     $newCategory = $_POST[cat];
     
+    if(!is_numeric($price)){
+      $control = 'Неправильно введена цена товара';
+    }
+    
     if($_FILES[photo] && !$_FILES[photo][error]){
       $newPhoto = substr($_FILES['photo']['type'],6);
       

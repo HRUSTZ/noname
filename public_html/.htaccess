@@ -1,6 +1,6 @@
 # не забыть открыть на проде
-#php_flag display_errors off 
-#php_flag display_startup_errors off
+php_flag display_errors off 
+php_flag display_startup_errors off
 
 AddDefaultCharset UTF-8 
 Options -Indexes 
