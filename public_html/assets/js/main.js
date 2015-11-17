@@ -4,7 +4,7 @@
       $('.menu-user').slideToggle("slow");
   });
 
-  $('.signin-btn').on('click', function(){    
+  $('.nav-btn-login').on('click', function(){    
       $('.drop-form').slideToggle("slow");
   });
 
