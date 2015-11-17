@@ -1,33 +1,35 @@
-<section class="products">
-  <div class="products-content">
-    <section class="products-filter">
-      <div class="page-title">
-        <h1><i class="fa fa-filter"></i>Категории</h1>
-      </div>
-      <p><a href="/products"><i class="fa fa-chevron-right"></i>Все товары</a></p>
-      <? foreach($cont[cat] as $value): ?>
-      <p><a href="/products/<?= $value[name]?>"><i class="fa fa-chevron-right"></i><?= $value[translation]?></a></p>
-      <? endforeach; ?>
-    </section>
-    <section class="products-catalog">
-      <div class="page-title">
-          <h1><i class="fa fa-shopping-cart"></i><?= $cont[title]?></h1>
-        </div>
-      <section class="products-catalog-content">
-        <? foreach($cont[cont] as $value): ?>         
-        <article class="product">
-          <a class="product-img"  href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
-          <div class="product-nd">
-            <p class="product-name"><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></p>
-            <pre><p class="product-description"><?= $value[description]?></p></pre>
-          </div>
-          <p class="product-price"><?= $value[price]?><i class="fa fa-rub"></i></p>
-        </article>
-        <? endforeach; ?>
-        <p class="products-clean"><?= $cont[clean]?></p>
-      </section>
-    <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3], $cont[page][4])?>
-    </section>
-  </div>        
-</section>       
 
+
+
+
+
+<section class="catalog wrap">  
+      
+      <section class="catalog-filter">
+        <h1>Категории</h1>
+        <section class="filter-content shadow">
+          <p><a href="/products">Все товары</a></p>
+          <? foreach($cont[cat] as $value): ?>
+          <p><a href="/products/<?= $value[name]?>"><?= $value[translation]?></a></p>
+          <? endforeach; ?>
+        </section>
+      </section>
+    
+      <section class="catalog-products">
+        <h1>Продукты</h1>
+        <section class="products-content">
+          <? foreach($cont[cont] as $value): ?> 
+          <article class="catalog-product shadow">
+            <img src="<?= $value[photo]?>">
+            <div class="product-content">
+              <h2><?= $value[name]?></h2>
+              <p><?= $value[price]?> р.</p>
+              <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
+            </div>
+          </article>
+          <? endforeach; ?>
+          <p class="products-clean"><?= $cont[clean]?></p>
+          <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3], $cont[page][4])?>
+        </section>
+      </section>
+    </section>
