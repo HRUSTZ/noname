@@ -33,7 +33,6 @@
       <div class="main-articles-block">
         <? foreach($cont[news] as $value): ?>
         <article class="main-article">
-          <a href="/news/article/<?= $value[id]?>"><img class="main-article-img" src="<?= $value[photo]?>" alt="<?= $value[name]?>"></a>
           <div class="main-articles-content">
             <div class="main-article-nd">
               <div class="main-article-name">

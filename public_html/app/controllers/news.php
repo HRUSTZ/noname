@@ -3,6 +3,7 @@
 
 $control = $query[2];
 $id = $query[3];
+if($id != '' && !is_numeric($id)) error('Станица не найдена');
 
 if($control == '') $control = 'page';
 

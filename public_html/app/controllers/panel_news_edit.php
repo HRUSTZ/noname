@@ -10,7 +10,7 @@ if($action == 'edit'){
     $newDescription = $_POST[description];
     $newText = $_POST[text];
     
-    if($_FILES[photo] && !$_FILES[photo][error]){
+    /*if($_FILES[photo] && !$_FILES[photo][error]){
       $newPhoto = substr($_FILES['photo']['type'],6);
       
       if(!preg_replace('/\.(?:jp(?:e?g|e|2)|gif|png|tiff?|bmp|ico)$/i', '', $newPhoto)){
@@ -24,10 +24,10 @@ if($action == 'edit'){
       } else{
         $newPhoto = ", photo = '$newPhoto'";
       }
-    }
+    }*/
     
     if(!$control){
-      $mysqli -> query("UPDATE News SET name = '$newName', description = '$newDescription', text = '$newText' $newPhoto WHERE id = '$id'");
+      $mysqli -> query("UPDATE News SET name = '$newName', description = '$newDescription', text = '$newText' WHERE id = '$id'");
       inputNotice('Новость успешно отредактированна');
       header('Location: /panel');
       exit();
@@ -47,7 +47,7 @@ if($action == 'delete'){
 }
 
 if($id){
-	$q = $mysqli -> query("SELECT name, description, text, photo FROM News WHERE id = '$id'");
+	$q = $mysqli -> query("SELECT name, description, text FROM News WHERE id = '$id'");
   $result = $q -> fetch_assoc();
   $result[id] = $id;
 } else{
