@@ -12,5 +12,11 @@
       </div>
     </div>
   </section>
+  
+  Еще товары из категории:<a href="/products/<?= $cont[moreCat][name]?>"><?= $cont[moreCat][translation]?></a>
+  
+  <? foreach($cont[more] as $value): ?>
+  <a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a>
+  <? endforeach; ?>
 
 </section>

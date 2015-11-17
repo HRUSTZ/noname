@@ -8,11 +8,15 @@ if($control == '') $control = 'page';
 
 if($control == 'article'){
   if($id){
-    $q = $mysqli -> query("SELECT * FROM News WHERE id='$id'");
+    $q = $mysqli -> query("SELECT * FROM News WHERE id = '$id'");
     $result = $q -> fetch_assoc();
     
     if($result){   
       $title = $result[name];
+      
+      $q = $mysqli -> query("SELECT id, name, date FROM News WHERE id NOT IN ('$id') ORDER BY id DESC LIMIT 0, 5");
+      $result[more] = $q -> fetch_all(MYSQLI_ASSOC);
+      
       $content = tpl("article", $result);
     } else{
       error('Нет статьи');

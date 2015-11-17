@@ -14,6 +14,13 @@ if($module == 'number' && $modulePage != ''){
   
   if($result){   
     $title = $result[name];
+    
+    $q = $mysqli -> query("SELECT id, name FROM Products WHERE category = '$result[category]' && id NOT IN ('$modulePage') LIMIT 0, 5");
+    $result[more] = $q -> fetch_all(MYSQLI_ASSOC);
+    
+    $sqlCat = $mysqli -> query("SELECT name, translation FROM Category WHERE id = '$result[category]'");
+    $result[moreCat] = $sqlCat -> fetch_assoc();
+    
     $path = 'product'; 
   } else{
     error('Нет товара');

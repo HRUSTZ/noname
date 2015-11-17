@@ -11,7 +11,7 @@ if($action == 'edit'){
     $newPrice = $_POST[price];
     $newCategory = $_POST[cat];
     
-    if(!is_numeric($price)){
+    if(!is_numeric($newPrice)){
       $control = 'Неправильно введена цена товара';
     }
     
