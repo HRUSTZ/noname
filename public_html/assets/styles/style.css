@@ -1352,6 +1352,7 @@ nav ul{
   margin: 0 25px 25px;
   text-align: center;
   height: 48px;
+  overflow: hidden;
 }
 .product-content p{
   text-align: center;
@@ -1486,7 +1487,8 @@ nav ul{
 .product-page-description{
   margin: 25px;
   font-size: 14px;
-  text-align: justify; 
+  text-align: justify;
+  white-space: pre-wrap; 
 }
 .article-page-sidebar,
 .product-page-sidebar{
