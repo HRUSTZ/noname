@@ -8,33 +8,29 @@
   <title><?=$title?></title>
 </head>
 <body>
-<section class="drop-form shadow">
-          <section class="drop-sign-in">
-            <div class="page-title">
-              <h1><i class="fa fa-users"></i>Авторизация</h1>
-            </div>
-            <form action="/authorization" method="POST" class="sign-in-form form" autocomplete="on">
-              <div>
-              <label for="user-email">Email</label>
-              <input type="email" id="user-email" name="login" required>
-              </div>
-              <div>
-                <label for="password1">Пароль</label>
-                <input type="password" id="password1" name="password" required>
-              </div>
-              <button class="form-btn button button-anim" type="submit">Войти</button> 
-              <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-            </form>
-          </section>
-          <section class="drop-sign-up">
-            <a href="/registration"><button class="form-btn button button-anim" type="submit">Регистрация</button></a>
-          </section>
-        </section>
-
-
-
-<div class="container">
-    
+  <section class="drop-form shadow">
+    <section class="drop-sign-in">
+      <div class="page-title">
+        <h1><i class="fa fa-users"></i>Авторизация</h1>
+      </div>
+      <form action="/authorization" method="POST" class="sign-in-form form" autocomplete="on">
+        <div>
+        <label for="user-email">Email</label>
+        <input type="email" id="user-email" name="login" required>
+        </div>
+        <div>
+          <label for="password1">Пароль</label>
+          <input type="password" id="password1" name="password" required>
+        </div>
+        <button class="form-btn button button-anim" type="submit">Войти</button> 
+        <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+      </form>
+    </section>
+    <section class="drop-sign-up">
+      <a href="/registration"><button class="form-btn button button-anim" type="submit">Регистрация</button></a>
+    </section>
+  </section>
+  <div class="container">
     <header class="wrap">
       <div class="header-content">
         <a class="header-logo" href="/main"><img src="/assets/img/logo.png" height="85" width="285" alt="1С Коракс Ростов-на-Дону"></a>
@@ -53,7 +49,6 @@
         </div>
       </div>
     </header>
-    
     <nav class="shadow">
       <ul class="wrap">
         <a class="nav-btn button button-anim" href="/main">Главная</a>
@@ -66,18 +61,9 @@
         <button class="nav-btn-login button button-anim"><i class="fa fa-sign-in"></i></button>
       </ul>
     </nav>
-
     <?=$content?>
-
     <footer class="shadow">2015 © ООО "Коракс"</footer>
-</div>
-
-
-
-
+  </div>
 <script src="/assets/js/main.js"></script>
-
 </body>
-</html>
-
-  
+</html> 
