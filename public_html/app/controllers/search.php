@@ -46,16 +46,21 @@ function getResults($words){
   if(!$result[cont]){
     $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
   } else{
-    $result[message] = 'По запросу: "'.$_POST['search'].'" найдено товаров: '.$n;
+    $result[message] = 'По запросу: "'.$_POST['search'].'" найдено результатов: '.$n;
   }
 	return $result;
 }
 
-$max = 10; // максимальное количество слов во фразе
-$minLength = 3; // минимальная длина искомого слова
-$word = explode(" ", cleanPostData($_POST['search']));
-$words = cleanArrayToSearch($word, $max, $minLength);
-$result = getResults($words);
+if(strlen(trim($_POST['search'])) >= 3){
+  $max = 10; // максимальное количество слов во фразе
+  $minLength = 3; // минимальная длина искомого слова
+  $word = explode(" ", cleanPostData($_POST['search']));
+  $words = cleanArrayToSearch($word, $max, $minLength);
+  $result = getResults($words);  
+} else{
+  $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
+  $result[cont] = array();
+}
 
 $title = 'Поиск';
 $content = tpl('search', $result);
