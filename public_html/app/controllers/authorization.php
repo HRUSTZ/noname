@@ -37,7 +37,10 @@ if($_POST){
     
     $link = $_SESSION['link'];
     unset($_SESSION['link']);
-
+    if($link == '/authorization'){
+      $link = '/main';
+    }
+    
     inputNotice('Вы успешно авторизировались');
     
     header("Location: $link");
