@@ -1,4 +1,4 @@
-(function( window ){
+/*(function( window ){
 
   $('.user-signin-btn').on('click', function(){    
       $('.menu-user').slideToggle("slow");
@@ -8,7 +8,7 @@
       $('.drop-form').slideToggle("slow");
   });
 
-})( window );
+})( window ); */
 
 function notice(text){
   var d=document.createElement('div');
@@ -24,3 +24,46 @@ function notice(text){
   document.body.removeChild(mask);
   } , 2000)
 }
+
+
+
+
+(function( window ){
+ 
+    'use strict';
+
+    $('.user-signin-btn').on('click', function(){    
+      $('.menu-user').slideToggle("slow");
+  });
+ 
+    var body = document.body,
+        mask = document.createElement("div"),
+        toggleSlideTop = document.querySelector( ".nav-btn-login" ),
+        activeNav;
+    mask.className = "mask";
+ 
+    /* slide menu top */
+    toggleSlideTop.addEventListener( "click", function(){
+        body.classList.add("open");
+        //classie.add( body, "smt-open" );
+        document.body.appendChild(mask);
+        //activeNav = "open";
+    } );
+ 
+
+mask.addEventListener( "click", function(){
+        body.classList.remove("open");
+        //activeNav = "";
+        document.body.removeChild(mask);
+    } );
+
+    
+    [].slice.call(document.querySelectorAll(".close")).forEach(function(el,i){
+        el.addEventListener( "click", function(){
+            body.classList.remove("activeNav");
+            //activeNav = "";
+            document.body.removeChild(mask);
+        } );
+    });
+ 
+})( window );

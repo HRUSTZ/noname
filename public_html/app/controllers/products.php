@@ -33,7 +33,7 @@ if($module == 'number' && $modulePage != ''){
   
   $control = true;
   
-  $result[title] = 'Продукты';
+  $result[title] = 'Все товары';
   $title = "Наши предложения";
   $path = 'products';
 } else{

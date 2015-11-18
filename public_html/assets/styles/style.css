@@ -1107,7 +1107,6 @@ h1{
 }
 /*======================= HEADER =======================*/
 header{
-  width: 100%;
   height: 100px;
 }
 .header-content{
@@ -1352,6 +1351,7 @@ nav ul{
   font-size: 16px;
   margin: 0 25px 25px;
   text-align: center;
+  height: 48px;
 }
 .product-content p{
   text-align: center;
@@ -1409,7 +1409,8 @@ nav ul{
   padding-bottom: 50px;
 }
 .catalog-filter{
-  width: 300px;
+  width: 275px;
+  margin: 0 0 25px 25px;
 }
 .catalog-products{
   width: 700px;
@@ -1417,7 +1418,7 @@ nav ul{
 .filter-content{
   padding-top: 25px;
   background: #fff;
-  width: 300px;
+  width: 275px;
   border-radius: 15px;
 }
 .filter-content p{
@@ -1447,13 +1448,12 @@ nav ul{
   height: 270px;
   width: 650px;
   margin: 0 25px;
-  display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   border-radius: 15px;
   font-size: 18px;
-  
+  display: flex;
 }
 /*======================= ARTICLE & PRODUCT =======================*/
 .article-page,
@@ -1562,7 +1562,7 @@ footer{
 
 
 
-.drop-form{
+/*.drop-form{
   z-index:3;
   position:absolute;
   top:50px;
@@ -1596,7 +1596,7 @@ footer{
 }
 .drop-sign-up button{
   margin: 25px;
-}
+}*/
 .user-signin-btn,
 .signin-btn,
 .search-btn{
@@ -1625,7 +1625,7 @@ footer{
 
 
 .menu-user{
-  z-index: 2;
+  z-index: 3;
   position: absolute;
   top: 50px;
   right: 0;
@@ -1713,6 +1713,7 @@ footer{
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  width: 650px;
 }
 .page-selector > a{
   display: flex;
@@ -1737,4 +1738,41 @@ footer{
 .switch-item:hover{
   color: #fff;
   background: #028ec9;
+}
+
+
+
+
+
+
+
+
+
+
+
+.drop-form {
+    top: -550px;
+    height: 350px;
+    position: fixed;
+    z-index: 20;
+    overflow: hidden;
+    transition: all 0.5s;
+    left: 50%;
+    margin-left: -275px;
+    width: 550px;
+    border-radius: 15px;
+    background: #fff;
+}
+body.open .drop-form {
+   top: 50%;
+   margin-top: -175px;
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
