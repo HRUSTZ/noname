@@ -55,8 +55,13 @@ if(strlen(trim($_POST['search'])) >= 2){
   $max = 10; // максимальное количество слов во фразе
   $minLength = 2; // минимальная длина искомого слова
   $word = explode(" ", cleanPostData($_POST['search']));
-  $words = cleanArrayToSearch($word, $max, $minLength);
-  $result = getResults($words);  
+  //print_r($word);
+  if($word[0] == ''){
+    $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
+  } else{
+    $words = cleanArrayToSearch($word, $max, $minLength);
+    $result = getResults($words);  
+  }
 } else{
   $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
   $result[cont] = array();

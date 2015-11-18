@@ -1,4 +1,4 @@
-<?
+<? header("Content-type: text/html; Charset=utf-8");
 $action = $query[3];
 
 if($action == 'add'){
