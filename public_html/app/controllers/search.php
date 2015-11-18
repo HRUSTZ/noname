@@ -37,7 +37,7 @@ function getResults($words){
 		$i++;
 		$sql = $sql." name LIKE '%".$value."%' || description LIKE '%".$value."%'".($i == count($words)?"":" ||");
 	}
-	$sql .= " ORDER BY 'id' DESC";
+	//$sql .= " ORDER BY 'id' DESC";
 	$q = $mysqli -> query($sql);
   $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
   
@@ -51,9 +51,9 @@ function getResults($words){
 	return $result;
 }
 
-if(strlen(trim($_POST['search'])) >= 3){
+if(strlen(trim($_POST['search'])) >= 2){
   $max = 10; // максимальное количество слов во фразе
-  $minLength = 3; // минимальная длина искомого слова
+  $minLength = 2; // минимальная длина искомого слова
   $word = explode(" ", cleanPostData($_POST['search']));
   $words = cleanArrayToSearch($word, $max, $minLength);
   $result = getResults($words);  
