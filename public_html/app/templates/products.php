@@ -28,8 +28,8 @@
             </div>
           </article>
           <? endforeach; ?>
-          <p class="products-clean"><?= $cont[clean]?></p>
-          <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3], $cont[page][4])?>
+          <?= $cont[clean]?>
         </section>
+        <?page($cont[page][0], $cont[page][1], $cont[page][2], $cont[page][3], $cont[page][4])?>
       </section>
     </section>

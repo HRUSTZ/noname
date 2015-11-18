@@ -72,7 +72,7 @@ if($control){
   $result[page] = array($controlPage, $idPage, $count[0], '9', true);
   
   if(!$result[cont]){
-    $result[clean] = 'По указанным параметрам не найдено ни одного товара.';
+    $result[clean] = '<p class="products-clean shadow">По указанным параметрам не найдено ни одного товара.</p>';
     $result[page][4] = false;
   }
 }

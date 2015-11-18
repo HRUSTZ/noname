@@ -1054,10 +1054,10 @@ body{
   font: 16px/1.5em Noto Sans, sans-serif;
 }
 .separator{
-  width: 200px;
   height: 15px;
-  margin: 0 auto 25px;
   background: url(/assets/img/7.png);
+  width: 200px;
+  margin: 0 auto 25px;
 }
 h1{
   margin: 25px;
@@ -1319,7 +1319,6 @@ nav ul{
 .product-img{
   display: flex;
   height: 200px;
-
 }
 .main-product img{
   margin: auto;
@@ -1401,7 +1400,7 @@ nav ul{
 .news-article .article-description{
   width: 450px;
 }
-.news .separator:last-child{
+.news-wrap > .separator:last-child{
   display: none;
 }
 /*======================= CATALOG =======================*/
@@ -1444,6 +1443,18 @@ nav ul{
   max-width: 175px;
   margin: auto;
 }
+.products-clean{
+  height: 270px;
+  width: 650px;
+  margin: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 15px;
+  font-size: 18px;
+  
+}
 /*======================= ARTICLE & PRODUCT =======================*/
 .article-page,
 .product-page{
@@ -1464,6 +1475,7 @@ nav ul{
   font-size: 18px;
   text-transform: none;
   margin: 25px 25px 10px;
+  word-break: break-word;
 }
 .article-page-date{
   margin: 0 25px 25px;
