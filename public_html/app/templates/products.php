@@ -1,8 +1,4 @@
 
-
-
-
-
 <section class="catalog wrap">  
       
       <section class="catalog-filter">
