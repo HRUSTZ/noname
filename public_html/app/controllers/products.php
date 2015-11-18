@@ -33,9 +33,9 @@ if($module == 'number' && $modulePage != ''){
   
   $control = true;
   
-  $result[title] = 'Все товары';
+  $result[title] = 'Продукты';
   $title = "Наши предложения";
-  $path = 'products'; 
+  $path = 'products';
 } else{
   $sqlCat = $mysqli -> query("SELECT id, name, translation FROM Category WHERE name = '$module'");
   $category = $sqlCat -> fetch_assoc();

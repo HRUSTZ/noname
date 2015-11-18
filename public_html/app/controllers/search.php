@@ -1,4 +1,12 @@
 <?//поиск по каталогу
+if($_POST['search'] == '' && $_SESSION['search']){
+  $_POST['search'] = $_SESSION['search'];
+} elseif($_POST['search'] == '' && $_SESSION['search'] == ''){
+  $result[message] = 'Не задан поисковой запрос';
+}
+
+$_SESSION['search'] = $_POST['search'];
+
 function cleanPostData($data){
 	$data = strip_tags($data);
 	$data = strtolower($data);
@@ -31,17 +39,23 @@ function getResults($words){
 	}
 	$sql .= " ORDER BY 'id' DESC";
 	$q = $mysqli -> query($sql);
-  $result = $q -> fetch_all(MYSQLI_ASSOC);
+  $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
+  
+  $n = count($result[cont]);
+  
+  if(!$result[cont]){
+    $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
+  } else{
+    $result[message] = 'По запросу: "'.$_POST['search'].'" найдено товаров: '.$n;
+  }
 	return $result;
 }
 
 $max = 10; // максимальное количество слов во фразе
 $minLength = 3; // минимальная длина искомого слова
-$word = explode(" ", cleanPostData($_POST["search"]));
+$word = explode(" ", cleanPostData($_POST['search']));
 $words = cleanArrayToSearch($word, $max, $minLength);
-$results = getResults($words);
-
-print_r($results);
+$result = getResults($words);
 
 $title = 'Поиск';
 $content = tpl('search', $result);

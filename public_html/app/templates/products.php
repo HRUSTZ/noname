@@ -16,7 +16,7 @@
       </section>
     
       <section class="catalog-products">
-        <h1>Продукты</h1>
+        <h1><?= $cont[title]?></h1>
         <section class="products-content">
           <? foreach($cont[cont] as $value): ?> 
           <article class="catalog-product shadow">
