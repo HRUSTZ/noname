@@ -37,11 +37,11 @@
           <h1>Продукты</h1>
           <? foreach($cont[products] as $value): ?>
           <article class="main-product shadow">
-            <img src="<?= $value[photo]?>">
+            <div class="product-img"><img src="<?= $value[photo]?>"></div>
             <div class="main-product-content product-content">
               <div class="product-layer shadow">
               <h2><?= $value[name]?></h2>
-              <p><?= $value[price]?></p>
+              <p><?= $value[price]?> р.</p>
               <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
               </div>
             </div>

@@ -20,7 +20,7 @@
         <section class="products-content">
           <? foreach($cont[cont] as $value): ?> 
           <article class="catalog-product shadow">
-            <img src="<?= $value[photo]?>">
+            <div class="product-img"><img src="<?= $value[photo]?>"></div>
             <div class="product-content">
               <h2><?= $value[name]?></h2>
               <p><?= $value[price]?> р.</p>

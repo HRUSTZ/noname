@@ -1190,7 +1190,7 @@ nav ul{
   border: 0;
   outline: 0;
   border-radius: 15px;
-  font-size: 18px;
+  font-size: 16px;
 }
 .nav-btn-login,
 .nav-btn-search{
@@ -1201,6 +1201,16 @@ nav ul{
   border: 0;
   background: 0;
   cursor: pointer;
+  color: #fff;
+  transition: all .7s;
+}
+.nav-btn-login i,
+.nav-btn-search i{
+  font-size: 22px;
+}
+.nav-btn-login:hover,
+.nav-btn-search:hover{
+  color: #036ca6;
 }
 /*======================= MAIN =======================*/
 .main{
@@ -1214,14 +1224,14 @@ nav ul{
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 25px;
+  border-radius: 15px;
   width: 1000px;
 }
 .main-about-img{
   height: 400px;
 }
 .main-about-img img{
-  border-radius: 25px;
+  border-radius: 15px;
   height: 400px;
   width: 1000px;
 }
@@ -1245,7 +1255,7 @@ nav ul{
 .main-services-content > article{
   width: 300px;
   margin-left: 25px;
-  border-radius: 25px;
+  border-radius: 15px;
   background: #fff url(/assets/img/5.png);
   display: flex;
   height: 550px;
@@ -1254,14 +1264,13 @@ nav ul{
 .main-services-content > article p{
   margin: 25px;
   text-align: justify;
-  font-size: 14px;
 }
 .main-content{
   display: flex;
 }
 .article{
   margin: 0 25px 25px;
-  border-radius: 25px;
+  border-radius: 15px;
   padding-top: 25px;
 }
 .main-article{
@@ -1273,16 +1282,16 @@ nav ul{
   margin: 0 25px;
   width: 395px;
   font-size: 16px;
-  max-height: 48px;
   overflow: hidden;
+  height: 48px;
 }
 .article-description{
   margin: 3px 25px;
   width: 395px;
   overflow: hidden;
-  max-height: 72px;
   font-size: 14px;
   text-align: justify;
+  height: 72px;
 }
 .article-date{
   display: inline-block;
@@ -1305,10 +1314,15 @@ nav ul{
   overflow: hidden;
   position: relative;
   background: #fff;
-  border-radius: 25px;
+  border-radius: 15px;
+}
+.product-img{
+  display: flex;
+  height: 200px;
+
 }
 .main-product img{
-  margin: 0 25px;
+  margin: auto;
   max-height: 200px;
   max-width: 200px;
 }
@@ -1316,7 +1330,7 @@ nav ul{
   background: rgba(255,255,255,.8);
   height: 200px;
   transition: all .7s;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .product-layer:hover{
   padding-top: 25px;
@@ -1405,7 +1419,7 @@ nav ul{
   padding-top: 25px;
   background: #fff;
   width: 300px;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .filter-content p{
   padding: 0 25px 25px;
@@ -1423,12 +1437,12 @@ nav ul{
   margin: 0 0 25px 25px;
   padding-bottom: 25px;
   background: #fff;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .catalog-product img{
   max-height: 175px;
   max-width: 175px;
-  margin: 12px;
+  margin: auto;
 }
 /*======================= ARTICLE & PRODUCT =======================*/
 .article-page,
@@ -1442,7 +1456,7 @@ nav ul{
   width: 625px;
   margin: 0 25px 25px;
   background: #fff;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 .article-page h1,
 .product-page h1{
@@ -1466,7 +1480,8 @@ nav ul{
 .product-page-sidebar{
   width: 300px;
   background: #fff;
-  border-radius: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
 }
 .article-sidebar-date{
   margin: 0 25px;
@@ -1478,6 +1493,7 @@ nav ul{
   margin: 0 25px 25px;
   font-size: 14px;
   text-decoration: underline;
+  word-break: break-word;
 }
 .product-sidebar-link,
 .article-sidebar-link{
@@ -1537,7 +1553,7 @@ footer{
 .drop-form{
   z-index:3;
   position:absolute;
-  top:150px;
+  top:50px;
   right:0;
   display:none;
   width: 576px;
@@ -1666,4 +1682,47 @@ footer{
 .user-edit-btn:hover,
 .user-exit-btn:hover{
   color: #036ca6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.page-selector{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.page-selector > a{
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 25px 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5) inset;
+  transition: all .5s;
+}
+.switch-item{
+  color: #036ca6;
+  background: #fff;
+}
+.switch-item-cur{
+  color: #fff;
+  background-color: #036ca6;
+}
+.switch-item:hover{
+  color: #fff;
+  background: #028ec9;
 }
