@@ -21,7 +21,7 @@
     <section class="main-articles">
       <h1>Последние акции</h1>
       <? foreach($cont[news] as $value): ?>
-      <article class="main-article article shadow">
+      <article class="article shadow">
         <h2><a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a></h2>
         <p class="article-description"><?= $value[description]?></p>
         <p class="article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
@@ -35,12 +35,12 @@
       <? foreach($cont[products] as $value): ?>
       <article class="main-product shadow">
         <div class="product-img"><img src="<?= $value[photo]?>"></div>
-        <div class="main-product-content product-content">
-          <div class="product-layer shadow">
-          <h2><?= $value[name]?></h2>
-          <p><?= $value[price]?> р.</p>
-          <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
-          </div>
+        <div class="product-content main-product-content ">
+          
+            <h2><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></h2>
+            <p><?= $value[price]?> р.</p>
+            <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
+          
         </div>
       </article>
       <? endforeach; ?>
