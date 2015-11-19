@@ -1,8 +1,17 @@
-<?= $cont[message]?>
-<? foreach($cont[cont] as $value): ?>
-<div class="product-img"><img src="<?= $value[photo]?>"></div>
-  <?= $value[name]?>
-  <?= $value[price]?>
-  <?= $value[description]?>
-  <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
-<? endforeach; ?>
+<section class="catalog wrap">
+  <section class="catalog-products">
+    <h1><?= $cont[message]?></h1>
+    <section class="products-content search-product">
+      <? foreach($cont[cont] as $value): ?> 
+      <article class="catalog-product shadow">
+        <a class="product-img" href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>"></a>
+        <div class="product-content">
+          <h2><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></h2>
+          <p><?= $value[price]?> р.</p>
+          <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
+        </div>
+      </article>
+      <? endforeach; ?>
+    </section>
+  </section>
+</section>

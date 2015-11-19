@@ -13,8 +13,8 @@
     <h1>Авторизация</h1>
     <form action="/authorization" method="POST" class="sign-in-form form" autocomplete="on">
       <div>
-      <label for="login">Email</label>
-      <input type="email" id="login" name="login" required>
+        <label for="login">Email</label>
+        <input type="email" id="login" name="login" required>
       </div>
       <div>
         <label for="password">Пароль</label>

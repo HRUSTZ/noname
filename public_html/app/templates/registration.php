@@ -1,8 +1,6 @@
 <section class="sign-up">
-  <section class="sign-up-content">
-    <div class="page-title">
-      <h1><i class="fa fa-user-plus"></i>Регистрация</h1>
-    </div>
+  <section class="sign-up-content shadow">
+    <h1>Регистрация</h1>
     <form class="form sign-up-form" action="/registration" method="POST">
       <div>
         <label for="user-email">Email</label>

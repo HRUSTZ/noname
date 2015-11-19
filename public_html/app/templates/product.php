@@ -2,7 +2,9 @@
   <section class="product-page-content shadow">
     <h1><?= $cont[name]?></h1>
     <div class="product-flex">
-      <img src="<?= $cont[photo]?>" alt="<?= $cont[name]?>">
+      <div class="product-img">
+        <img src="<?= $cont[photo]?>" alt="<?= $cont[name]?>">
+      </div>
       <div class="product-info">
         <p class="product-price">Цена: <?= $cont[price]?> р.</p>
         <p>Чтобы заказать товар, звоните по телефону:<br> 8 (863) 279-91-63<br>
