@@ -1714,7 +1714,7 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 865px;
+  width: 100%;
   margin: 0 auto;
 }
 .page-selector > a{
@@ -1752,22 +1752,69 @@ footer{
 
 
 
-.drop-form {
-    top: -550px;
-    height: 350px;
-    position: fixed;
-    z-index: 20;
-    overflow: hidden;
-    transition: all 0.5s;
-    left: 50%;
-    margin-left: -275px;
-    width: 550px;
-    border-radius: 15px;
-    background: #fff;
+.drop-form{
+  top: -550px;
+  height: 380px;
+  position: fixed;
+  z-index: 20;
+  overflow: hidden;
+  transition: all 0.5s;
+  left: 50%;
+  margin-left: -275px;
+  width: 550px;
+  border-radius: 15px;
+  background: #fff;
+}
+.close{
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 30px;
+  cursor: pointer;
+}
+.close:hover{
+  color: #036ca6;
+}
+.sign-in-form label{
+  display: block;
+  margin: 0 25px;
+}
+.sign-in-form input{
+  margin: 0 25px 25px;
+  width: 478px;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #036ca6;
+}
+.form-btn{
+  width: 160px;
+  height: 30px;
+  margin: 0 195px 25px;
+  border: 1px solid #036ca6;
+  padding: 0;
+  outline: 0;
+  border-radius: 15px;
+  background: #036ca6;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.form-btn:hover{
+  color: #036ca6;
+}
+.drop-form > p{
+  text-align: center;
+
+}
+.drop-form > p a{
+  text-decoration: underline;
+}
+.drop-form > p a:hover{
+  color: #036ca6;
 }
 body.open .drop-form {
    top: 50%;
-   margin-top: -175px;
+   margin-top: -190px;
 }
 .mask {
     position: fixed;

@@ -62,3 +62,6 @@
 .fa-filter:before{
   content: "\f0b0";
 }
+.fa-times:before{
+ content: "\f00d";
+}

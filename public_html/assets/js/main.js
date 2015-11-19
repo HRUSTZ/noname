@@ -38,8 +38,7 @@ function notice(text){
  
     var body = document.body,
         mask = document.createElement("div"),
-        toggleSlideTop = document.querySelector( ".nav-btn-login" ),
-        activeNav;
+        toggleSlideTop = document.querySelector( ".nav-btn-login" );
     mask.className = "mask";
  
     /* slide menu top */
@@ -60,7 +59,7 @@ mask.addEventListener( "click", function(){
     
     [].slice.call(document.querySelectorAll(".close")).forEach(function(el,i){
         el.addEventListener( "click", function(){
-            body.classList.remove("activeNav");
+            body.classList.remove("open");
             //activeNav = "";
             document.body.removeChild(mask);
         } );

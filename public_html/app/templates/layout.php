@@ -9,26 +9,22 @@
 </head>
 <body>
   <section class="drop-form shadow">
-    <section class="drop-sign-in">
-      <div class="page-title">
-        <h1><i class="fa fa-users"></i>Авторизация</h1>
+    <i class="fa fa-times close"></i>
+    <h1>Авторизация</h1>
+    <form action="/authorization" method="POST" class="sign-in-form form" autocomplete="on">
+      <div>
+      <label for="login">Email</label>
+      <input type="email" id="login" name="login" required>
       </div>
-      <form action="/authorization" method="POST" class="sign-in-form form" autocomplete="on">
-        <div>
-        <label for="user-email">Email</label>
-        <input type="email" id="user-email" name="login" required>
-        </div>
-        <div>
-          <label for="password1">Пароль</label>
-          <input type="password" id="password1" name="password" required>
-        </div>
-        <button class="form-btn button button-anim" type="submit">Войти</button> 
-        <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-      </form>
-    </section>
-    <section class="drop-sign-up">
-      <a href="/registration"><button class="form-btn button button-anim" type="submit">Регистрация</button></a>
-    </section>
+      <div>
+        <label for="password">Пароль</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button class="form-btn button button-anim" type="submit">Войти</button> 
+      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+    </form>
+    <div class="separator"></div>
+    <p><a href="/registration">Регистрация</a></p>
   </section>
   <div class="container">
     <header class="wrap">
