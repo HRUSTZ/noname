@@ -1319,7 +1319,7 @@ nav ul{
 }
 .product-img{
   display: flex;
-  height: 192px;
+  height: 255px;
 }
 .main-product img{
   margin: auto;
