@@ -36,36 +36,17 @@
       <? endforeach; ?>
       <button class="button button-anim" type="submit">Подтвердить</button>
     </form>
-    <h1>Все товары на сайте</h1>
     
     <h1>Изменение "главных товаров"</h1>
     <form action="/panel/main_edit/products_edit" method="POST" class="shadow">
-      <? foreach($cont[products] as $value): ?>
-        <select name="t<?=$value[main]?>" id="number">
-      <? foreach($cont[allProducts] as $value): ?>
-        <option <?=($cont[allProducts] == $value[id])?'selected':''?> value='<?=$value[id]?>'><?=$value[name]?></option>
-      <? endforeach; ?>
-      </select>
-      <? endforeach; ?>
+      <? for($i = 1; $i <= 3; $i++):?>
+        <select name="t<?=$i?>" id="number">
+          <? foreach($cont[allProducts] as $value): ?>
+            <option <?=($value[main] == $i)?'selected':''?> value='<?=$value[id]?>'><?=$value[name]?></option>
+          <? endforeach; ?>
+        </select>
+      <? endfor; ?>
       <button class="button button-anim" type="submit">Подтвердить</button>
-
-      
-    </form>
+    </form> 
   </section>
 </section>
-
-
-
-
-<!--    <table>
-      <tr>
-        <td>Номер</td>
-        <td>Товар</td>
-      </tr>
-      <? foreach($cont[allProducts] as $value): ?> 
-        <tr>
-          <td><?=$value[id]?></td>
-          <td><?=$value[name]?></td>
-        </tr>
-      <? endforeach; ?>
-    </table>-->

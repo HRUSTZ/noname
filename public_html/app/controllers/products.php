@@ -15,7 +15,7 @@ if($module == 'number' && $modulePage != ''){
   if($result){   
     $title = $result[name];
     
-    $q = $mysqli -> query("SELECT id, name FROM Products WHERE category = '$result[category]' && id NOT IN ('$modulePage') LIMIT 0, 5");
+    $q = $mysqli -> query("SELECT id, name FROM Products WHERE category = '$result[category]' && id NOT IN ('$modulePage') ORDER BY RAND() LIMIT 0, 6");
     $result[more] = $q -> fetch_all(MYSQLI_ASSOC);
     
     $sqlCat = $mysqli -> query("SELECT name, translation FROM Category WHERE id = '$result[category]'");

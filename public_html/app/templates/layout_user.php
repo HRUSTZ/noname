@@ -67,6 +67,7 @@
                   </div>
                 </div>
                 <div class="user-btns">
+                  <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
                   <a href="/profile_edit"><button class="user-edit-btn button button-anim">Редактировать</button></a>
                   <a href="/exit"><button class="user-exit-btn button button-anim">Выход</button></a>
                 </div>

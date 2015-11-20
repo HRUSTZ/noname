@@ -36,8 +36,37 @@ if($action == 'products_edit' && $_POST){
   $t1 = $_POST[t1];
   $t2 = $_POST[t2];
   $t3 = $_POST[t3];
-  
+
   $control = false;
+  
+  if($t1 == $t2 || $t2 == $t3 || $t1 == $t3){
+    $control = 'Выбраны одинаковые товары';
+  }
+  
+  if(!$control){
+    $mysqli -> query("UPDATE Products SET main = '0' WHERE main = '1' || main = '2' || main = '3'");
+    
+    $i = 1;
+    
+    foreach($_POST as $value){
+      $mysqli -> query("UPDATE Products SET main = '$i' WHERE id = '$value'");
+      $i++;
+    }  
+    
+    inputNotice('Данные успешно изменены');
+    header("Location: /panel/main_edit");
+    exit;
+  } else{
+    inputNotice($control);
+  }
+}
+
+/*
+if($action == 'products_edit' && $_POST){
+  $t1 = $_POST[t1];
+  $t2 = $_POST[t2];
+  $t3 = $_POST[t3];
+  
   
   $q = $mysqli -> query("SELECT COUNT(*) FROM Products WHERE id = '$t1' || id = '$t2' || id = '$t3'");
   $idProd = $q -> fetch_row();
@@ -67,6 +96,7 @@ if($action == 'products_edit' && $_POST){
     inputNotice($control);
   }
 }
+*/
 
 $q = $mysqli -> query("SELECT * FROM Data");
 $txt = $q -> fetch_all(MYSQLI_ASSOC);

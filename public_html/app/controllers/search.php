@@ -37,7 +37,7 @@ function getResults($words){
 		$i++;
 		$sql = $sql." name LIKE '%".$value."%' || description LIKE '%".$value."%'".($i == count($words)?"":" ||");
 	}
-	//$sql .= " ORDER BY 'id' DESC";
+	$sql .= "  ORDER BY RAND()";
 	$q = $mysqli -> query($sql);
   $result[cont] = $q -> fetch_all(MYSQLI_ASSOC);
   
