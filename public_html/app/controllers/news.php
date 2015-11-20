@@ -42,7 +42,7 @@ if($control == 'article'){
   $result[page] = array('/news/page/', $id, $count[0], '5', true);
   
   if(!$result[cont]){
-    $result[clean] = 'По указанным параметрам не найдено ни одной новости.';
+    $result[clean] = '<p class="products-clean shadow">По указанным параметрам не найдено ни одной новости.</p>';
     $result[page][4] = false;
   }
   

@@ -1246,6 +1246,7 @@ nav ul{
   margin: 0 100px 25px;
   font-size: 18px;
   text-align: center;
+  white-space: pre-wrap;
 }
 .main-services-content{
   display: flex;
@@ -1859,4 +1860,131 @@ body.open .drop-form {
   text-align: center;
   color: #fff;
   background: #036ca6;
+}
+
+
+
+.admin-panel{
+  padding-bottom: 50px;
+  display: flex;
+}
+.admin-menu{
+
+}
+.admin-menu-content{
+  width: 250px;
+  margin-left: 25px;
+  padding: 25px;
+  background: #fff;
+  border-radius: 15px;
+}
+.admin-menu-content > div{
+  margin-bottom: 25px;
+}
+.admin-menu-content > div:last-child{
+  margin: 0;
+}
+.admin-menu-content h2{
+  font-size: 20px;
+  margin-bottom: 5px;;
+
+}
+.admin-menu-content p{
+  text-decoration: underline;
+
+}
+.admin-menu-content p a:hover{
+
+}
+.admin-panel-content{
+  padding-top: 1px;
+}
+.admin-panel-content form{
+  width: 715px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  margin: 0 25px 25px;
+  position: relative;
+
+}
+.admin-panel-content form > label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+
+}
+.admin-panel-content form .input-file{
+  padding: 0;
+  height: 24px;
+}
+.admin-panel-content form > img{
+  max-height: 250px;
+  max-width: 250px;
+
+}
+.admin-panel-content form > input{
+  width: 691px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.admin-panel-content form > textarea{
+  width: 693px;
+  resize: vertical;
+  min-height: 154px;
+  display: block;
+  margin-bottom: 25px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: inherit;
+  white-space: pre-wrap;
+}
+.admin-panel-content form > select{
+  height: 34px;
+  width: 200px;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+.admin-panel-content form > button{
+  width: 160px;
+  height: 30px;
+  border: 1px solid #036ca6;
+  padding: 0;
+  outline: 0;
+  border-radius: 15px;
+  background: #036ca6;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 277.5px;
+}
+.admin-panel-content form > button:hover{
+  color: #036ca6;
+}
+.admin-panel-content form > a{
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 18px;
+  text-decoration: underline;
+}
+.admin-panel-content form > p{
+  text-decoration: underline;
+  display: inline-block;
+  width: 350px;
+  margin: 0 5px 25px 0;
+}
+.admin-panel-content form > span{
+  margin: -25px 0 25px 0;
+  text-decoration: underline;
+  text-align: right;
+  display: block;
+}
+.admin-panel-content form  a i{
+  margin: 0 5px;
+}
+.admin-panel-content form a:hover{
+  color: #036ca6;
 }
