@@ -43,10 +43,11 @@ function getResults($words){
   
   $n = count($result[cont]);
   
+  $result[message] = 'Результаты поиска: '.$_POST['search'];
   if(!$result[cont]){
-    $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
+    $result[messageResult] = 'Найдено результатов: '.$n;
   } else{
-    $result[message] = 'По запросу: "'.$_POST['search'].'" найдено результатов: '.$n;
+    $result[messageResult] = 'Найдено результатов: '.$n;
   }
 	return $result;
 }
@@ -57,14 +58,20 @@ if(strlen(trim($_POST['search'])) >= 2){
   $word = explode(" ", cleanPostData($_POST['search']));
   //print_r($word);
   if($word[0] == ''){
-    $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
+    $result[message] = 'Результаты поиска: '.$_POST['search'];
+    $result[messageResult] = 'Найдено результатов: 0';
   } else{
     $words = cleanArrayToSearch($word, $max, $minLength);
     $result = getResults($words);  
   }
 } else{
-  $result[message] = 'По запросу: "'.$_POST['search'].'" ничего не найдено';
+  $result[message] = 'Результаты поиска: '.$_POST['search'];
+  $result[messageResult] = 'Найдено результатов: 0';
   $result[cont] = array();
+}
+
+if($result[message]){
+  
 }
 
 $title = 'Поиск';

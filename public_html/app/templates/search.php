@@ -1,6 +1,7 @@
 <section class="catalog wrap">
   <section class="catalog-products">
     <h1><?= $cont[message]?></h1>
+    <h2><?= $cont[messageResult]?></h2>
     <section class="products-content search-product">
       <? foreach($cont[cont] as $value): ?> 
       <article class="catalog-product shadow">
