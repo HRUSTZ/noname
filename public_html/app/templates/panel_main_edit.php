@@ -26,7 +26,7 @@
       <input type="text" id="title" name="title" value="<?=$cont[mainText][title]?>"/>
       <label for="text">Описание</label>
       <textarea id="text" name="about"><?=$cont[mainText][about]?></textarea>
-      <input type="submit" value="Подтвердить">
+      <button class="button button-anim" type="submit">Подтвердить</button>
     </form>
     <h1>Изменение "достоинств/услуг"</h1>
     <form action="/panel/main_edit/services_edit" method="POST" class="shadow">
@@ -34,7 +34,7 @@
         <label for="s<?=$value[id]?>"><?=$value[id]?></label>
         <textarea id="s<?=$value[id]?>" name="s<?=$value[id]?>"><?=$value[about]?></textarea>
       <? endforeach; ?>
-      <input type="submit" value="Подтвердить">
+      <button class="button button-anim" type="submit">Подтвердить</button>
     </form>
     <h1>Все товары на сайте</h1>
     
@@ -47,7 +47,7 @@
       <? endforeach; ?>
       </select>
       <? endforeach; ?>
-      <input type="submit" value="Подтвердить">
+      <button class="button button-anim" type="submit">Подтвердить</button>
 
       
     </form>
