@@ -35,48 +35,46 @@
         <a class="nav-btn button button-anim" href="/main">Главная</a>
         <a class="nav-btn button button-anim" href="/products">Каталог</a>
         <a class="nav-btn button button-anim" href="/news">Акции</a>
-        <form class="nav-form-search">
-          <input type="text" placeholder="Поиск товаров" required>
-          <button class="nav-btn-search button button-anim" type="submit"></button>
+        <form class="nav-form-search" method="POST" action="/search">
+          <input type="text" name="search" placeholder="Поиск товаров" required>
+          <button class="nav-btn-search button button-anim" type="submit"><i class="fa fa-search"></i></button>
         </form>
-        <button class="user-signin-btn button button-anim"></button>
+        <button class="nav-btn-user button button-anim"><i class="fa fa-user"></i></button>
+
+
+
 
 
 
         <section class="menu-user">
             <div class="menu-profile">
-              <section class="admin-profile">
-                <? if($admin): ?>
-                  <div class="page-title">
-                    <h1><i class="fa fa-user"></i>Администрирование</h1>
-                  </div>
-                  <a href="/panel"><button class="admin-btn button button-anim">Панель управления</button></a>
-                  <a href="/panel/news_add"><button class="admin-btn button button-anim">+Новость</button></a>
-                  <a href="/panel/products_add"><button class="admin-btn button button-anim">+Товар</button></a>
-                <? endif; ?>
+              <? if($admin): ?>
+              <section class="menu-admin-profile">
+                <a href="/panel"><button class="button button-anim">Панель управления</button></a>
+                <a href="/panel/news_add"><button class="button button-anim">+ Новость</button></a>
+                <a href="/panel/products_add"><button class="button button-anim">+ Товар</button></a>
               </section>
-              <section class="user-profile">
-                <div class="page-title">
-                  <h1><i class="fa fa-user"></i>Профиль</h1>
-                </div>
-                <div class="user-info">
-                  <img class="user-img" src="<?=$photo?>" alt="<?=$name?>">
-                  <div class="user-ne">
-                    <p><?=$name?></p>
-                    <p><?=$login?></p>
+              <? endif; ?>
+              <section class="menu-user-profile">
+                <div class="user-flex">
+                  <div class="user-img">  
+                    <img src="<?=$photo?>" alt="<?=$name?>">
                   </div>
-                </div>
-                <div class="user-btns">
-                  <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-                  <a href="/profile_edit"><button class="user-edit-btn button button-anim">Редактировать</button></a>
-                  <a href="/exit"><button class="user-exit-btn button button-anim">Выход</button></a>
+                  <div class="user-info">
+                    <div class="user-name">
+                      <p><?=$name?></p>
+                      <p><?=$login?></p>
+                    </div>
+                    <div class="user-edit">
+                      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+                      <a href="/profile_edit">Редактировать</a>
+                      <a href="/exit">Выход</a>
+                    </div>
+                  </div>
                 </div>
               </section>
             </div>
           </section>
-
-
-
       </ul>
     </nav>
 

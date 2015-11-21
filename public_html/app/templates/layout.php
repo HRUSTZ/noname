@@ -52,7 +52,7 @@
         <a class="nav-btn button button-anim" href="/news">Акции</a>
         <form class="nav-form-search" method="POST" action="/search">
           <input type="text" name="search" placeholder="Поиск товаров" required>
-          <button class="nav-btn-search button button-anim" type="submit"> <i class="fa fa-search"></i></button>
+          <button class="nav-btn-search button button-anim" type="submit"><i class="fa fa-search"></i></button>
         </form>
         <button class="nav-btn-login button button-anim"><i class="fa fa-sign-in"></i></button>
       </ul>

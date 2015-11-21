@@ -23,7 +23,7 @@
     <h1>Выбор товара</h1>
     <form class="shadow">
       <? foreach($cont as $value): ?> 
-      <p><a href="/panel/news_edit/<?= $value[id]?>"><i class="fa fa-chevron-right"></i><?= $value[name]?></a></p>
+      <p><a href="/panel/products_edit/<?= $value[id]?>"><i class="fa fa-chevron-right"></i><?= $value[name]?></a></p>
       <? endforeach; ?>
     </form>
   </section>

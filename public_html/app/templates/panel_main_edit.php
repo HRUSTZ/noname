@@ -31,7 +31,7 @@
     <h1>Изменение "достоинств/услуг"</h1>
     <form action="/panel/main_edit/services_edit" method="POST" class="shadow">
       <? foreach($cont[servicesText] as $value): ?>
-        <label for="s<?=$value[id]?>"><?=$value[id]?></label>
+        <label for="s<?=$value[id]?>">Достоинство (услуга) <?=$value[id]?></label>
         <textarea id="s<?=$value[id]?>" name="s<?=$value[id]?>"><?=$value[about]?></textarea>
       <? endforeach; ?>
       <button class="button button-anim" type="submit">Подтвердить</button>
@@ -40,6 +40,7 @@
     <h1>Изменение "главных товаров"</h1>
     <form action="/panel/main_edit/products_edit" method="POST" class="shadow">
       <? for($i = 1; $i <= 3; $i++):?>
+        <label for="number">Товар <?=$i?></label>
         <select name="t<?=$i?>" id="number">
           <? foreach($cont[allProducts] as $value): ?>
             <option <?=($value[main] == $i)?'selected':''?> value='<?=$value[id]?>'><?=$value[name]?></option>
