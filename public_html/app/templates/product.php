@@ -14,13 +14,15 @@
     <div class="separator"></div>
     <p class="product-page-description"><?= $cont[description]?></p>
   </section>
-  <section class="product-page-sidebar shadow">
-    <h1>Продукты из категории</h1>
-    <p class="product-category"><?= $cont[moreCat][translation]?></p>
-    <? foreach($cont[more] as $value): ?>
-    <p class="product-sidebar-name"><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></p>
-    <? endforeach; ?>
-    <div class="separator"></div>
-    <p class="product-sidebar-link"><a href="/products/<?= $cont[moreCat][name]?>">Все продукты</a></p>
-  </section>
+  <? if($cont[more]):?>
+    <section class="product-page-sidebar shadow">
+      <h1>Продукты из категории</h1>
+      <p class="product-category"><?= $cont[moreCat][translation]?></p>
+      <? foreach($cont[more] as $value): ?>
+      <p class="product-sidebar-name"><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></p>
+      <? endforeach; ?>
+      <div class="separator"></div>
+      <p class="product-sidebar-link"><a href="/products/<?= $cont[moreCat][name]?>">Все продукты</a></p>
+    </section>
+  <?endif;?>
 </section>

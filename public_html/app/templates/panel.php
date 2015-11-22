@@ -3,8 +3,8 @@
     <h1>Панель управления</h1>
     <section class="admin-menu-content panel shadow">
       <div class="admin-info">
-        <p>Количество новостей на сайте: <?= $cont[0] ?></p>
         <p>Количество товаров на сайте: <?= $cont[1] ?></p>
+        <p>Количество новостей на сайте: <?= $cont[0] ?></p>
       </div>
       <div>
         <h2>Главная</h2>
