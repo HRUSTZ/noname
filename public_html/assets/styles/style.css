@@ -929,3 +929,29 @@ body.open .drop-form {
 .profile-edit > form{
   margin: 0 187px 25px;
 }
+/*======================= ERROR =======================*/
+.error{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: url(/assets/img/err.jpg) center no-repeat;
+  background-size: cover;
+}
+.error h1{
+  font-size: 60px;
+  color: #565656;
+}
+.error p{
+  font-size: 30px;
+  color: #343434;
+}
+.error a{
+  text-decoration: underline;
+}
+.error a:hover{
+  color: #036ca6;
+}

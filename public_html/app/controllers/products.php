@@ -4,7 +4,7 @@
 $module = $query[2];
 $modulePage = $query[3];
 $idPage = $query[4];
-if($idPage != '' && !is_numeric($idPage)) error('Станица не найдена');
+if($idPage != '' && !is_numeric($idPage)) error('Страница не найдена');
 
 $control = false;
 
@@ -52,7 +52,7 @@ if($module == 'number' && $modulePage != ''){
     $title = "Наши предложения";
     $path = 'products'; 
   } else{
-    error('Станица не найдена');
+    error('Страница не найдена');
   }
 }
 

@@ -3,7 +3,7 @@
 
 $control = $query[2];
 $id = $query[3];
-if($id != '' && !is_numeric($id)) error('Станица не найдена');
+if($id != '' && !is_numeric($id)) error('Страница не найдена');
 
 if($control == '') $control = 'page';
 
@@ -49,5 +49,5 @@ if($control == 'article'){
   $title = "Новости";
   $content = tpl("articles", $result);
 } else{
-  error ('Станица не найдена');
+  error ('Страница не найдена');
 }
