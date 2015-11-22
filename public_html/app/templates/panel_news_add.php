@@ -23,11 +23,11 @@
     <h1>Добавление статьи</h1>
     <form action="/panel/news_add/add" method="POST" enctype="multipart/form-data" class="shadow">
       <label for="name">Название статьи</label>
-      <input type="text" id="name" name="name"/>
+      <input type="text" id="name" name="name" required/>
       <label for="description">Краткий текст статьи</label>
-      <textarea id="description" name="description"></textarea>
+      <textarea id="description" name="description" required></textarea>
       <label for="text">Полный текст статьи</label>
-      <textarea id="text" name="text"></textarea>
+      <textarea id="text" name="text" required></textarea>
       <button class="button button-anim" type="submit">Создать</button>
     </form>
   </section>

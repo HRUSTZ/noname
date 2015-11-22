@@ -23,14 +23,14 @@
     <h1>Добавление категории</h1>
     <form action="/panel/category_edit/add" method="POST" class="shadow">
       <label for="translation">Название категории</label>
-      <input type="text" id="translation" name="translation"/>
+      <input type="text" id="translation" name="translation" required/>
       <button class="button button-anim" type="submit">Добавить</button>
     </form>
     <h1>Изменение категории</h1>
     <form action="/panel/category_edit/edit" method="POST" class="shadow">
       <label for="">Название категории</label>
       <? foreach ($cont[cat] as $value): ?>
-      <input name="name[<?= $value[id]?>]" type="text" value="<?=$value[translation]?>">
+      <input name="name[<?= $value[id]?>]" type="text" value="<?=$value[translation]?>" required/>
       <span><a href="/panel/category_edit/delete/<?= $value[id]?>">Удалить</a></span>
       <? endforeach; ?>
       <button class="button button-anim" type="submit">Сохранить</button>

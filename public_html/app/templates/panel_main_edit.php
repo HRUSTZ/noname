@@ -23,16 +23,16 @@
     <h1>Изменение "О сайте"</h1>
     <form action="/panel/main_edit/text_edit" method="POST" class="shadow">
       <label for="title">Заголовок</label>
-      <input type="text" id="title" name="title" value="<?=$cont[mainText][title]?>"/>
+      <input type="text" id="title" name="title" value="<?=$cont[mainText][title]?>" required/>
       <label for="text">Описание</label>
-      <textarea id="text" name="about"><?=$cont[mainText][about]?></textarea>
+      <textarea id="text" name="about" required><?=$cont[mainText][about]?></textarea>
       <button class="button button-anim" type="submit">Подтвердить</button>
     </form>
     <h1>Изменение "достоинств/услуг"</h1>
     <form action="/panel/main_edit/services_edit" method="POST" class="shadow">
       <? foreach($cont[servicesText] as $value): ?>
         <label for="s<?=$value[id]?>">Достоинство (услуга) <?=$value[id]?></label>
-        <textarea id="s<?=$value[id]?>" name="s<?=$value[id]?>"><?=$value[about]?></textarea>
+        <textarea id="s<?=$value[id]?> required" name="s<?=$value[id]?>"><?=$value[about]?></textarea>
       <? endforeach; ?>
       <button class="button button-anim" type="submit">Подтвердить</button>
     </form>

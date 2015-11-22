@@ -23,11 +23,11 @@
     <h1>Редактирование статьи</h1>
     <form action="/panel/news_edit/<?=$cont[id]?>/edit" method="POST" enctype="multipart/form-data" class="shadow">
       <label for="name">Название статьи</label>
-      <input type="text" id="name" name="name" value="<?=$cont[name]?>"/>
+      <input type="text" id="name" name="name" value="<?=$cont[name]?>" required/>
       <label for="description">Краткий текст статьи</label>
-      <textarea id="description" name="description"><?=$cont[description]?></textarea>
+      <textarea id="description" name="description" required><?=$cont[description]?></textarea>
       <label for="text">Полный текст статьи</label>
-      <textarea id="text" name="text"><?=$cont[text]?></textarea>
+      <textarea id="text" name="text" required><?=$cont[text]?></textarea>
       <button class="button button-anim" type="submit">Изменить</button>
       <a href="/panel/news_edit/<?=$cont[id]?>/delete">Удалить<i class="fa fa-times"></i></a>
     </form>

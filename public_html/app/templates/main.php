@@ -1,6 +1,6 @@
 <section class="main">
   <section class="main-about wrap">
-    <div class="main-about-img"><img src="/assets/img/1.png"></div>
+    <div class="main-about-img"><img src="/assets/img/1.jpg"></div>
     <div class="main-about-layer shadow"></div>
     <div class="main-about-content">
       <h1><?= $cont[mainText][title]?></h1>

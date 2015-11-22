@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
-  <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <meta name="robots" content="noyaca">
+  <meta name="keywords" content="коракс, программы 1с, бухгалтерский учет, 1с предприятие, 1с бухгалтерия, 1с торговля, 1с розница, 1с">
+  <meta name="description" content="коракс, купить программы 1с, автоматизация магазинов и предприятий, бухгалтерский учет">
   <title><?=$title?></title>
 </head>
 <body>

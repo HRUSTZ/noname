@@ -23,11 +23,11 @@
     <h1>Добавление товара</h1>
     <form action="/panel/products_add/add" method="POST" enctype="multipart/form-data" class="shadow">
       <label for="name">Название товара</label>
-      <input type="text" id="name" name="name"/>
+      <input type="text" id="name" name="name" required/>
       <label for="description">Описание товара</label>
-      <textarea id="description" name="description"></textarea>
+      <textarea id="description" name="description" required></textarea>
       <label for="price">Цена</label>
-      <input type="text" id="price" name="price"/>
+      <input type="text" id="price" name="price" required/>
       <label for="cat">Категория</label>
       <select id="cat" name="cat" id="number">
       <?foreach($cont[cat] as $value): ?>

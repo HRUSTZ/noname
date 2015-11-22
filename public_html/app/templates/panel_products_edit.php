@@ -23,11 +23,11 @@
     <h1>Редактирование товара</h1>
     <form action="/panel/products_edit/<?=$cont[id]?>/edit" method="POST" enctype="multipart/form-data" class="shadow">
       <label for="name">Название товара</label>
-      <input type="text" id="name" name="name" value="<?=$cont[name]?>"/>
+      <input type="text" id="name" name="name" value="<?=$cont[name]?>" required/>
       <label for="description">Описание товара</label>
-      <textarea id="description" name="description"><?=$cont[description]?></textarea>
+      <textarea id="description" name="description" required><?=$cont[description]?></textarea>
       <label for="price">Цена</label>
-      <input type="text" id="price" name="price" value="<?=$cont[price]?>"/>
+      <input type="text" id="price" name="price" value="<?=$cont[price]?>" required/>
       <label for="cat">Категория</label>
       <select id="cat" name="cat" id="number">
       <?foreach($cont[cat] as $value): ?>
@@ -37,7 +37,7 @@
       <label for="photo">Главное изображение</label>
       <img src="<?=$cont[photo]?>">
       <input class="input-file" id="photo" name="photo" type="file">
-      <button class="button button-anim" type="submit">Создать</button>
+      <button class="button button-anim" type="submit">Изменить</button>
       <a href="/panel/products_edit/<?=$cont[id]?>/delete">Удалить<i class="fa fa-times"></i></a>
     </form>
   </section>

@@ -6,7 +6,7 @@ function notice(text){
   document.body.appendChild(d);
   setTimeout( function() { 
   document.body.removeChild(d);
-  } , 4000)
+  } , 8000)
 }
 
 (function( window ){
