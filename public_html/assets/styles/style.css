@@ -931,19 +931,25 @@ body.open .drop-form {
 }
 /*======================= ERROR =======================*/
 .error{
-  position: relative;
   height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
   background: url(/assets/img/err.jpg) center no-repeat;
   background-size: cover;
+  min-width: 1140px;
+}
+.error-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  word-break: break-word;
 }
 .error h1{
   font-size: 60px;
   color: #565656;
+  line-height: 1;
 }
 .error p{
   font-size: 30px;

@@ -8,8 +8,10 @@
 </head>
 <body>
   <section class="error">
-    <h1>Упс! <?echo($handl);?></h1>
-    <p>Вернуться на <a href="/main">главную</a></p>
+    <div class="error-content wrap">
+      <h1>Упс! <?echo($handl);?></h1>
+      <p>Вернуться на <a href="/main">главную</a></p>
+    </div>
   </section>
 </body>
 </html>
