@@ -530,13 +530,13 @@ body.open-login-menu .menu-user{
   height: 0;
   background: #fff;
   box-shadow:0 0 10px 1px rgba(0,0,0,0.3) inset;
-  width:560px;
   z-index:3;
   position:absolute;
   top:50px;
   right:25px;
   transition:all .7s;
   overflow: hidden;
+  max-width: 560px;
 }
 .menu-profile{
   display: flex;
@@ -641,7 +641,7 @@ body.open-login-menu .menu-user{
   position: fixed;
   z-index: 20;
   overflow: hidden;
-  transition: all 0.5s;
+  transition: all 0.7s;
   left: 50%;
   margin-left: -275px;
   width: 550px;
@@ -855,7 +855,7 @@ body.open .drop-form {
 }
 .admin-panel-content form .input-file{
   padding: 0;
-  height: 24px;
+  height: 30px;
 }
 .admin-panel-content form > img{
   max-height: 250px;
