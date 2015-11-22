@@ -48,7 +48,7 @@ function page($p1, $p2, $p3, $p4 = 5, $p5 = true){ //переключение с
   $page = $p3 / $p4;
   if($page > 1 && $p5 == true){
     echo'<div class="page-selector">';
-    echo'<a class="switch-item" href="'.$p1.'1" title="В конец"><i class="fa fa-long-arrow-left"></i></a>';
+    echo'<a class="switch-item" href="'.$p1.'1" title="В начало"><i class="fa fa-long-arrow-left"></i></a>';
     for($i = ($p2 - 3); $i < ($page + 1); $i++){
       if($i > 0 && $i <= ($p2 + 3)){
         if($p2 == $i){

@@ -22,7 +22,7 @@ if(isset($token) && isset($login)){
 }
 
 if(!include($controller)){
-  error("Нет страницы - ".$controller);
+  error("Нет страницы - ".$query[1]);
 }  
 
 if($isAuth){
