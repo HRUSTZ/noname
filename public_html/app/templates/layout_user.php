@@ -9,9 +9,7 @@
   <title><?=$title?></title>
 </head>
 <body>
-
-<div class="container">
-    
+  <div class="container">
     <header>
       <div class="header-content wrap">
         <a class="header-logo" href="/main"><img src="/assets/img/logo.png" height="85" width="285" alt="1С Коракс Ростов-на-Дону"></a>
@@ -30,7 +28,6 @@
         </div>
       </div>
     </header>
-    
     <nav class="shadow">
       <ul class="wrap">
         <a class="nav-btn button button-anim" href="/main">Главная</a>
@@ -41,53 +38,41 @@
           <button class="nav-btn-search button button-anim" type="submit"><i class="fa fa-search"></i></button>
         </form>
         <button class="nav-btn-user button button-anim"><i class="fa fa-user"></i></button>
-
-
-
-
-
-
         <section class="menu-user">
-            <div class="menu-profile">
-              <? if($admin): ?>
-              <section class="menu-admin-profile">
-                <a href="/panel"><button class="button button-anim">Панель управления</button></a>
-                <a href="/panel/news_add"><button class="button button-anim">+ Новость</button></a>
-                <a href="/panel/products_add"><button class="button button-anim">+ Товар</button></a>
-              </section>
-              <? endif; ?>
-              <section class="menu-user-profile">
-                <div class="user-flex">
-                  <div class="user-img">  
-                    <img src="<?=$photo?>" alt="<?=$name?>">
+          <div class="menu-profile">
+            <? if($admin): ?>
+            <section class="menu-admin-profile">
+              <a href="/panel"><button class="button button-anim">Панель управления</button></a>
+              <a href="/panel/news_add"><button class="button button-anim">+ Новость</button></a>
+              <a href="/panel/products_add"><button class="button button-anim">+ Товар</button></a>
+            </section>
+            <? endif; ?>
+            <section class="menu-user-profile">
+              <div class="user-flex">
+                <div class="user-img">  
+                  <img src="<?=$photo?>" alt="<?=$name?>">
+                </div>
+                <div class="user-info">
+                  <div class="user-name">
+                    <p><?=$name?></p>
+                    <p><?=$login?></p>
                   </div>
-                  <div class="user-info">
-                    <div class="user-name">
-                      <p><?=$name?></p>
-                      <p><?=$login?></p>
-                    </div>
-                    <div class="user-edit">
-                      <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
-                      <a href="/profile_edit">Редактировать</a>
-                      <a href="/exit">Выход</a>
-                    </div>
+                  <div class="user-edit">
+                    <? $_SESSION['link'] = $_SERVER['REQUEST_URI'] ?>
+                    <a href="/profile_edit">Редактировать</a>
+                    <a href="/exit">Выход</a>
                   </div>
                 </div>
-              </section>
-            </div>
-          </section>
+              </div>
+            </section>
+          </div>
+        </section>
       </ul>
     </nav>
-
-
-
     <?=$content?>
-
     <footer class="shadow">2015 © ООО "Коракс"</footer>
-  
-
+  </div>
 <script src="/assets/js/main.js"></script>
-
 </body>
 </html>
 

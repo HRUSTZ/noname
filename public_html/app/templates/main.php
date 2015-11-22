@@ -36,11 +36,9 @@
       <article class="main-product shadow">
         <div class="product-img"><img src="<?= $value[photo]?>"></div>
         <div class="product-content main-product-content ">
-          
-            <h2><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></h2>
-            <p><?= $value[price]?> р.</p>
-            <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
-          
+          <h2><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></h2>
+          <p><?= $value[price]?> р.</p>
+          <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
         </div>
       </article>
       <? endforeach; ?>

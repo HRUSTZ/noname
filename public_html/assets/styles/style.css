@@ -91,7 +91,7 @@ header{
 .map-link{
   font-weight: bold;
   color: #000;
-  text-decoration: underline;;
+  text-decoration: underline;
 }
 .map-link:hover{
   color: #036ca6;
@@ -522,29 +522,7 @@ footer{
   color: #fff;
   line-height: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*======================= USER MENU =======================*/
 body.open-login-menu .menu-user{
   height: 140px;
 }
@@ -624,21 +602,7 @@ body.open-login-menu .menu-user{
 .menu-admin-profile button:hover{
   color: #036ca6;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*======================= PAGE SELECTOR =======================*/
 .page-selector{
   display: flex;
   align-items: center;
@@ -670,17 +634,7 @@ body.open-login-menu .menu-user{
   color: #fff;
   background: #028ec9;
 }
-
-
-
-
-
-
-
-
-
-
-
+/*======================= LOGIN MENU =======================*/
 .drop-form{
   top: -550px;
   height: 380px;
@@ -748,7 +702,6 @@ body.open-login-menu .menu-user{
 }
 .drop-form > p{
   text-align: center;
-
 }
 .drop-form > p a{
   text-decoration: underline;
@@ -769,11 +722,7 @@ body.open .drop-form {
     height: 100%;
     background: rgba(0, 0, 0, 0.8);
 }
-
-
-
-
-
+/*======================= NOTICE & ANIMATION =======================*/
 .notice {
   z-index: 99;
   position: fixed;
@@ -835,7 +784,6 @@ body.open .drop-form {
     top:-100px;
   }
 }
-
 @keyframes slideup {
   0% {
     top:-100px;
@@ -850,20 +798,14 @@ body.open .drop-form {
     top:-100px;
   }
 }
-
-
-
+/*======================= ADMIN PANEL =======================*/
 .admin-panel{
   padding-bottom: 50px;
   display: flex;
 }
-.admin-menu{
-
-}
 .admin-menu .panel{
   width: 715px;
   margin: 0 187px 25px;
-
 }
 .admin-menu .panel .admin-info{
   font-weight: bold;
@@ -887,12 +829,10 @@ body.open .drop-form {
 }
 .admin-menu-content h2{
   font-size: 20px;
-  margin-bottom: 5px;;
-
+  margin-bottom: 5px;
 }
 .admin-menu-content p{
   text-decoration: underline;
-
 }
 .admin-menu-content p a:hover{
   color: #036ca6;
@@ -907,13 +847,11 @@ body.open .drop-form {
   padding: 25px;
   margin: 0 25px 25px;
   position: relative;
-
 }
 .admin-panel-content form > label{
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
-
 }
 .admin-panel-content form .input-file{
   padding: 0;
@@ -922,7 +860,6 @@ body.open .drop-form {
 .admin-panel-content form > img{
   max-height: 250px;
   max-width: 250px;
-
 }
 .admin-panel-content form > input{
   width: 691px;
