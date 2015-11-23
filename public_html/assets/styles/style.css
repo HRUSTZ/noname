@@ -366,12 +366,18 @@ nav ul{
   display: flex;
   padding-bottom: 50px;
 }
+.catalog-products{
+  width: 840px;
+}
+.catalog .catalog-search{
+  width: 1140px;
+}
 .catalog-products h2{
   margin: 25px;
   font-size: 20px;
 }
 .catalog-filter{
-  width: 275px;
+  width: 250px;
   margin: 0 0 25px 25px;
 }
 .search-product .catalog-product{
@@ -505,11 +511,12 @@ nav ul{
 .product-price{
   font-size: 20px;
   font-weight: bold;
-  padding-bottom: 27px;;
+  padding-bottom: 27px;
 }
 .product-category{
   margin: 0 25px 25px;
   font-style: italic;
+  font-weight: bold;
 }
 /*======================= FOOTER =======================*/
 footer{

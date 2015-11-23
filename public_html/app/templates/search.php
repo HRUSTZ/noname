@@ -1,5 +1,5 @@
 <section class="catalog wrap">
-  <section class="catalog-products">
+  <section class="catalog-products catalog-search">
     <h1><?= $cont[message]?></h1>
     <h2><?= $cont[messageResult]?></h2>
     <section class="products-content search-product">
