@@ -21,13 +21,13 @@
     <section class="main-articles">
       <h1>Последние акции</h1>
       <? foreach($cont[news] as $value): ?>
-      <article class="article shadow">
+      <!--<article class="article shadow">
         <h2><a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a></h2>
         <p class="article-description"><?= $value[description]?></p>
         <p class="article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
         <a href="/news/article/<?= $value[id]?>">Подробнее</a>
       </article>
-      <? endforeach; ?>
+      <? endforeach; ?>  -->
       <p><a href="/news">Все акции</a></p>
     </section>
     <section class="main-products">

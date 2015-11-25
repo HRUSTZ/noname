@@ -231,6 +231,9 @@ nav ul{
 .main-content{
   display: flex;
 }
+.main-articles{
+  width: 850px;
+}
 .article{
   margin: 0 25px 25px;
   border-radius: 15px;

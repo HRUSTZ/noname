@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="/assets/styles/style.css">
-  <link href="/assets/favicon.png" rel="shortcut icon" type="image/png" />
+  <link href="/assets/favicon.png" rel="shortcut icon" type="image/png">
   <meta name="robots" content="noyaca">
   <meta name="keywords" content="Коракс, программы 1с, бухгалтерский учет, 1с предприятие, 1с бухгалтерия, 1с торговля, 1с розница, 1с">
   <meta name="description" content="коракс, купить программы 1с, автоматизация магазинов и предприятий, бухгалтерский учет">
