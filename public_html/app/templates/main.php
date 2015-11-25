@@ -32,7 +32,9 @@
         <p><a href="/news">Все акции</a></p>
       </section>
     <?else:?>
-      <h1>Акций пока нет</h1>
+      <section class="main-articles">
+        <h1>Акций пока нет</h1>
+      </section>
     <?endif;?>
     <section class="main-products">
       <h1>Продукты</h1>
