@@ -364,6 +364,9 @@ nav ul{
 .news-wrap > .separator:last-child{
   display: none;
 }
+.news .products-clean{
+  margin: auto;
+}
 /*======================= CATALOG =======================*/
 .catalog{
   display: flex;
@@ -429,7 +432,7 @@ nav ul{
   border-radius: 15px;
   font-size: 18px;
   display: flex;
-  margin-right: 25px;
+  margin-left: 25px;
 }
 /*======================= ARTICLE & PRODUCT =======================*/
 .article-page,
