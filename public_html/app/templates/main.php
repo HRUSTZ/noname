@@ -18,18 +18,22 @@
     </div>
   </section>
   <section class="main-content wrap">
-    <section class="main-articles">
-      <h1>Последние акции</h1>
-      <? foreach($cont[news] as $value): ?>
-      <!--<article class="article shadow">
-        <h2><a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a></h2>
-        <p class="article-description"><?= $value[description]?></p>
-        <p class="article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
-        <a href="/news/article/<?= $value[id]?>">Подробнее</a>
-      </article>
-      <? endforeach; ?>  -->
-      <p><a href="/news">Все акции</a></p>
-    </section>
+    <? if($cont[news]):?>
+      <section class="main-articles">
+        <h1>Последние акции</h1>
+        <? foreach($cont[news] as $value): ?>
+        <!--<article class="article shadow">
+          <h2><a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a></h2>
+          <p class="article-description"><?= $value[description]?></p>
+          <p class="article-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
+          <a href="/news/article/<?= $value[id]?>">Подробнее</a>
+        </article>
+        <? endforeach; ?>  -->
+        <p><a href="/news">Все акции</a></p>
+      </section>
+    <?else:?>
+      <h1>Акций пока нет</h1>
+    <?endif;?>
     <section class="main-products">
       <h1>Продукты</h1>
       <? foreach($cont[products] as $value): ?>
