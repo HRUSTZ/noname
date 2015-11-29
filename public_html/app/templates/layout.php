@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=1140px">
   <link rel="stylesheet" href="/assets/styles/style.css">
   <link href="/assets/favicon.png" rel="shortcut icon" type="image/png">
   <meta name="robots" content="noyaca">
