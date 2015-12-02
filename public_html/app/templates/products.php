@@ -13,11 +13,11 @@
     <section class="products-content">
       <? foreach($cont[cont] as $value): ?> 
       <article class="catalog-product shadow">
-        <a class="product-img" href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>"></a>
+        <a class="product-img flexbox" href="/products/number/<?= $value[id]?>"><img src="<?= $value[photo]?>"></a>
         <div class="product-content">
           <h2><a href="/products/number/<?= $value[id]?>"><?= $value[name]?></a></h2>
           <p><?= $value[price]?> р.</p>
-          <a class="button button-anim" href="/products/number/<?= $value[id]?>">Подробнее</a>
+          <a class="button button-anim flexbox" href="/products/number/<?= $value[id]?>">Подробнее</a>
         </div>
       </article>
       <? endforeach; ?>

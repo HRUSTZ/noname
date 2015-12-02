@@ -2,7 +2,7 @@
   <section class="product-page-content shadow">
     <h1><?= $cont[name]?></h1>
     <div class="product-flex">
-      <div class="product-img">
+      <div class="product-img flexbox">
         <img src="<?= $cont[photo]?>" alt="<?= $cont[name]?>">
       </div>
       <div class="product-info">
