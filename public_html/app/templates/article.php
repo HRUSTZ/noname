@@ -9,7 +9,7 @@
   <section class="article-page-sidebar shadow">
     <h1>Последние акции</h1>
     <? foreach($cont[more] as $value): ?>
-    <p class="article-sidebar-date"><?echo rus_date("j F Y", strtotime($cont[date]));?></p>
+    <p class="article-sidebar-date"><?echo rus_date("j F Y", strtotime($value[date]));?></p>
     <p class="article-sidebar-name"><a href="/news/article/<?= $value[id]?>"><?= $value[name]?></a></p>
     <? endforeach; ?>
     <div class="separator"></div>
