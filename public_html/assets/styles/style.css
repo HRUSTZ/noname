@@ -10,6 +10,13 @@ body{
   height: 100%;
   font: 16px/1.5em Noto Sans, sans-serif;
 }
+.flexbox{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
 .separator{
   height: 15px;
   background: url(/assets/img/7.png);
@@ -67,26 +74,18 @@ header{
   height: 100px;
 }
 .header-content{
-  display: flex;
   height: 100%;
   align-items: center;
 }
 .header-logo{
   display: block;
-  height: 85px;
-  margin: 0 auto;
-}
-.header-caption{
-  width: 264px;
-  font-size: 24px;
-  text-transform: uppercase;
-  margin: 0 auto;
+  height: 90px;
+  margin: 0 50px;
 }
 .header-info{
-  width: 286px;
   font-size: 15px;
-  line-height: 1.4em;
-  margin: 0 auto;
+  line-height: 1.2em;
+  margin: 0 55px 0 364px;
 }
 .map-link{
   font-weight: bold;
@@ -97,7 +96,7 @@ header{
   color: #036ca6;
 }
 .header-social{
-  margin: 0 auto;
+  margin-right: 25px;;
 }
 .header-social a{
   display: block;
@@ -115,13 +114,11 @@ nav{
   background: linear-gradient(to top, #036ca6, #028ec9);
 }
 nav ul{
-  display: flex;
   height: 100%;
   align-items: center;
   position: relative;
 }
 .nav-btn{
-  display: flex;
   width: 120px;
   height: 30px;
   border-radius: 5px;
@@ -135,7 +132,6 @@ nav ul{
   color: #036ca6;
 }
 .nav-form-search{
-  display: flex;
   height: 30px;
   margin-left: 280px;
 }
@@ -197,7 +193,7 @@ nav ul{
 .main-about-layer{
   z-index: 1;
   height: 400px;
-  background: rgba(255,255,255,.85);
+  background: rgba(255,255,255,.75);
 }
 .main-about-content{
   z-index: 2;
@@ -208,13 +204,9 @@ nav ul{
   text-align: center;
   white-space: pre-wrap;
 }
-.main-services-content{
-  display: flex;
-}
 .main-services-content > article{
   width: 330px;
   background: #fff url(/assets/img/5.png);
-  display: flex;
   height: 580px;
   align-items: center;
   border-radius: 15px;
@@ -227,9 +219,7 @@ nav ul{
   max-height: 264px;
   overflow: hidden;
   font-size: 14px;
-}
-.main-content{
-  display: flex;
+  white-space: pre-wrap;
 }
 .main-articles{
   width: 850px;
@@ -275,6 +265,29 @@ nav ul{
 .main-products h1{
   margin-right: 50px;
 }
+.no-news h1{
+  margin-right: 25px;
+}
+.no-news .main-product{
+  width: 330px;
+  height: 330px;
+  margin: 0 25px 25px;
+}
+.no-news .main-product-content{
+  width: 330px;
+  height: 330px;
+  padding-top: 232px;
+}
+.no-news .product-img{
+  height: 232px;
+}
+.no-news .main-product img{
+  max-height: 207px;
+  max-width: 207px;
+}
+.no-news .product-content p{
+  padding-top: 25px;
+}
 .main-product{
   width: 265px;
   height: 265px;
@@ -285,7 +298,6 @@ nav ul{
   border-radius: 15px;
 }
 .product-img{
-  display: flex;
   height: 192px;
 }
 .main-product img{
@@ -325,7 +337,6 @@ nav ul{
   font-weight: bold;
 }
 .product-content > a{
-  display: flex;
   width: 120px;
   height: 30px;
   justify-content: center;
@@ -533,7 +544,17 @@ footer{
   background: linear-gradient(to top, #036ca6, #028ec9);
   text-align: center;
   color: #fff;
-  line-height: 50px;
+}
+.footer-content p{
+  padding-top: 7px; 
+}
+.footer-content span{
+  font-size: 12px;
+  display: block;
+  margin-top: -6px;
+}
+.footer-content span a{
+  text-decoration: underline;
 }
 /*======================= USER MENU =======================*/
 body.open-login-menu .menu-user{
